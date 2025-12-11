@@ -20,8 +20,9 @@
           <entry name="$MAVEN_REPOSITORY$/org/mapstruct/mapstruct-processor/1.6.3/mapstruct-processor-1.6.3.jar" />
         </processorPath>
         <module name="job-service" />
-        <module name="booking-service" />
+        <module name="payment-service" />
         <module name="user-service" />
+        <module name="booking-service" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -37,6 +38,7 @@
       <module name="discovery-service" options="-parameters" />
       <module name="gateway-service" options="-parameters" />
       <module name="job-service" options="-parameters" />
+      <module name="payment-service" options="-parameters" />
       <module name="third-party-platform" options="-parameters" />
       <module name="user-service" options="-parameters" />
     </option>
