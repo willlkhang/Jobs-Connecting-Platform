@@ -10,12 +10,12 @@ import org.springframework.data.repository.query.Param;
 
 import java.util.List;
 
-public interface ServiceRepository extends JpaRepository<Solution, Integer> {
+public interface SolutionRepository extends JpaRepository<Solution, Integer> {
 
-    @Query("SELECT s FROM Solution s JOIN s.categories c WHERE c.categoryId =:categoryId")
+    @Query("SELECT  s FROM Solution  s JOIN s.categories c WHERE c.categoryId =:categoryId")
     List<Solution> getSolutionByCategoryId(@Param("categoryId") Long categoryId);
 
-    @Query("SELECT s FROM  Solution s WHERE s.serviceName =:serviceName")
+    @Query("SELECT s FROM  Solution s WHERE s.solutionName =:serviceName")
     List<Solution> getSolutionByName(@Param("solutionName") String solutionName);
 
     //The query which interrupts the data such as update requires these 2 annotations

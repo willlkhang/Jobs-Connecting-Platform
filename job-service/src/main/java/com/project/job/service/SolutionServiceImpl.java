@@ -4,7 +4,7 @@ import com.project.base.dto.SolutionDTO;
 
 import com.project.job.domain.Solution;
 import com.project.job.mapper.SolutionMapper;
-import com.project.job.repository.ServiceRepository;
+import com.project.job.repository.SolutionRepository;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -15,7 +15,7 @@ import java.util.List;
 public class SolutionServiceImpl implements SolutionService {
 
     @Autowired
-    private ServiceRepository serviceRepository;
+    private SolutionRepository solutionRepository;
 
     @Autowired
     private SolutionMapper solutionMapper;
@@ -27,7 +27,7 @@ public class SolutionServiceImpl implements SolutionService {
 
     @Override
     public void save(Solution solution) {
-
+        solutionRepository.save(solution);
     }
 
     @Override
