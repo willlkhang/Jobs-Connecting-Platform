@@ -19,6 +19,8 @@
           <entry name="$MAVEN_REPOSITORY$/org/mapstruct/mapstruct-processor/1.6.3/mapstruct-processor-1.6.3.jar" />
           <entry name="$MAVEN_REPOSITORY$/org/mapstruct/mapstruct-processor/1.6.3/mapstruct-processor-1.6.3.jar" />
         </processorPath>
+        <module name="job-service" />
+        <module name="booking-service" />
         <module name="user-service" />
       </profile>
     </annotationProcessing>
@@ -30,9 +32,11 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="base-service" options="" />
       <module name="booking" options="-parameters" />
+      <module name="booking-service" options="-parameters" />
       <module name="config-service" options="-parameters" />
       <module name="discovery-service" options="-parameters" />
       <module name="gateway-service" options="-parameters" />
+      <module name="job-service" options="-parameters" />
       <module name="third-party-platform" options="-parameters" />
       <module name="user-service" options="-parameters" />
     </option>
