@@ -4,6 +4,7 @@ import jakarta.persistence.*;
 import lombok.*;
 
 import java.math.BigDecimal;
+import java.util.HashSet;
 import java.util.Set;
 
 @Entity
@@ -20,9 +21,13 @@ public class Service {
     @Column(name = "user_id")
     private Long userId;
 
-    @ManyToMany
-    @JoinColumn(name = "category_id", referencedColumnName = "category_id")
-    private Set<Category> categories;
+    @ManyToMany(fetch = FetchType.LAZY)
+    @JoinTable(
+            name = "services_categories",
+            joinColumns = @JoinColumn(name = "service_id"),
+            inverseJoinColumns = @JoinColumn(name = "category_id")
+    )
+    private Set<Category> categories = new HashSet<>();
 
     @Column(name = "service_name")
     private String serviceName;
