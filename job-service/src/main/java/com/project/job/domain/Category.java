@@ -23,7 +23,7 @@ public class Category {
     private String description;
 
     @OneToMany(mappedBy = "category")
-    private Set<Service> services;
+    private Set<Solution> solutions;
 
     public Long getCategoryId() {
         return categoryId;
@@ -49,11 +49,11 @@ public class Category {
         this.description = description;
     }
 
-    public Set<Service> getServices() {
-        return services;
+    public Set<Solution> getSolutions() {
+        return solutions;
     }
 
-    public void setServices(Set<Service> services) {
-        this.services = services;
+    public void setSolutions(Set<Solution> solutions) {
+        this.solutions = solutions;
     }
 }

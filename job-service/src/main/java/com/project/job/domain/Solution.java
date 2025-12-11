@@ -8,29 +8,29 @@ import java.util.HashSet;
 import java.util.Set;
 
 @Entity
-@Table(name="Service")
+@Table(name="Solution")
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class Service {
+public class Solution {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "service_id")
-    private Long serviceId;
+    @Column(name = "solution_id")
+    private Long solutionId;
 
     @Column(name = "user_id")
     private Long userId;
 
     @ManyToMany(fetch = FetchType.LAZY)
     @JoinTable(
-            name = "services_categories",
-            joinColumns = @JoinColumn(name = "service_id"),
+            name = "solutions_categories",
+            joinColumns = @JoinColumn(name = "solution_id"),
             inverseJoinColumns = @JoinColumn(name = "category_id")
     )
     private Set<Category> categories = new HashSet<>();
 
-    @Column(name = "service_name")
-    private String serviceName;
+    @Column(name = "solution_name")
+    private String solutionName;
     @Column(name = "description")
     private String description;
     @Column(name = "price")
@@ -38,12 +38,12 @@ public class Service {
     @Column(name = "processed_number") //this mean the number of customer I used this service in the past
     private Integer processedNumber;
 
-    public Long getServiceId() {
-        return serviceId;
+    public Long getSolutionId() {
+        return solutionId;
     }
 
-    public void setServiceId(Long serviceId) {
-        this.serviceId = serviceId;
+    public void setSolutionId(Long solutionId) {
+        this.solutionId = solutionId;
     }
 
     public Long getUserId() {
@@ -62,20 +62,12 @@ public class Service {
         this.categories = categories;
     }
 
-    public String getServiceName() {
-        return serviceName;
+    public String getSolutionName() {
+        return solutionName;
     }
 
-    public void setServiceName(String serviceName) {
-        this.serviceName = serviceName;
-    }
-
-    public BigDecimal getPrice() {
-        return price;
-    }
-
-    public void setPrice(BigDecimal price) {
-        this.price = price;
+    public void setSolutionName(String solutionName) {
+        this.solutionName = solutionName;
     }
 
     public String getDescription() {
@@ -84,6 +76,14 @@ public class Service {
 
     public void setDescription(String description) {
         this.description = description;
+    }
+
+    public BigDecimal getPrice() {
+        return price;
+    }
+
+    public void setPrice(BigDecimal price) {
+        this.price = price;
     }
 
     public Integer getProcessedNumber() {
