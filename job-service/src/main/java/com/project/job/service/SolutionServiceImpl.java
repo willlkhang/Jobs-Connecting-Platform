@@ -32,12 +32,12 @@ public class SolutionServiceImpl implements SolutionService {
 
     @Override
     public void delete(Solution solution) {
-
+        solutionRepository.delete(solution);
     }
 
     @Override
     public SolutionDTO getServiceById(Long id) {
-        return null;
+        return  null;
     }
 
     @Override
