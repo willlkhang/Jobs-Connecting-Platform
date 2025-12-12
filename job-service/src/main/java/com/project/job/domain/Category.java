@@ -22,7 +22,10 @@ public class Category {
     @Column(name = "description")
     private String description;
 
-    @OneToMany(mappedBy = "category")
+//    @OneToMany(mappedBy = "category")
+//    private Set<Solution> solutions;
+
+    @ManyToMany(mappedBy = "categories")
     private Set<Solution> solutions;
 
     public Long getCategoryId() {

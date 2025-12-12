@@ -1,6 +1,7 @@
 package com.project.job.service;
 
 import com.project.base.dto.SolutionDTO;
+import com.project.base.exception.BusinessException;
 
 import com.project.job.domain.Solution;
 import com.project.job.mapper.SolutionMapper;
@@ -42,10 +43,10 @@ public class SolutionServiceImpl implements SolutionService {
         List<Solution> solutionList = solutionRepository.getSolutionByName(solutionName);
         List<SolutionDTO> lstDTO = solutionList.stream().map(a -> solutionMapper.entityToDTO(a)).collect(Collectors.toList());
 
-        if(lstDTO.isEmpty()):
+        if(lstDTO.isEmpty())
             return lstDTO.get(0);
-        else:
-            throw new
+        else
+            throw new BusinessException("Solution not found");
     }
 
     @Override
