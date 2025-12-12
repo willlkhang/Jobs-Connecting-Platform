@@ -7,14 +7,17 @@ import java.util.List;
 
 public interface SolutionService {
 
-    List<SolutionDTO> getServiceByName(String solutionName);
+    List<Solution> getSolutionByCategoryId(Long CategoryId);
 
+    //basic save delete group
     void save(Solution solution);
-
     void delete(Solution solution);
 
-    SolutionDTO getServiceById(Long id);
+    //fetching group
+    SolutionDTO getSolutionByName(String solutionName);
+    SolutionDTO getSolutionById(Long id);
 
+    //number updating group
     void increaseProcessedNumber(Long id);
     void decreaseProcessedNumber(Long id);
 }

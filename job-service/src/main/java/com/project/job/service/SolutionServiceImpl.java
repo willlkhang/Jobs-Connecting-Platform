@@ -10,6 +10,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.stream.Collectors;
 
 @Service
 public class SolutionServiceImpl implements SolutionService {
@@ -20,10 +21,6 @@ public class SolutionServiceImpl implements SolutionService {
     @Autowired
     private SolutionMapper solutionMapper;
 
-    @Override
-    public List<SolutionDTO> getServiceByName(String serviceName) {
-        return List.of();
-    }
 
     @Override
     public void save(Solution solution) {
@@ -36,8 +33,24 @@ public class SolutionServiceImpl implements SolutionService {
     }
 
     @Override
-    public SolutionDTO getServiceById(Long id) {
-        return  null;
+    public List<Solution> getSolutionByCategoryId(Long CategoryId) {
+        return List.of();
+    }
+
+    @Override
+    public SolutionDTO getSolutionByName(String solutionName) {
+        List<Solution> solutionList = solutionRepository.getSolutionByName(solutionName);
+        List<SolutionDTO> lstDTO = solutionList.stream().map(a -> solutionMapper.entityToDTO(a)).collect(Collectors.toList());
+
+        if(lstDTO.isEmpty()):
+            return lstDTO.get(0);
+        else:
+            throw new
+    }
+
+    @Override
+    public SolutionDTO getSolutionById(Long id) {
+        return null;
     }
 
     @Override
