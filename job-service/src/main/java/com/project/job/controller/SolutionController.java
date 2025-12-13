@@ -34,6 +34,15 @@ public class SolutionController {
         return ResponseEntity.ok().body(solution);
     }
 
+    @GetMapping("get-solutions-by-category-id")
+    public ResponseEntity<Result> getListSolutionByCategoryId(@RequestParam("categoryId") Long categoryId) {
+        Result result = new Result(); //here using result as Solution and Category are 2 different entities
+        List<SolutionDTO> lst = solutionService.getSolutionByCategoryId(categoryId);
+        result.setData(lst);
+        result.setStatusCode(200);
+        return ResponseEntity.ok().body(result);
+    }
+
     @GetMapping("/check-exit-solution")
     public ResponseEntity<SolutionDTO> checkSolutionExist(@RequestParam("solutionName") String name) throws BusinessException {
         SolutionDTO solutionDTO = solutionService.getSolutionByName(name);

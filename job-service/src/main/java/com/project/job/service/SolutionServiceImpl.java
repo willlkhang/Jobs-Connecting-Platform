@@ -34,8 +34,10 @@ public class SolutionServiceImpl implements SolutionService {
     }
 
     @Override
-    public List<Solution> getSolutionByCategoryId(Long CategoryId) {
-        return List.of();
+    public List<SolutionDTO> getSolutionByCategoryId(Long categoryId) {
+        List<Solution> lst = solutionRepository.getSolutionByCategoryId(categoryId);
+        List<SolutionDTO> lstDTO = lst.stream().map(a -> solutionMapper.entityToDTO(a)).collect(Collectors.toList());
+        return lstDTO;
     }
 
     @Override

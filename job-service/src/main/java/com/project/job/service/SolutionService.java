@@ -7,7 +7,7 @@ import java.util.List;
 
 public interface SolutionService {
 
-    List<Solution> getSolutionByCategoryId(Long CategoryId);
+    List<SolutionDTO> getSolutionByCategoryId(Long CategoryId);
 
     //basic save delete group
     void save(Solution solution);
