@@ -43,15 +43,22 @@ public class SolutionServiceImpl implements SolutionService {
         List<Solution> solutionList = solutionRepository.getSolutionByName(solutionName);
         List<SolutionDTO> lstDTO = solutionList.stream().map(a -> solutionMapper.entityToDTO(a)).collect(Collectors.toList());
 
-        if(lstDTO.isEmpty())
+        if(!lstDTO.isEmpty())
             return lstDTO.get(0);
         else
+            System.out.println("Searching for solution with name: '" + solutionName + "'");
             throw new BusinessException("Solution not found");
     }
 
     @Override
     public SolutionDTO getSolutionById(Long id) {
-        return null;
+        List<Solution> solutionList = solutionRepository.getSolutionsById(id);
+        List<SolutionDTO> lstDTO = solutionList.stream().map(a -> solutionMapper.entityToDTO(a)).collect(Collectors.toList());
+
+        if(lstDTO.isEmpty())
+            return lstDTO.get(0);
+        else
+            throw new BusinessException("Solution not found");
     }
 
     @Override

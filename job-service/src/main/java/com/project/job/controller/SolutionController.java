@@ -26,10 +26,10 @@ public class SolutionController {
     @Autowired
     private SolutionMapper solutionMapper;
     @Autowired
-    private SolutionRepository solutionRepository;;
+    private SolutionRepository solutionRepository;
 
     @GetMapping("/check-exit-solution")
-    public ResponseEntity<SolutionDTO> checkSolutionExist(@RequestParam String name) throws BusinessException {
+    public ResponseEntity<SolutionDTO> checkSolutionExist(@RequestParam("solutionName") String name) throws BusinessException {
         SolutionDTO solutionDTO = solutionService.getSolutionByName(name);
 
         return ResponseEntity.ok(solutionDTO);
