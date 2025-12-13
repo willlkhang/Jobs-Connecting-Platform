@@ -28,6 +28,12 @@ public class SolutionController {
     @Autowired
     private SolutionRepository solutionRepository;
 
+    @PostMapping("add-solution")
+    public ResponseEntity<Solution> addSolution(@RequestBody Solution solution) { //or this can be implied by saving solution
+        solutionService.save(solution);
+        return ResponseEntity.ok().body(solution);
+    }
+
     @GetMapping("/check-exit-solution")
     public ResponseEntity<SolutionDTO> checkSolutionExist(@RequestParam("solutionName") String name) throws BusinessException {
         SolutionDTO solutionDTO = solutionService.getSolutionByName(name);
