@@ -43,9 +43,16 @@ public class SolutionController {
         return ResponseEntity.ok().body(result);
     }
 
-    @GetMapping("/check-exit-solution")
-    public ResponseEntity<SolutionDTO> checkSolutionExist(@RequestParam("solutionName") String name) throws BusinessException {
+    @GetMapping("/check-exit-solution-by-name")
+    public ResponseEntity<SolutionDTO> checkSolutionExistByName(@RequestParam("solutionName") String name) throws BusinessException {
         SolutionDTO solutionDTO = solutionService.getSolutionByName(name);
+
+        return ResponseEntity.ok(solutionDTO);
+    }
+
+    @GetMapping("/check-exit-solution-by-id")
+    public ResponseEntity<SolutionDTO> checkSolutionExistById(@RequestParam("solutionId") Long id) throws BusinessException {
+        SolutionDTO solutionDTO = solutionService.getSolutionById(id);
 
         return ResponseEntity.ok(solutionDTO);
     }
