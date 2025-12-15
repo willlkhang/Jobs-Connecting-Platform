@@ -19,5 +19,5 @@ public interface SolutionService {
 
     //number updating group
     void increaseProcessedNumber(Long id);
-    void decreaseProcessedNumber(Long id);
+    //void decreaseProcessedNumber(Long id);
 }

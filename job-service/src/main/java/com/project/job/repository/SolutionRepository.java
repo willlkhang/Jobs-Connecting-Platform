@@ -25,7 +25,7 @@ public interface SolutionRepository extends JpaRepository<Solution, Integer> {
     @Transactional
     @Modifying
     @Query(value = "UPDATE Solution s SET s.processedNumber = (s.processedNumber + 1) WHERE s.solutionId =:solutionId")
-    void increaseProcessedNumber(@Param("solutionId") Integer serviceId, @Param("processedNumber") Integer processedNumber);
+    void increaseProcessedNumber(@Param("solutionId") Long solutionId);
 
     @Transactional
     @Modifying

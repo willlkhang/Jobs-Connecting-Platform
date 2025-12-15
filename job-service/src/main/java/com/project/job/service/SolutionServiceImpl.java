@@ -63,13 +63,13 @@ public class SolutionServiceImpl implements SolutionService {
             throw new BusinessException("Solution not found");
     }
 
-    @Override
-    public void decreaseProcessedNumber(Long id) {
-
-    }
+//    @Override
+//    public void decreaseProcessedNumber(Long id) {
+//
+//    }
 
     @Override
     public void increaseProcessedNumber(Long id) {
-
+        solutionRepository.increaseProcessedNumber(id);
     }
 }

@@ -56,4 +56,10 @@ public class SolutionController {
 
         return ResponseEntity.ok(solutionDTO);
     }
+
+    @PostMapping("increase-number-of-customers-used-solution")
+    public void increaseNumberOfCustomersUsedSolution(@RequestParam("solutionId") Long id)  {
+        solutionService.increaseProcessedNumber(id);
+    }
+
 }
