@@ -1,7 +1,5 @@
 package com.project.user.dto;
 
-import com.edu.base.domain.User;
-
 public class UserSignUp {
 
     private String username;

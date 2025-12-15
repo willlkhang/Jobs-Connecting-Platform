@@ -71,7 +71,7 @@
         </dependency>
 
         <dependency>
-            <groupId>com.edu</groupId>
+            <groupId>com.project</groupId>
             <artifactId>base-service</artifactId>
             <version>1.0</version>
         </dependency>

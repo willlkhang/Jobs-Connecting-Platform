@@ -9,7 +9,7 @@ public class BookingDTO {
     private Long userId;
     private BigDecimal totalAmount;
     private Integer status;
-    private Date date;
+    private Date bookingDate;
 
     public Long getBookingId() {
         return bookingId;
@@ -43,11 +43,11 @@ public class BookingDTO {
         this.status = status;
     }
 
-    public Date getDate() {
-        return date;
+    public Date getBookingDate() {
+        return bookingDate;
     }
 
-    public void setDate(Date date) {
-        this.date = date;
+    public void setBookingDate(Date bookingDate) {
+        this.bookingDate = bookingDate;
     }
 }

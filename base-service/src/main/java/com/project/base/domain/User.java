@@ -10,8 +10,10 @@ public class User {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    //using @column is optional
     private Long id;
     private String username;
+    private String email;
     private String phone;
     private String password;
     private String fullName;
@@ -26,14 +28,24 @@ public class User {
     private Set<Role> roles = new HashSet<>();
 
     public User() {}
-    public User(Long id, String username, String password, String phone, String userType, String fullName, Set<Role> roles) {
+
+    public User(Long id, Set<Role> roles, String userType, String password, String fullName, String phone, String email, String username) {
         this.id = id;
-        this.username = username;
-        this.password = password;
-        this.phone = phone;
-        this.userType = userType;
-        this.fullName = fullName;
         this.roles = roles;
+        this.userType = userType;
+        this.password = password;
+        this.fullName = fullName;
+        this.phone = phone;
+        this.email = email;
+        this.username = username;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
     }
 
     public Long getId() {
