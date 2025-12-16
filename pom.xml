@@ -16,6 +16,7 @@
         <module>booking-service</module>
         <module>job-service</module>
         <module>payment-service</module>
+        <module>authorization-service</module>
     </modules>
 
     <parent>

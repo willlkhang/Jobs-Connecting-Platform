@@ -1,5 +1,5 @@
 server:
-  port: 8083
+  port: 8086
 
 eureka:
   client:
@@ -27,17 +27,15 @@ spring:
     hibernate:
       ddl-auto: update
     properties:
-      hibernate.default_schema: db_job
+      hibernate.default_schema: db_user
       hibernate.id.new_generator_mappings: true
       hibernate.connection.provider_disables_autocommit: true
       hibernate.cache.use_second_level_cache: false
       hibernate.cache.use_query_cache: false
       hibernate.generate_statistics: false
 
----
-spring:
-  security:
-    oauth2:
-      resourceserver:
-        jwt:
-          issuer-uri: http://localhost:8086
+security:
+  client-id: ${CLIENT_ID:project}
+  client-secret: ${CLIENT_SECRET:secret}
+  jwt:
+    duration: ${JWT_DURATION:6000}

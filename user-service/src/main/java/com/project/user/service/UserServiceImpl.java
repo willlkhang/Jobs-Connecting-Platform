@@ -18,10 +18,9 @@ public class UserServiceImpl implements UserService {
         User user = userRepository.findUserByUsername(username);
         return user != null;
     }
-
     @Override
     public boolean isDuplicatedEmail(String email) {
-        User user = userRepository.findUserByUsername(email);
+        User user = userRepository.findUserByUserEmail(email);
         return user != null;
     }
 

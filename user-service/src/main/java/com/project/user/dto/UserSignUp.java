@@ -6,18 +6,18 @@ public class UserSignUp {
     private String email;
     private String password;
     private String phone;
-    private String firstName;
+    private String fullName;
     private String userType;
 
     public UserSignUp() {}
 
-    public UserSignUp(String username, String email, String password, String phone, String userType, String firstName) {
+    public UserSignUp(String username, String email, String password, String phone, String userType, String fullName) {
         this.username = username;
         this.email = email;
         this.password = password;
         this.phone = phone;
         this.userType = userType;
-        this.firstName = firstName;
+        this.fullName = fullName;
     }
 
     public String getUsername() {
@@ -52,12 +52,12 @@ public class UserSignUp {
         this.phone = phone;
     }
 
-    public String getFirstName() {
-        return firstName;
+    public String getFullName() {
+        return fullName;
     }
 
-    public void setFirstName(String firstName) {
-        this.firstName = firstName;
+    public void setFullName(String fullName) {
+        this.fullName = fullName;
     }
 
     public String getUserType() {
