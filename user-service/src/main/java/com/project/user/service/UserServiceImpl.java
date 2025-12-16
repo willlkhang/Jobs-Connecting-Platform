@@ -2,7 +2,6 @@ package com.project.user.service;
 
 import com.project.base.domain.User;
 import com.project.user.repository.UserRepository;
-import com.project.user.repository.RoleRepository;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -12,8 +11,7 @@ public class UserServiceImpl implements UserService {
 
     @Autowired
     private UserRepository userRepository;
-    @Autowired
-    private RoleRepository roleRepository;
+
 
     @Override
     public boolean isDuplicatedUsername(String username) {

@@ -9,15 +9,15 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 
 @SpringBootApplication
-//@EntityScan(basePackages = "com.edu.base.domain")
+@EntityScan(basePackages = "com.project.base.domain")
 //@EnableFeignClients
 public class UserApplication {
     public static void main(String[] args) {
         new SpringApplicationBuilder(UserApplication.class).run(args);
     }
 
-    @Bean
-    public PasswordEncoder passwordEncoder() {
-        return new BCryptPasswordEncoder();
-    }
+//    @Bean
+//    public PasswordEncoder passwordEncoder() {
+//        return new BCryptPasswordEncoder();
+//    }
 }
