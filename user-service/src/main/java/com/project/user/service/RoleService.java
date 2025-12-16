@@ -9,7 +9,9 @@ public interface RoleService {
 
     void updateRole(String username, Role roleName) throws RoleException;
 
-    void updateAllowedMethod(String username, Role role) throws RoleException;
+    void updateAllowedMethod(String methodName, String role) throws RoleException;
 
     List<Role> listOfRoleByUsername(String username);
+
+    boolean checkRoleExists(String roleName);
 }
