@@ -31,10 +31,9 @@ public class UserController {
     @GetMapping("get-user-by-id")
     public ResponseEntity<User> getUserById(@RequestParam("userId") Long id) {
         User user = userService.findUserByUserId(id);
-        if(user == null){
+        if (user == null) {
             return ResponseEntity.notFound().build();
         }
-        return ResponseEntity.ok(user);
+        return ResponseEntity.ok().body(user);
     }
-
 }

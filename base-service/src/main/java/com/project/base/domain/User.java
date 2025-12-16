@@ -1,5 +1,6 @@
 package com.project.base.domain;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import java.util.HashSet;
 import java.util.Set;
@@ -15,9 +16,11 @@ public class User {
     private String username;
     private String email;
     private String phone;
-    //private String password;
     private String fullName;
     private String userType;
+
+    @JsonIgnore
+    private String password;
 
     @ManyToMany(fetch = FetchType.LAZY)
     @JoinTable(
@@ -29,11 +32,11 @@ public class User {
 
     public User() {}
 
-    public User(Long id, Set<Role> roles, String userType, String fullName, String phone, String email, String username) {
+    public User(Long id, Set<Role> roles, String userType, String password, String fullName, String phone, String email, String username) {
         this.id = id;
         this.roles = roles;
         this.userType = userType;
-        //this.password = password;
+        this.password = password;
         this.fullName = fullName;
         this.phone = phone;
         this.email = email;
@@ -58,6 +61,14 @@ public class User {
 
     public Set<Role> getRoles() {
         return roles;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
     }
 
     public void setRoles(Set<Role> roles) {
