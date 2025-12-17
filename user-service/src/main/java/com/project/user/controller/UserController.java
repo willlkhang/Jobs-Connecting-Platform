@@ -35,7 +35,7 @@ public class UserController {
     @Autowired
     PasswordEncoder passwordEncoder;
 
-    @GetMapping("get-user-by-id")
+    @GetMapping("/get-user-by-id")
     public ResponseEntity<User> getUserById(@RequestParam("userId") Long id) {
         User user = userService.findUserByUserId(id);
         if (user == null) {
@@ -53,13 +53,13 @@ public class UserController {
         return ResponseEntity.ok().body(user);
     }
 
-    @PostMapping("saveUser")
+    @PostMapping("/saveUser")
     public ResponseEntity<User> saveUser(@RequestBody User user) {
         userService.saveUser(user);
         return ResponseEntity.ok().body(user);
     }
 
-    @PostMapping("register-new-user")
+    @PostMapping("/register-new-user")
     public ResponseEntity<?> registerNewUser(@RequestBody UserSignUp userSignUp) {
         if (!userService.isDuplicatedEmail(userSignUp.getEmail()) &&
             !userService.isDuplicatedUsername(userSignUp.getUsername())) {
