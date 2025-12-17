@@ -1,5 +1,6 @@
 package com.project.user.controller;
 
+import com.project.base.domain.AllowedMethod;
 import com.project.base.domain.Role;
 import com.project.base.domain.User;
 
@@ -99,5 +100,26 @@ public class UserController {
             return ResponseEntity.ok().body(user);
         }
         else return ResponseEntity.ok("User or role is not on database");
+    }
+
+    @PreAuthorize("hasRole('ADMIN')")
+    @PostMapping("/assign-methods-to-role")
+    public ResponseEntity<?> assignMethodsToRole(@RequestParam("method") String methodName,
+                                                 @RequestParam("role") String roleName) {
+        roleService.updateAllowedMethod(methodName, roleName);
+
+        return ResponseEntity.ok("Assign Successfully");
+    }
+
+    @PreAuthorize("hasRole('ADMIN')")
+    @PostMapping("/update-roles-for-user")
+    public ResponseEntity<?> updateRolesForUser(@RequestParam("username") String username,
+                                                @RequestParam("role") String roleName)
+            throws RuntimeException {
+
+        Role role = roleRepository.findRoleByRoleName(roleName);
+        roleService.updateRole(username, role);
+
+        return ResponseEntity.ok("Update Successfully");
     }
 }
