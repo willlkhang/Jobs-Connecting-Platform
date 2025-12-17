@@ -19,7 +19,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-public class SolutionController {
+public class JobController {
 
     @Autowired
     private SolutionService solutionService;

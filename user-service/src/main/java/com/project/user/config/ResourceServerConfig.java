@@ -20,7 +20,10 @@ public class ResourceServerConfig {
 
         http.csrf(csrf -> csrf.disable());
         http.authorizeHttpRequests(authorize ->
-                authorize.requestMatchers("/register-new-user/**").permitAll()
+                authorize
+                        .requestMatchers("/register-new-user/**").permitAll()
+                        //.requestMatchers("/register/**").hasAuthority("USER")
+                        //.requestMatchers("/get-user-role-by-username/**").permitAll()
                         .anyRequest().authenticated());
         http.oauth2ResourceServer(oauth2ResourceServer -> oauth2ResourceServer.jwt(Customizer.withDefaults()));
         return http.build();

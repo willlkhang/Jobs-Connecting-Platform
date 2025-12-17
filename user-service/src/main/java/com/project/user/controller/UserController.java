@@ -14,6 +14,7 @@ import com.project.user.repository.AllowedMethodRepository;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 
 import org.springframework.security.crypto.password.PasswordEncoder;
@@ -83,5 +84,20 @@ public class UserController {
     @GetMapping("/get-user-role-by-username")
     public ResponseEntity<?> getUserRoleByUsername(@RequestParam("username") String username) {
         return ResponseEntity.ok(roleService.listOfRoleByUsername(username));
+    }
+
+    @PreAuthorize("hasRole('ADMIN')")
+    @PatchMapping("/assign/{userId}/{roleId}")
+    public ResponseEntity<?> setRoleForUser(@PathVariable Long userId,
+                                            @PathVariable Long roleId) {
+        User user = userRepository.findUserByUserId(userId);
+        Role role = roleRepository.findRoleByRoleId(roleId);
+
+        if(user != null && role != null) {
+            user.getRoles().add(role);
+            userService.saveUser(user);
+            return ResponseEntity.ok().body(user);
+        }
+        else return ResponseEntity.ok("User or role is not on database");
     }
 }
