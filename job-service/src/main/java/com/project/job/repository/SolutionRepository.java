@@ -12,7 +12,7 @@ import java.util.List;
 
 public interface SolutionRepository extends JpaRepository<Solution, Integer> {
 
-    @Query("SELECT  s FROM Solution  s JOIN s.categories c WHERE c.categoryId =:categoryId")
+    @Query("SELECT s FROM Solution  s JOIN s.categories c WHERE c.categoryId =:categoryId")
     List<Solution> getSolutionByCategoryId(@Param("categoryId") Long categoryId);
 
     @Query("SELECT s FROM  Solution s WHERE s.solutionName =:solutionName")

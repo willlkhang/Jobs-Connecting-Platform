@@ -1,6 +1,6 @@
 package com.project.payment.domain;
 
-import com.project.payment.enumeration.PaymentMethod;
+import com.project.payment.enumerator.PaymentMethod;
 
 import jakarta.persistence.*;
 
