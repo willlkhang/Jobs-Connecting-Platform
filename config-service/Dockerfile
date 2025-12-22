@@ -1,4 +1,4 @@
-FROM openjdk:17-alpine
+FROM eclipse-temurin:17-jre-alpine
 
 COPY  target/config-service-1.0.jar config-service-1.0.jar
 
