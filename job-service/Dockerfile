@@ -1,7 +1,5 @@
-FROM eclipse-temurin:17-jre-alpine
+FROM openjdk:17-alpine
 
-WORKDIR /app
+COPY  target/job-service-1.0.jar job-service-1.0.jar
 
-COPY  target/*.jar app.jar
-
-ENTRYPOINT ["java", "-jar", "app.jar"]
+ENTRYPOINT ["java", "-jar", "job-service-1.0.jar"]
