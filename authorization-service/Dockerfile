@@ -1,4 +1,4 @@
-FROM eclipse-temurin:17-jre-alpine
+FROM amazoncorretto:17-alpine
 
 COPY  target/authorization-service-1.0.jar authorization-service-1.0.jar
 

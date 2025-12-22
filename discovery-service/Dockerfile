@@ -1,4 +1,4 @@
-FROM eclipse-temurin:17-jre-alpine
+FROM amazoncorretto:17-alpine
 
 COPY  target/discovery-service-1.0.jar discovery-service-1.0.jar
 

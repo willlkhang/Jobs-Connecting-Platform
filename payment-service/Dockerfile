@@ -1,4 +1,4 @@
-FROM eclipse-temurin:17-jre-alpine
+FROM amazoncorretto:17-alpine
 
 COPY  target/payment-service-1.0.jar payment-service-1.0.jar
 
