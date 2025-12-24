@@ -1,117 +1,17 @@
-#version: '3.8'
-
 services:
-  postgres:
-    image: postgres:17-alpine
-    container_name: postgres-db
-    environment:
-      POSTGRES_USER: postgres
-      POSTGRES_PASSWORD: 12345678
-      POSTGRES_DB: thirdparty
+  zookeeper:
+    platform: linux/amd64
+    image: apache/kafka:4.1.1
+    container_name: zookeeper
     ports:
-      - "5432:5432"
-    volumes:
-      - postgres_data:/var/lib/postgresql/data
+      - "2181:2181"
 
-  config-service:
-    build: ./config-service
-    container_name: config-service
+  kafka:
+    platform: linux/amd64
+    image: wurstmeister/kafka:latest
+    container_name: kafka
     ports:
-      - "8088:8088"
+      - "9092:9092"
     environment:
-      - EUREKA_CLIENT_REGISTER_WITH_EUREKA=true
-      - EUREKA_CLIENT_SERVICEURL_DEFAULTZONE=http://discovery-service:8061/eureka/
-    depends_on:
-      - discovery-service
-
-  discovery-service:
-    build: ./discovery-service
-    container_name: discovery-service
-    ports:
-      - "8061:8061"
-    environment:
-      - EUREKA_CLIENT_REGISTER_WITH_EUREKA=false
-      - EUREKA_CLIENT_FETCH_REGISTRY=false
-
-  gateway-service:
-    build: ./gateway-service
-    container_name: gateway-service
-    ports:
-      - "8060:8060"
-    environment:
-      - EUREKA_CLIENT_SERVICEURL_DEFAULTZONE=http://discovery-service:8061/eureka/
-    depends_on:
-      - discovery-service
-
-  authorization-service:
-    build: ./authorization-service
-    container_name: authorization-service
-    ports:
-      - "8086:8086"
-    environment:
-      - EUREKA_CLIENT_SERVICEURL_DEFAULTZONE=http://discovery-service:8061/eureka/
-      - SPRING_DATASOURCE_URL=jdbc:postgresql://postgres:5432/thirdparty
-      - SPRING_DATASOURCE_USERNAME=postgres
-      - SPRING_DATASOURCE_PASSWORD=12345678
-    depends_on:
-      - postgres
-      - discovery-service
-
-  user-service:
-    build: ./user-service
-    container_name: user-service
-    ports:
-      - "8085:8085"
-    environment:
-      - EUREKA_CLIENT_SERVICEURL_DEFAULTZONE=http://discovery-service:8061/eureka/
-      - SPRING_DATASOURCE_URL=jdbc:postgresql://postgres:5432/thirdparty
-      - SPRING_DATASOURCE_USERNAME=postgres
-      - SPRING_DATASOURCE_PASSWORD=12345678
-    depends_on:
-      - postgres
-      - discovery-service
-
-  job-service:
-    build: ./job-service
-    container_name: job-service
-    ports:
-      - "8083:8083"
-    environment:
-      - EUREKA_CLIENT_SERVICEURL_DEFAULTZONE=http://discovery-service:8061/eureka/
-      - SPRING_DATASOURCE_URL=jdbc:postgresql://postgres:5432/thirdparty
-      - SPRING_DATASOURCE_USERNAME=postgres
-      - SPRING_DATASOURCE_PASSWORD=12345678
-    depends_on:
-      - postgres
-      - discovery-service
-
-  booking-service:
-    build: ./booking-service
-    container_name: booking-service
-    ports:
-      - "8082:8082"
-    environment:
-      - EUREKA_CLIENT_SERVICEURL_DEFAULTZONE=http://discovery-service:8061/eureka/
-      - SPRING_DATASOURCE_URL=jdbc:postgresql://postgres:5432/thirdparty
-      - SPRING_DATASOURCE_USERNAME=postgres
-      - SPRING_DATASOURCE_PASSWORD=12345678
-    depends_on:
-      - postgres
-      - discovery-service
-
-  payment-service:
-    build: ./payment-service
-    container_name: payment-service
-    ports:
-      - "8081:8081"
-    environment:
-      - EUREKA_CLIENT_SERVICEURL_DEFAULTZONE=http://discovery-service:8061/eureka/
-      - SPRING_DATASOURCE_URL=jdbc:postgresql://postgres:5432/thirdparty
-      - SPRING_DATASOURCE_USERNAME=postgres
-      - SPRING_DATASOURCE_PASSWORD=12345678
-    depends_on:
-      - postgres
-      - discovery-service
-
-volumes:
-  postgres_data:
+      KAFKA_ZOOKEEPER_HOST_NAME: localhost
+      KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181

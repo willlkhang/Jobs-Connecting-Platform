@@ -1,5 +1,5 @@
-FROM amazoncorretto:17-alpine
+FROM amazoncorretto:23-alpine
 
-COPY  target/booking-service-1.0.jar booking-service-1.0.jar
+COPY target/*.jar app.jar
 
-ENTRYPOINT ["java", "-jar", "booking-service-1.0.jar"]
+ENTRYPOINT ["java", "-jar", "app.jar"]

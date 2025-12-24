@@ -1,1 +1,16 @@
 sudo -u postgres /Library/PostgreSQL/18/bin/pg_ctl -D /Library/PostgreSQL/18/data start
+
+docker-compose up -d --build
+
+
+docker pull apache/kafka:latest
+docker run -d --name=kafka -p 9092:9092 apache/kafka
+
+//show ID
+docker exec -ti kafka /opt/kafka/bin/kafka-cluster.sh cluster-id --bootstrap-server :9092
+
+//Send message
+docker exec -ti kafka /opt/kafka/bin/kafka-console-producer.sh --bootstrap-server :9092 --topic demo
+
+//read message
+docker exec -ti kafka /opt/kafka/bin/kafka-console-consumer.sh --bootstrap-server :9092 --topic demo --from-beginning
