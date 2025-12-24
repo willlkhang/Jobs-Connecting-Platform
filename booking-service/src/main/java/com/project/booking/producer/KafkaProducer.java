@@ -14,4 +14,16 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class KafkaProducer {
+
+    private static final Logger log = LoggerFactory.getLogger(KafkaProducer.class);
+
+    @Autowired
+    private KafkaTemplate<Integer, BookingEvent> kafkaTemplate;
+
+    @Value("${spring.kafka.topic.producer.booking.name}")
+    private String bookingTopic;
+
+    public void sendBookingEvent(Integer key, BookingEvent bookingEvent) {
+        kafkaTemplate.send(bookingTopic, key, bookingEvent);
+    }
 }
