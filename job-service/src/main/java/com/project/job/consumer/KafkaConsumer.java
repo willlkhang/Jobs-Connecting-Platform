@@ -13,4 +13,14 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class KafkaConsumer {
+
+    private Logger LOGGER = LoggerFactory.getLogger(KafkaConsumer.class);
+
+    @Autowired
+    private SolutionService solutionService;
+
+    @KafkaListener(topics = {"${spring.kafka.topic.consumer.booking.name}"}, groupId = "solution", autoStartup = "true")
+    public void updateSolution(BookingEvent bookingEvent) {
+        solutionService.increaseProcessedNumber(bookingEvent.getBooking().getBookingId());
+    }
 }

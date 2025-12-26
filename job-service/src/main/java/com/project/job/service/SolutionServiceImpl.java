@@ -1,5 +1,7 @@
 package com.project.job.service;
 
+import com.project.base.dto.BookingEvent;
+import com.project.base.dto.BookingDTO;
 import com.project.base.dto.SolutionDTO;
 import com.project.base.exception.BusinessException;
 
@@ -11,6 +13,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Optional;
 import java.util.stream.Collectors;
 
 @Service
@@ -63,13 +66,15 @@ public class SolutionServiceImpl implements SolutionService {
             throw new BusinessException("Solution not found");
     }
 
-//    @Override
-//    public void decreaseProcessedNumber(Long id) {
-//
-//    }
-
     @Override
     public void increaseProcessedNumber(Long id) {
         solutionRepository.increaseProcessedNumber(id);
+    }
+
+    @Override
+    public void updateSolution(BookingEvent booking) {
+        BookingDTO bookingDTO = booking.getBooking();
+        //this may or may not contain nullable value
+        Optional<Solution> solution = solutionRepository.getSolutionsById(bookingDTO.get)
     }
 }

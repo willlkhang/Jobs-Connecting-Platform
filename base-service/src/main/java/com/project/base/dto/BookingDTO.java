@@ -7,9 +7,18 @@ public class BookingDTO {
 
     private Long bookingId;
     private Long userId;
+    private Long solutionId;
     private BigDecimal totalAmount;
     private Integer status;
     private Date bookingDate;
+
+    public Long getSolutionId() {
+        return solutionId;
+    }
+
+    public void setSolutionId(Long solutionId) {
+        this.solutionId = solutionId;
+    }
 
     public Long getBookingId() {
         return bookingId;
