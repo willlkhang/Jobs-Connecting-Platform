@@ -2,22 +2,23 @@ package com.project.base.dto;
 
 import java.math.BigDecimal;
 import java.util.Date;
+import java.util.List;
 
 public class BookingDTO {
 
     private Long bookingId;
     private Long userId;
-    private Long solutionId;
+    private List<SolutionDTO> solutionIdList;
     private BigDecimal totalAmount;
     private Integer status;
     private Date bookingDate;
 
-    public Long getSolutionId() {
-        return solutionId;
+    public List<SolutionDTO> getSolutionIdList() {
+        return solutionIdList;
     }
 
-    public void setSolutionId(Long solutionId) {
-        this.solutionId = solutionId;
+    public void setSolutionIdList(List<SolutionDTO> solutionIdList) {
+        this.solutionIdList = solutionIdList;
     }
 
     public Long getBookingId() {

@@ -45,25 +45,24 @@ public class SolutionServiceImpl implements SolutionService {
 
     @Override
     public SolutionDTO getSolutionByName(String solutionName) {
-        List<Solution> solutionList = solutionRepository.getSolutionByName(solutionName);
-        List<SolutionDTO> lstDTO = solutionList.stream().map(a -> solutionMapper.entityToDTO(a)).collect(Collectors.toList());
+        Solution solution = solutionRepository.getSolutionByName(solutionName);
 
-        if(!lstDTO.isEmpty())
-            return lstDTO.get(0);
-        else
-            System.out.println("Searching for solution with name: '" + solutionName + "'");
+        if(solution == null) {
             throw new BusinessException("Solution not found");
+        }
+        else
+            return solutionMapper.entityToDTO(solution);
     }
 
     @Override
     public SolutionDTO getSolutionById(Long id) {
-        List<Solution> solutionList = solutionRepository.getSolutionsById(id);
-        List<SolutionDTO> lstDTO = solutionList.stream().map(a -> solutionMapper.entityToDTO(a)).collect(Collectors.toList());
+        Solution solution = solutionRepository.getSolutionsById(id);
 
-        if(!lstDTO.isEmpty())
-            return lstDTO.get(0);
-        else
+        if(solution == null) {
             throw new BusinessException("Solution not found");
+        }
+        else
+            return solutionMapper.entityToDTO(solution);
     }
 
     @Override
@@ -75,6 +74,12 @@ public class SolutionServiceImpl implements SolutionService {
     public void updateSolution(BookingEvent booking) {
         BookingDTO bookingDTO = booking.getBooking();
         //this may or may not contain nullable value
-        Optional<Solution> solution = solutionRepository.getSolutionsById(bookingDTO.get)
+        Optional<Solution> solution = Optional.ofNullable(solutionRepository.getSolutionsById(bookingDTO.getSolutionIdList().getFirst().getSolutionId()));
+
+        if(solution.isPresent()) {
+            Solution s =  solution.get();
+
+            solutionRepository.increaseProcessedNumber(s.getSolutionId());
+        }
     }
 }

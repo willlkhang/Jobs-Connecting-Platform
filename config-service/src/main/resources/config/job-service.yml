@@ -48,9 +48,10 @@ spring:
     bootstrap-servers: localhost:9092
     topic:
       producer:
-        booking.name: t_booking
+        job.name: t_job
       consumer:
         booking.name: t_booking_result
+        job.name: t_job_result
     producer:
       key-serializer: org.apache.kafka.common.serialization.IntegerSerializer
       value-serializer: org.springframework.kafka.support.serializer.JsonSerializer

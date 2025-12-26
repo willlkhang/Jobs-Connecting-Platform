@@ -16,10 +16,10 @@ public interface SolutionRepository extends JpaRepository<Solution, Integer> {
     List<Solution> getSolutionByCategoryId(@Param("categoryId") Long categoryId);
 
     @Query("SELECT s FROM  Solution s WHERE s.solutionName =:solutionName")
-    List<Solution> getSolutionByName(@Param("solutionName") String solutionName);
+    Solution getSolutionByName(@Param("solutionName") String solutionName);
 
     @Query("SELECT s FROM Solution s WHERE s.solutionId =:solutionId")
-    List<Solution> getSolutionsById(@Param("solutionId") Long id);
+    Solution getSolutionsById(@Param("solutionId") Long id);
 
     //The query which interrupts the data such as update requires these 2 annotations
     @Transactional
@@ -29,6 +29,6 @@ public interface SolutionRepository extends JpaRepository<Solution, Integer> {
 
     @Transactional
     @Modifying
-    @Query(value = "UPDATE Solution s SET s.processedNumber = (s.processedNumber - 1) WHERE s.solutionId =:solutionId")
-    void decreaseProcessedNumber(@Param("solutionId") Integer serviceId, @Param("processedNumber") Integer processedNumber);
+    @Query(value = "UPDATE Solution s SET s.processedNumber = (s.processedNumber + 1) WHERE s.solutionId =:solutionId")
+    void updateProcessedNumber(@Param("solutionId") Long solutionId);
 }
