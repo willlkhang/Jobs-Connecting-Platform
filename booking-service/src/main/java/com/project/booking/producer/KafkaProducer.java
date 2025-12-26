@@ -23,7 +23,9 @@ public class KafkaProducer {
     @Value("${spring.kafka.topic.producer.booking.name}")
     private String bookingTopic;
 
-    public void sendBookingEvent(Integer key, BookingEvent bookingEvent) {
-        kafkaTemplate.send(bookingTopic, key, bookingEvent);
+
+    public void sendBookingEvent(Long key, BookingEvent bookingEvent) {
+        //backup Math.toIntExact(key)
+        kafkaTemplate.send(bookingTopic, (int) (long) key, bookingEvent); //booking ID
     }
 }
