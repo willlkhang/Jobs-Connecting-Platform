@@ -1,7 +1,9 @@
 sudo -u postgres /Library/PostgreSQL/18/bin/pg_ctl -D /Library/PostgreSQL/18/data start
 
-docker-compose up -d --build
+sudo lsof -i :<port>
+kill -9 <PID>
 
+docker-compose up -d --build
 
 docker pull apache/kafka:latest
 docker run -d --name=kafka -p 9092:9092 apache/kafka
