@@ -47,6 +47,13 @@ public class BookingServiceImpl implements BookingService{
 
     @Override
     public void createBooking(SolutionDTO solutionDTO) {
+        Booking booking = new Booking();
+        booking.setBookingDate(new Date());
+        booking.setStatus(1);
+
+        BigDecimal price = solutionDTO.getPrice();
+        booking.setTotalAmount(price);
+
 
     }
 
