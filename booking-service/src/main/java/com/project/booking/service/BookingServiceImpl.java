@@ -13,6 +13,8 @@ import com.project.booking.repository.BookingRepository;
 
 import com.project.booking.producer.KafkaProducer;
 
+import com.project.booking.util.AppUtil;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
@@ -36,9 +38,13 @@ public class BookingServiceImpl implements BookingService{
     @Autowired
     private UserService userService;
 
+    //Kafka group
     @Autowired
     private KafkaProducer kafkaProducer;
 
+    //util group
+    @Autowired
+    private AppUtil appUtil;
 
     @Override
     public void updateBooking(Long bookingId) {
@@ -54,7 +60,21 @@ public class BookingServiceImpl implements BookingService{
         BigDecimal price = solutionDTO.getPrice();
         booking.setTotalAmount(price);
 
+        String username = appUtil.getUserNameLogin();
+        ResponseEntity<User> responseEntity = userService.getUserByUserName(username);
 
+        booking.setUserId(responseEntity.getBody().getId().longValue());
+
+        bookingRepository.save(booking);
+
+        BookingSolution bookingSolution = new BookingSolution();
+        bookingSolution.setBookingSolutionId(solutionDTO.getSolutionId());
+        bookingSolution.setBooking(booking);
+
+        bookingSolutionRepository.save(bookingSolution);
+
+        //update solution quantity
+        //save to payment service
     }
 
     @Override
