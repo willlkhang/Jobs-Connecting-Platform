@@ -2,6 +2,7 @@ package com.project.payment.service;
 
 import com.project.payment.domain.Payment;
 import com.project.payment.enumerator.PaymentMethod;
+import com.project.payment.enumerator.PaymentStatus;
 import com.project.payment.repository.PaymentRepository;
 
 import com.project.base.exception.BusinessException;
@@ -20,7 +21,7 @@ public class PaymentServiceImpl implements PaymentService {
 
     @Override
     public Payment getPaymentById(Long id) {
-        Payment  payment = paymentRepository.getPaymentById(id);
+        Payment payment = paymentRepository.getPaymentById(id);
 
         if(payment != null)
             throw new BusinessException("Payment with id " + id + " already exists");
@@ -30,5 +31,14 @@ public class PaymentServiceImpl implements PaymentService {
 
     @Override
     public void savePayment(Long bookingId, BigDecimal amount) {
+
+        Payment payment = new Payment();
+        payment.setBookingId(bookingId);
+        payment.setAmount(amount);
+        payment.setPaymentMethod(PaymentMethod.VISA_MASTER);
+        payment.setPaymentStatus(PaymentStatus.PENDING);
+        payment.setPaymentDate(new Date());
+
+        paymentRepository.save(payment);
     }
 }
