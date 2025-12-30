@@ -25,7 +25,8 @@ public class PaymentController {
     }
 
     @PostMapping("/save-payment")
-    public void savePayment(@RequestParam Long bookingId, @RequestParam BigDecimal price){
+    public void savePayment(@RequestParam(name = "bookingId") Long bookingId,
+                            @RequestParam(name = "price") BigDecimal price){
         paymentService.savePayment(bookingId, price);
     }
 }

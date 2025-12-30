@@ -1,5 +1,6 @@
 package com.project.booking.service;
 
+import com.project.base.domain.User;
 import com.project.base.dto.BookingDTO;
 import com.project.base.dto.SolutionDTO;
 import com.project.base.dto.BookingEvent;
@@ -29,13 +30,19 @@ public class BookingServiceImpl implements BookingService{
     @Autowired
     private BookingRepository bookingRepository;
 
+    //feign group
+    @Autowired
+    private JobService jobService;
+    @Autowired
+    private UserService userService;
+
     @Autowired
     private KafkaProducer kafkaProducer;
 
 
     @Override
     public void updateBooking(Long bookingId) {
-
+        bookingRepository.updateBookingStatus(bookingId);
     }
 
     @Override
@@ -45,11 +52,7 @@ public class BookingServiceImpl implements BookingService{
 
     @Override
     public List<Booking> getBookingsByUserId(Long userId) {
-        return List.of();
+        return bookingRepository.findBookingByUserId(userId);
     }
 
-    @Override
-    public SolutionDTO getSolutionFromBookingServiceById(Long id){
-        return null;
-    }
 }
