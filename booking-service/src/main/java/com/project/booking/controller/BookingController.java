@@ -14,4 +14,5 @@ import com.project.booking.service.BookingService;
 
 
 public class BookingController {
+
 }

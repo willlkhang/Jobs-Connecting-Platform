@@ -12,4 +12,6 @@ public interface BookingService {
     void createBooking(SolutionDTO solutionDTO);
 
     void updateBooking(Long bookingId);
+
+    SolutionDTO getSolutionFromBookingServiceById(Long id);
 }
