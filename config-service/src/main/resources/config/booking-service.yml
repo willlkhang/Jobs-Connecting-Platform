@@ -49,7 +49,7 @@ spring:
     bootstrap-servers: localhost:9092
     topic:
       producer:
-        booking.name: t_booking
+        booking.name: t_booking_result
       consumer:
         booking.name: t_booking_result
     producer:

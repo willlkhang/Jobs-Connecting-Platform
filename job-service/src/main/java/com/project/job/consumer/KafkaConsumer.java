@@ -23,4 +23,5 @@ public class KafkaConsumer {
     public void updateSolution(BookingEvent bookingEvent) {
         solutionService.increaseProcessedNumber(bookingEvent.getBooking().getSolutionId());
     }
+
 }
