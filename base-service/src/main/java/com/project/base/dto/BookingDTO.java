@@ -8,17 +8,18 @@ public class BookingDTO {
 
     private Long bookingId;
     private Long userId;
-    private List<SolutionDTO> solutionIdList;
+//    private List<SolutionDTO> solutionIdList;
+    private Long solutionId;
     private BigDecimal totalAmount;
     private Integer status;
     private Date bookingDate;
 
-    public List<SolutionDTO> getSolutionIdList() {
-        return solutionIdList;
+    public Long getSolutionId() {
+        return solutionId;
     }
 
-    public void setSolutionIdList(List<SolutionDTO> solutionIdList) {
-        this.solutionIdList = solutionIdList;
+    public void setSolutionId(Long solutionId) {
+        this.solutionId = solutionId;
     }
 
     public Long getBookingId() {

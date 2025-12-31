@@ -21,6 +21,6 @@ public class KafkaConsumer {
 
     @KafkaListener(topics = {"${spring.kafka.topic.consumer.booking.name}"}, groupId = "solution", autoStartup = "true")
     public void updateSolution(BookingEvent bookingEvent) {
-        solutionService.increaseProcessedNumber(bookingEvent.getBooking().getSolutionIdList().getFirst().getSolutionId());
+        solutionService.increaseProcessedNumber(bookingEvent.getBooking().getSolutionId());
     }
 }

@@ -74,7 +74,7 @@ public class SolutionServiceImpl implements SolutionService {
     public void updateSolution(BookingEvent booking) {
         BookingDTO bookingDTO = booking.getBooking();
         //this may or may not contain nullable value
-        Optional<Solution> solution = Optional.ofNullable(solutionRepository.getSolutionsById(bookingDTO.getSolutionIdList().getFirst().getSolutionId()));
+        Optional<Solution> solution = Optional.ofNullable(solutionRepository.getSolutionsById(bookingDTO.getSolutionId()));
 
         if(solution.isPresent()) {
             Solution s =  solution.get();

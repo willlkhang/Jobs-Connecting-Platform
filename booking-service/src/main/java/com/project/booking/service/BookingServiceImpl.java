@@ -22,6 +22,7 @@ import org.springframework.stereotype.Service;
 
 import java.awt.print.Book;
 import java.math.BigDecimal;
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
@@ -63,6 +64,7 @@ public class BookingServiceImpl implements BookingService{
         BigDecimal price = solutionDTO.getPrice();
         booking.setTotalAmount(price);
 
+
         //fetch user login who makes booking - real time booing
         String username = appUtil.getUserNameLogin();
         ResponseEntity<User> responseEntity = userService.getUserByUserName(username);
@@ -80,9 +82,8 @@ public class BookingServiceImpl implements BookingService{
 
         //Mapper booking to bookingDTO
         BookingDTO bookingDTO = bookingMapper.bookingDTO(booking);
-        if(bookingDTO.getSolutionIdList() == null || bookingDTO.getSolutionIdList().isEmpty()){
-            //bookingDTO.setSolutionIdList(List.of(solutionDTO));
-        }
+        bookingDTO.setSolutionId(solutionDTO.getSolutionId());
+
 
         //update solution quantity using kafka
         BookingEvent bookingEvent = new BookingEvent();
@@ -90,7 +91,6 @@ public class BookingServiceImpl implements BookingService{
 
         //use Kafka producer to trigger update in solution service
         kafkaProducer.sendBookingEvent(booking.getBookingId(), bookingEvent);
-
         //save to payment service
     }
 

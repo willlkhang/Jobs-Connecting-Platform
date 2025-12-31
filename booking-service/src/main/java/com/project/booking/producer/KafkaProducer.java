@@ -25,7 +25,6 @@ public class KafkaProducer {
 
 
     public void sendBookingEvent(Long key, BookingEvent bookingEvent) {
-        //backup Math.toIntExact(key)
         kafkaTemplate.send(bookingTopic, key, bookingEvent); //booking ID
     }
 }
