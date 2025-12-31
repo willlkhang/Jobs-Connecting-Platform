@@ -18,7 +18,7 @@ public class KafkaProducer {
     private static final Logger log = LoggerFactory.getLogger(KafkaProducer.class);
 
     @Autowired
-    private KafkaTemplate<Integer, BookingEvent> kafkaTemplate;
+    private KafkaTemplate<Long, BookingEvent> kafkaTemplate;
 
     @Value("${spring.kafka.topic.producer.booking.name}")
     private String bookingTopic;
@@ -26,6 +26,6 @@ public class KafkaProducer {
 
     public void sendBookingEvent(Long key, BookingEvent bookingEvent) {
         //backup Math.toIntExact(key)
-        kafkaTemplate.send(bookingTopic, (int) (long) key, bookingEvent); //booking ID
+        kafkaTemplate.send(bookingTopic, key, bookingEvent); //booking ID
     }
 }

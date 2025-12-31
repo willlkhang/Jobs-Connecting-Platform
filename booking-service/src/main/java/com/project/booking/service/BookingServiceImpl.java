@@ -80,6 +80,9 @@ public class BookingServiceImpl implements BookingService{
 
         //Mapper booking to bookingDTO
         BookingDTO bookingDTO = bookingMapper.bookingDTO(booking);
+        if(bookingDTO.getSolutionIdList() == null || bookingDTO.getSolutionIdList().isEmpty()){
+            //bookingDTO.setSolutionIdList(List.of(solutionDTO));
+        }
 
         //update solution quantity using kafka
         BookingEvent bookingEvent = new BookingEvent();
