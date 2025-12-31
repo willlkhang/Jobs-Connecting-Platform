@@ -53,27 +53,32 @@ public class BookingServiceImpl implements BookingService{
 
     @Override
     public void createBooking(SolutionDTO solutionDTO) {
+        //make booking entity
         Booking booking = new Booking();
         booking.setBookingDate(new Date());
         booking.setStatus(1);
-
         BigDecimal price = solutionDTO.getPrice();
         booking.setTotalAmount(price);
 
+        //fetch user login who makes booking - real time booing
         String username = appUtil.getUserNameLogin();
         ResponseEntity<User> responseEntity = userService.getUserByUserName(username);
-
         booking.setUserId(responseEntity.getBody().getId().longValue());
 
-        bookingRepository.save(booking);
+        bookingRepository.save(booking); //save to database
 
+        //M2M hibernate
         BookingSolution bookingSolution = new BookingSolution();
-        bookingSolution.setBookingSolutionId(solutionDTO.getSolutionId());
         bookingSolution.setBooking(booking);
+        bookingSolution.setBookingId(booking.getBookingId());
+        bookingSolution.setSolutionId(solutionDTO.getSolutionId());
 
         bookingSolutionRepository.save(bookingSolution);
 
-        //update solution quantity
+        //update solution quantity using kafka
+        BookingEvent bookingEvent = new BookingEvent();
+        bookingEvent.setBooking();
+
         //save to payment service
     }
 
