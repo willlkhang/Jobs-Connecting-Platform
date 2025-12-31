@@ -10,7 +10,7 @@ import org.springframework.data.repository.query.Param;
 
 import java.util.List;
 
-public interface SolutionRepository extends JpaRepository<Solution, Integer> {
+public interface SolutionRepository extends JpaRepository<Solution, Long> {
 
     @Query("SELECT s FROM Solution  s JOIN s.categories c WHERE c.categoryId =:categoryId")
     List<Solution> getSolutionByCategoryId(@Param("categoryId") Long categoryId);
