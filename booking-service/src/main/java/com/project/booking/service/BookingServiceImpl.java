@@ -8,6 +8,7 @@ import com.project.base.dto.BookingEvent;
 import com.project.booking.domain.Booking;
 import com.project.booking.domain.BookingSolution;
 
+import com.project.booking.mapper.BookingMapper;
 import com.project.booking.repository.BookingSolutionRepository;
 import com.project.booking.repository.BookingRepository;
 
@@ -31,6 +32,8 @@ public class BookingServiceImpl implements BookingService{
     private BookingSolutionRepository bookingSolutionRepository;
     @Autowired
     private BookingRepository bookingRepository;
+    @Autowired
+    private BookingMapper bookingMapper;
 
     //feign group
     @Autowired
@@ -75,9 +78,15 @@ public class BookingServiceImpl implements BookingService{
 
         bookingSolutionRepository.save(bookingSolution);
 
+        //Mapper booking to bookingDTO
+        BookingDTO bookingDTO = bookingMapper.bookingDTO(booking);
+
         //update solution quantity using kafka
         BookingEvent bookingEvent = new BookingEvent();
-        bookingEvent.setBooking();
+        bookingEvent.setBooking(bookingDTO);
+
+        //use Kafka producer to trigger update in solution service
+        kafkaProducer.sendBookingEvent(booking.getBookingId(), bookingEvent);
 
         //save to payment service
     }
