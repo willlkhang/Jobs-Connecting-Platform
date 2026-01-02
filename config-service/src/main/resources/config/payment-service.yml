@@ -41,3 +41,23 @@ spring:
       resourceserver:
         jwt:
           issuer-uri: http://localhost:8086
+
+---
+spring:
+  kafka:
+    bootstrap-servers: localhost:9092
+    topic:
+      producer:
+        payment.name: t_payment
+      consumer:
+        booking.name: t_booking_result
+        payment.name: t_payment_result
+    producer:
+      key-serializer: org.apache.kafka.common.serialization.LongSerializer
+      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
+    consumer:
+      key-deserializer: org.apache.kafka.common.serialization.LongDeserializer
+      value-deserializer: org.springframework.kafka.support.serializer.JsonDeserializer
+      properties:
+        spring.json.trusted.packages: "*"
+        allow.auto.create.topics: false
