@@ -41,4 +41,9 @@ public class PaymentServiceImpl implements PaymentService {
 
         paymentRepository.save(payment);
     }
+
+    @Override
+    public void updatePaymentStatus(Long paymentId, PaymentStatus status) {
+        paymentRepository.updatePaymentStatus(paymentId, status);
+    }
 }
