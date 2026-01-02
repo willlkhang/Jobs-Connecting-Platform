@@ -2,6 +2,7 @@ package com.project.booking.service;
 
 import com.project.base.domain.User;
 import com.project.base.dto.BookingDTO;
+import com.project.base.dto.BookingStatus;
 import com.project.base.dto.SolutionDTO;
 import com.project.base.dto.BookingEvent;
 
@@ -60,7 +61,7 @@ public class BookingServiceImpl implements BookingService{
         //make booking entity
         Booking booking = new Booking();
         booking.setBookingDate(new Date());
-        booking.setStatus(1);
+        booking.setStatus(BookingStatus.PENDING);
         BigDecimal price = solutionDTO.getPrice();
         booking.setTotalAmount(price);
 

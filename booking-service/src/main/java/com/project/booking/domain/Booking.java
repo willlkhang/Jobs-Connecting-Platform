@@ -1,11 +1,12 @@
 package com.project.booking.domain;
 
+import com.project.base.dto.BookingStatus;
+
 import jakarta.persistence.*;
 
 import java.math.BigDecimal;
 import java.util.Date;
 import java.util.List;
-import java.util.Set;
 
 @Entity
 @Table(name = "Booking")
@@ -21,7 +22,7 @@ public class Booking {
     @Column(name = "total_amount")
     private BigDecimal totalAmount;
     @Column(name = "status")
-    private Integer status;
+    private BookingStatus status;
 
     @Column(nullable = true, name = "booking_date")
     @Temporal(TemporalType.TIMESTAMP)
@@ -30,7 +31,7 @@ public class Booking {
     @OneToMany(mappedBy = "booking")
     private List<BookingSolution> solutions;
 
-    public Booking(Long bookingId, Long userId, BigDecimal totalAmount, Integer status, List<BookingSolution> solutions, Date bookingDate) {
+    public Booking(Long bookingId, Long userId, BigDecimal totalAmount, BookingStatus status, List<BookingSolution> solutions, Date bookingDate) {
         this.bookingId = bookingId;
         this.userId = userId;
         this.totalAmount = totalAmount;
@@ -65,11 +66,11 @@ public class Booking {
         this.totalAmount = totalAmount;
     }
 
-    public Integer getStatus() {
+    public BookingStatus getStatus() {
         return status;
     }
 
-    public void setStatus(Integer status) {
+    public void setStatus(BookingStatus status) {
         this.status = status;
     }
 
