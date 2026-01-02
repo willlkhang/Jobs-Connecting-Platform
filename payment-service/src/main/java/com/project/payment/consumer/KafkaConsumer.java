@@ -13,4 +13,15 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class KafkaConsumer {
+
+    private Logger LOGGER = LoggerFactory.getLogger(KafkaConsumer.class);
+
+    @Autowired
+    private PaymentService paymentService;
+
+    @KafkaListener(topics = {"${spring.kafka.topic.consumer.booking.name}"}, groupId = "payment", autoStartup = "true")
+    public void updatePaymentStatus(BookingEvent bookingEvent) {
+
+    }
+
 }
