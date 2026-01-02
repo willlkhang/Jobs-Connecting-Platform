@@ -1,6 +1,6 @@
-package com.project.booking.producer;
+package com.project.payment.producer;
 
-import com.project.base.dto.BookingEvent;
+import com.project.payment.domain.Payment;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -17,13 +17,13 @@ public class KafkaProducer {
     private static final Logger log = LoggerFactory.getLogger(KafkaProducer.class);
 
     @Autowired
-    private KafkaTemplate<Long, BookingEvent> kafkaTemplate;
+    private KafkaTemplate<Long, Payment> kafkaTemplate;
 
-    @Value("${spring.kafka.topic.producer.booking.name}")
-    private String bookingTopic;
+    @Value("${spring.kafka.topic.producer.payment.name}")
+    private String paymentTopic;
 
-
-    public void sendBookingEvent(Long key, BookingEvent bookingEvent) {
-        kafkaTemplate.send(bookingTopic, key, bookingEvent); //booking ID
+    public void sendPaymentMessage(Long key, Payment payment) {
+        kafkaTemplate.send(paymentTopic, key, payment); //payment ID
     }
+
 }
