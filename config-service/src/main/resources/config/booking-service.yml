@@ -52,6 +52,7 @@ spring:
         booking.name: t_booking_result
       consumer:
         booking.name: t_booking_result
+        payment.name: t_payment
     producer:
       key-serializer: org.apache.kafka.common.serialization.LongSerializer
       value-serializer: org.springframework.kafka.support.serializer.JsonSerializer

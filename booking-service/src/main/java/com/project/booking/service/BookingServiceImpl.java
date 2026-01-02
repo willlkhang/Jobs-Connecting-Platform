@@ -93,7 +93,6 @@ public class BookingServiceImpl implements BookingService{
         //use Kafka producer to trigger update in solution service
         //save to payment service
         kafkaProducer.sendBookingEvent(booking.getBookingId(), bookingEvent);
-
     }
 
     @Override
