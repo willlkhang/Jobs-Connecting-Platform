@@ -11,7 +11,7 @@ public class BookingDTO {
 //    private List<SolutionDTO> solutionIdList;
     private Long solutionId;
     private BigDecimal totalAmount;
-    private Integer status;
+    private BookingStatus status;
     private Date bookingDate;
 
     public Long getSolutionId() {
@@ -46,11 +46,11 @@ public class BookingDTO {
         this.totalAmount = totalAmount;
     }
 
-    public Integer getStatus() {
+    public BookingStatus getStatus() {
         return status;
     }
 
-    public void setStatus(Integer status) {
+    public void setStatus(BookingStatus status) {
         this.status = status;
     }
 
