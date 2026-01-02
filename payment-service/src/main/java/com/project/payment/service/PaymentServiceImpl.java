@@ -43,7 +43,7 @@ public class PaymentServiceImpl implements PaymentService {
     }
 
     @Override
-    public void updatePaymentStatus(Long paymentId, PaymentStatus status) {
-        paymentRepository.updatePaymentStatus(paymentId, status);
+    public void updatePaymentStatus(Long bookingId, PaymentStatus status) {
+        paymentRepository.updatePaymentStatus(bookingId, status);
     }
 }

@@ -90,8 +90,9 @@ public class BookingServiceImpl implements BookingService{
         bookingEvent.setBooking(bookingDTO);
 
         //use Kafka producer to trigger update in solution service
-        kafkaProducer.sendBookingEvent(booking.getBookingId(), bookingEvent);
         //save to payment service
+        kafkaProducer.sendBookingEvent(booking.getBookingId(), bookingEvent);
+
     }
 
     @Override

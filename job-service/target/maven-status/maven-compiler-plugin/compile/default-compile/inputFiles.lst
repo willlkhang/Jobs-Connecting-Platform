@@ -1,0 +1,11 @@
+/home/will/A MyDoc/project/project/project-4-thirdparty/job-service/src/main/java/com/project/job/JobApplication.java
+/home/will/A MyDoc/project/project/project-4-thirdparty/job-service/src/main/java/com/project/job/config/KafkaConfig.java
+/home/will/A MyDoc/project/project/project-4-thirdparty/job-service/src/main/java/com/project/job/consumer/KafkaConsumer.java
+/home/will/A MyDoc/project/project/project-4-thirdparty/job-service/src/main/java/com/project/job/controller/JobController.java
+/home/will/A MyDoc/project/project/project-4-thirdparty/job-service/src/main/java/com/project/job/domain/Category.java
+/home/will/A MyDoc/project/project/project-4-thirdparty/job-service/src/main/java/com/project/job/domain/Solution.java
+/home/will/A MyDoc/project/project/project-4-thirdparty/job-service/src/main/java/com/project/job/mapper/SolutionMapper.java
+/home/will/A MyDoc/project/project/project-4-thirdparty/job-service/src/main/java/com/project/job/producer/KafkaProducer.java
+/home/will/A MyDoc/project/project/project-4-thirdparty/job-service/src/main/java/com/project/job/repository/SolutionRepository.java
+/home/will/A MyDoc/project/project/project-4-thirdparty/job-service/src/main/java/com/project/job/service/SolutionService.java
+/home/will/A MyDoc/project/project/project-4-thirdparty/job-service/src/main/java/com/project/job/service/SolutionServiceImpl.java

@@ -11,6 +11,6 @@ public interface PaymentService {
 
     void savePayment(Long bookingId, BigDecimal amount);
 
-    void updatePaymentStatus(Long paymentId, PaymentStatus status);
+    void updatePaymentStatus(Long bookingId, PaymentStatus status);
 
 }

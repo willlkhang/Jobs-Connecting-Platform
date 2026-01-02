@@ -1,0 +1,12 @@
+com/project/job/producer/KafkaProducer.class
+com/project/job/controller/JobController.class
+com/project/job/mapper/SolutionMapperImpl.class
+com/project/job/consumer/KafkaConsumer.class
+com/project/job/domain/Category.class
+com/project/job/service/SolutionService.class
+com/project/job/domain/Solution.class
+com/project/job/JobApplication.class
+com/project/job/mapper/SolutionMapper.class
+com/project/job/config/KafkaConfig.class
+com/project/job/repository/SolutionRepository.class
+com/project/job/service/SolutionServiceImpl.class

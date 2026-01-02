@@ -2,6 +2,7 @@ package com.project.payment.consumer;
 
 import com.project.base.dto.BookingEvent;
 
+import com.project.payment.enumerator.PaymentStatus;
 import com.project.payment.service.PaymentService;
 
 import org.slf4j.Logger;
@@ -20,8 +21,14 @@ public class KafkaConsumer {
     private PaymentService paymentService;
 
     @KafkaListener(topics = {"${spring.kafka.topic.consumer.booking.name}"}, groupId = "payment", autoStartup = "true")
-    public void updatePaymentStatus(BookingEvent bookingEvent) {
+    public void savePayment2Db(BookingEvent bookingEvent) {
+        paymentService.savePayment(bookingEvent.getBooking().getBookingId(), bookingEvent.getBooking().getTotalAmount());
 
+        paymentService.updatePaymentStatus(bookingEvent.getBooking().getBookingId(), PaymentStatus.DONE);
     }
 
+//    @KafkaListener(topics = {"${spring.kafka.topic.consumer.booking.name}"}, groupId = "payment", autoStartup = "true")
+//    public void updatePaymentStatusDone(BookingEvent bookingEvent) {
+//        paymentService.updatePaymentStatus(bookingEvent.getBooking().getBookingId(), PaymentStatus.DONE);
+//    }
 }

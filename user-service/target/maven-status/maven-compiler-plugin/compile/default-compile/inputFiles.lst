@@ -1,0 +1,11 @@
+/home/will/A MyDoc/project/project/project-4-thirdparty/user-service/src/main/java/com/project/user/UserApplication.java
+/home/will/A MyDoc/project/project/project-4-thirdparty/user-service/src/main/java/com/project/user/config/ResourceServerConfig.java
+/home/will/A MyDoc/project/project/project-4-thirdparty/user-service/src/main/java/com/project/user/controller/UserController.java
+/home/will/A MyDoc/project/project/project-4-thirdparty/user-service/src/main/java/com/project/user/dto/UserSignUp.java
+/home/will/A MyDoc/project/project/project-4-thirdparty/user-service/src/main/java/com/project/user/repository/AllowedMethodRepository.java
+/home/will/A MyDoc/project/project/project-4-thirdparty/user-service/src/main/java/com/project/user/repository/RoleRepository.java
+/home/will/A MyDoc/project/project/project-4-thirdparty/user-service/src/main/java/com/project/user/repository/UserRepository.java
+/home/will/A MyDoc/project/project/project-4-thirdparty/user-service/src/main/java/com/project/user/service/RoleService.java
+/home/will/A MyDoc/project/project/project-4-thirdparty/user-service/src/main/java/com/project/user/service/RoleServiceImpl.java
+/home/will/A MyDoc/project/project/project-4-thirdparty/user-service/src/main/java/com/project/user/service/UserService.java
+/home/will/A MyDoc/project/project/project-4-thirdparty/user-service/src/main/java/com/project/user/service/UserServiceImpl.java
