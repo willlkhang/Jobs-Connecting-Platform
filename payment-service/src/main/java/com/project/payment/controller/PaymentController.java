@@ -36,7 +36,6 @@ public class PaymentController {
     @PostMapping("/update-payment-status")
     public void updatePaymentStatus(@RequestParam(name = "paymentId") Long paymentId,
                                     @RequestParam(name = "status") PaymentStatus status) {
-
+        paymentService.updatePaymentStatus(paymentId, status);
     }
-
 }
