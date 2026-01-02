@@ -52,8 +52,8 @@ public class BookingServiceImpl implements BookingService{
     private AppUtil appUtil;
 
     @Override
-    public void updateBooking(Long bookingId) {
-        bookingRepository.updateBookingStatus(bookingId);
+    public void updateBookingStatus(Long bookingId, BookingStatus status) {
+        bookingRepository.updateBookingStatus(bookingId, status);
     }
 
     @Override

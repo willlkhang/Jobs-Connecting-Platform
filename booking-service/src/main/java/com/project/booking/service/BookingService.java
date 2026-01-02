@@ -1,5 +1,6 @@
 package com.project.booking.service;
 
+import com.project.base.dto.BookingStatus;
 import com.project.booking.domain.Booking;
 import com.project.base.dto.SolutionDTO;
 import org.springframework.http.ResponseEntity;
@@ -12,6 +13,6 @@ public interface BookingService {
 
     void createBooking(SolutionDTO solutionDTO);
 
-    void updateBooking(Long bookingId);
+    void updateBookingStatus(Long bookingId, BookingStatus status);
 
 }

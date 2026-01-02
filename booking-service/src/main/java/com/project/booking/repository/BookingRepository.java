@@ -1,5 +1,7 @@
 package com.project.booking.repository;
 
+import com.project.base.dto.BookingStatus;
+
 import com.project.booking.domain.Booking;
 import jakarta.transaction.Transactional;
 import org.springframework.data.jpa.repository.JpaRepository;
@@ -17,6 +19,6 @@ public interface BookingRepository extends JpaRepository<Booking, Long> {
 
     @Transactional
     @Modifying
-    @Query(value = "UPDATE Booking b SET b.status = 2 WHERE b.bookingId =:bookingId")
-    void updateBookingStatus(@Param("bookingId") Long bookingId);
+    @Query(value = "UPDATE Booking b SET b.status =:status WHERE b.bookingId =:bookingId")
+    void updateBookingStatus(@Param("bookingId") Long bookingId, @Param("status") BookingStatus status);
 }

@@ -22,6 +22,7 @@ public class Booking {
     @Column(name = "total_amount")
     private BigDecimal totalAmount;
     @Column(name = "status")
+    @Enumerated(EnumType.STRING)
     private BookingStatus status;
 
     @Column(nullable = true, name = "booking_date")
