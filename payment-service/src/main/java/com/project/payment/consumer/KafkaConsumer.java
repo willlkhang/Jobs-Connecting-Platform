@@ -33,9 +33,4 @@ public class KafkaConsumer {
 
         kafkaProducer.sendPaymentMessage2UpdateBookingStatus(bookingEvent.getBooking().getBookingId(), bookingEvent);
     }
-
-//    @KafkaListener(topics = {"${spring.kafka.topic.consumer.booking.name}"}, groupId = "payment", autoStartup = "true")
-//    public void updatePaymentStatusDone(BookingEvent bookingEvent) {
-//        paymentService.updatePaymentStatus(bookingEvent.getBooking().getBookingId(), PaymentStatus.DONE);
-//    }
 }
