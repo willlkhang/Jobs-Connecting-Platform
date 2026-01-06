@@ -12,6 +12,7 @@ import com.project.job.domain.Solution;
 import com.project.job.repository.SolutionRepository;
 
 //rest api spring boot group
+import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -19,16 +20,15 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
+@RequiredArgsConstructor
 public class JobController {
 
     @Autowired
     private SolutionService solutionService;
-    @Autowired
-    private SolutionMapper solutionMapper;
-    @Autowired
-    private SolutionRepository solutionRepository;
+//    @Autowired
+//    private SolutionMapper solutionMapper;
 
-    @PostMapping("add-solution")
+    @PostMapping //("add-solution")
     public ResponseEntity<Solution> addSolution(@RequestBody Solution solution) { //or this can be implied by saving solution
         solutionService.save(solution);
         return ResponseEntity.ok().body(solution);
@@ -43,15 +43,15 @@ public class JobController {
         return ResponseEntity.ok().body(result);
     }
 
-    @GetMapping("/check-exit-solution-by-name")
-    public ResponseEntity<SolutionDTO> checkSolutionExistByName(@RequestParam("solutionName") String name) throws BusinessException {
+    @GetMapping("/solutions")
+    public ResponseEntity<SolutionDTO> checkSolutionExistByName(@RequestParam String name) throws BusinessException {
         SolutionDTO solutionDTO = solutionService.getSolutionByName(name);
 
         return ResponseEntity.ok(solutionDTO);
     }
 
-    @GetMapping("/check-exit-solution-by-id")
-    public ResponseEntity<SolutionDTO> checkSolutionExistById(@RequestParam("solutionId") Long id) throws BusinessException {
+    @GetMapping("/solutions/{id}")
+    public ResponseEntity<SolutionDTO> checkSolutionExistById(@PathVariable Long id) throws BusinessException {
         SolutionDTO solutionDTO = solutionService.getSolutionById(id);
 
         return ResponseEntity.ok(solutionDTO);
