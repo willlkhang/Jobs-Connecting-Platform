@@ -9,7 +9,6 @@ import com.project.base.exception.BusinessException;
 import com.project.job.service.SolutionService;
 import com.project.job.mapper.SolutionMapper;
 import com.project.job.domain.Solution;
-import com.project.job.repository.SolutionRepository;
 
 //rest api spring boot group
 import lombok.RequiredArgsConstructor;
@@ -28,16 +27,16 @@ public class JobController {
 //    @Autowired
 //    private SolutionMapper solutionMapper;
 
-    @PostMapping //("add-solution")
+    @PostMapping("/solution")
     public ResponseEntity<Solution> addSolution(@RequestBody Solution solution) { //or this can be implied by saving solution
         solutionService.save(solution);
         return ResponseEntity.ok().body(solution);
     }
 
-    @GetMapping("get-solutions-by-category-id")
-    public ResponseEntity<Result> getListSolutionByCategoryId(@RequestParam("categoryId") Long categoryId) {
+    @GetMapping("/solution/cateogry/{id}")
+    public ResponseEntity<Result> getListSolutionByCategoryId(@PathVariable Long id) {
         Result result = new Result(); //here using result as Solution and Category are 2 different entities
-        List<SolutionDTO> lst = solutionService.getSolutionByCategoryId(categoryId);
+        List<SolutionDTO> lst = solutionService.getSolutionByCategoryId(id);
         result.setData(lst);
         result.setStatusCode(200);
         return ResponseEntity.ok().body(result);
@@ -57,8 +56,8 @@ public class JobController {
         return ResponseEntity.ok(solutionDTO);
     }
 
-    @PostMapping("increase-number-of-customers-used-solution")
-    public void increaseNumberOfCustomersUsedSolution(@RequestParam("solutionId") Long id)  {
+    @PostMapping("/solution/{id}/quantity")
+    public void increaseNumberOfCustomersUsedSolution(@PathVariable Long id)  {
         solutionService.increaseProcessedNumber(id);
     }
 
