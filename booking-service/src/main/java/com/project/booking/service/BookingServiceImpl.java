@@ -100,4 +100,8 @@ public class BookingServiceImpl implements BookingService{
         return bookingRepository.findBookingByUserId(userId);
     }
 
+    @Override
+    public void saveBooking(Booking booking) {
+        bookingRepository.save(booking);
+    }
 }

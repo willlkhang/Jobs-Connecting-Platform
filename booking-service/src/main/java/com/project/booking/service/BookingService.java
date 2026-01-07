@@ -15,4 +15,6 @@ public interface BookingService {
 
     void updateBookingStatus(Long bookingId, BookingStatus status);
 
+    void saveBooking(Booking booking);
+
 }

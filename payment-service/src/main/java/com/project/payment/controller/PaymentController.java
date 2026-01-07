@@ -18,7 +18,7 @@ public class PaymentController {
     @Autowired
     private PaymentService paymentService;
 
-    @GetMapping("/payment/{id}")
+    @GetMapping("/{id}")
     public  ResponseEntity<?> getPaymentById(@PathVariable Long id){
         Payment payment = paymentService.getPaymentById(id);
         if(payment == null){
@@ -27,13 +27,13 @@ public class PaymentController {
         return ResponseEntity.ok().body(payment);
     }
 
-    @PostMapping("/payment/save")
+    @PostMapping("/save")
     public void savePayment(@RequestParam(name = "bookingId") Long bookingId,
                             @RequestParam(name = "price") BigDecimal price){
         paymentService.savePayment(bookingId, price);
     }
 
-    @PostMapping("/payment/update/status")
+    @PostMapping("/update/status")
     public void updatePaymentStatus(@RequestParam(name = "bookingId") Long bookingId,
                                     @RequestParam(name = "status") PaymentStatus status) {
         paymentService.updatePaymentStatus(bookingId, status);
