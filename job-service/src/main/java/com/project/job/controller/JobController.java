@@ -7,7 +7,6 @@ import com.project.base.exception.BusinessException;
 
 //job service group
 import com.project.job.service.SolutionService;
-import com.project.job.mapper.SolutionMapper;
 import com.project.job.domain.Solution;
 
 //rest api spring boot group
@@ -24,8 +23,7 @@ public class JobController {
 
     @Autowired
     private SolutionService solutionService;
-//    @Autowired
-//    private SolutionMapper solutionMapper;
+
 
     @PostMapping("/solution")
     public ResponseEntity<Solution> addSolution(@RequestBody Solution solution) { //or this can be implied by saving solution
@@ -42,21 +40,21 @@ public class JobController {
         return ResponseEntity.ok().body(result);
     }
 
-    @GetMapping("/solutions")
+    @GetMapping("/solution")
     public ResponseEntity<SolutionDTO> checkSolutionExistByName(@RequestParam String name) throws BusinessException {
         SolutionDTO solutionDTO = solutionService.getSolutionByName(name);
 
         return ResponseEntity.ok(solutionDTO);
     }
 
-    @GetMapping("/solutions/{id}")
+    @GetMapping("/solution/{id}")
     public ResponseEntity<SolutionDTO> checkSolutionExistById(@PathVariable Long id) throws BusinessException {
         SolutionDTO solutionDTO = solutionService.getSolutionById(id);
 
         return ResponseEntity.ok(solutionDTO);
     }
 
-    @PostMapping("/solution/{id}/quantity")
+    @PostMapping("/solution/{id}/sold/increase")
     public void increaseNumberOfCustomersUsedSolution(@PathVariable Long id)  {
         solutionService.increaseProcessedNumber(id);
     }
