@@ -37,8 +37,8 @@ public class UserController {
     @Autowired
     PasswordEncoder passwordEncoder;
 
-    @GetMapping("/get-user-by-id")
-    public ResponseEntity<User> getUserById(@RequestParam("userId") Long id) {
+    @GetMapping("/user/{id}")
+    public ResponseEntity<User> getUserById(@PathVariable Long id) {
         User user = userService.findUserByUserId(id);
         if (user == null) {
             return ResponseEntity.notFound().build();
@@ -46,8 +46,8 @@ public class UserController {
         return ResponseEntity.ok().body(user);
     }
 
-    @GetMapping("/get-user-by-username")
-    public ResponseEntity<User> getUserByUserName(@RequestParam("username") String username){
+    @GetMapping("/user")
+    public ResponseEntity<User> getUserByUserName(@RequestParam("name") String username){
         User user = userRepository.findUserByUsername(username);
         if(user == null){
             return ResponseEntity.notFound().build();
@@ -55,13 +55,13 @@ public class UserController {
         return ResponseEntity.ok().body(user);
     }
 
-    @PostMapping("/saveUser")
+    @PostMapping("/user/save")
     public ResponseEntity<User> saveUser(@RequestBody User user) {
         userService.saveUser(user);
         return ResponseEntity.ok().body(user);
     }
 
-    @PostMapping("/register-new-user")
+    @PostMapping("/user/register")
     public ResponseEntity<?> registerNewUser(@RequestBody UserSignUp userSignUp) {
         if (!userService.isDuplicatedEmail(userSignUp.getEmail()) &&
             !userService.isDuplicatedUsername(userSignUp.getUsername())) {
@@ -82,13 +82,13 @@ public class UserController {
         }
     }
 
-    @GetMapping("/get-user-role-by-username")
+    @GetMapping("/user/roles/")
     public ResponseEntity<?> getUserRoleByUsername(@RequestParam("username") String username) {
         return ResponseEntity.ok(roleService.listOfRoleByUsername(username));
     }
 
     @PreAuthorize("hasRole('ADMIN')")
-    @PatchMapping("/assign/{userId}/{roleId}")
+    @PatchMapping("/user/admin/assign/{userId}/to/{roleId}")
     public ResponseEntity<?> setRoleForUser(@PathVariable Long userId,
                                             @PathVariable Long roleId) {
         User user = userRepository.findUserByUserId(userId);
@@ -103,7 +103,7 @@ public class UserController {
     }
 
     @PreAuthorize("hasRole('ADMIN')")
-    @PostMapping("/assign-methods-to-role")
+    @PostMapping("/user/admin/assign/methods/role")
     public ResponseEntity<?> assignMethodsToRole(@RequestParam("method") String methodName,
                                                  @RequestParam("role") String roleName) {
         roleService.updateAllowedMethod(methodName, roleName);
@@ -112,7 +112,7 @@ public class UserController {
     }
 
     @PreAuthorize("hasRole('ADMIN')")
-    @PostMapping("/update-roles-for-user")
+    @PostMapping("/user/admin/update/roles/user")
     public ResponseEntity<?> updateRolesForUser(@RequestParam("username") String username,
                                                 @RequestParam("role") String roleName)
             throws RuntimeException {
