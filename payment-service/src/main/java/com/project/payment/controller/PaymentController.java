@@ -18,22 +18,22 @@ public class PaymentController {
     @Autowired
     private PaymentService paymentService;
 
-    @GetMapping("/get-payment-by-id")
-    public  ResponseEntity<?> getPaymentById(@RequestParam Long paymentId){
-        Payment payment = paymentService.getPaymentById(paymentId);
+    @GetMapping("/payment/{id}")
+    public  ResponseEntity<?> getPaymentById(@PathVariable Long id){
+        Payment payment = paymentService.getPaymentById(id);
         if(payment == null){
             return ResponseEntity.notFound().build();
         }
         return ResponseEntity.ok().body(payment);
     }
 
-    @PostMapping("/save-payment")
+    @PostMapping("/payment/save")
     public void savePayment(@RequestParam(name = "bookingId") Long bookingId,
                             @RequestParam(name = "price") BigDecimal price){
         paymentService.savePayment(bookingId, price);
     }
 
-    @PostMapping("/update-payment-status")
+    @PostMapping("/payment/update/status")
     public void updatePaymentStatus(@RequestParam(name = "bookingId") Long bookingId,
                                     @RequestParam(name = "status") PaymentStatus status) {
         paymentService.updatePaymentStatus(bookingId, status);
