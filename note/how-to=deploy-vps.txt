@@ -1,0 +1,23 @@
+-----HOW TO DEPLOY SPRING BOOT PROJECT ON VPS-----
+
+0/ Dockerize the project
+
+1/ Create droplet from Digital Ocean
+
+2/ start vps: root@<ipv4>
+
+3/ move to user dir (if have): cd /home/<user-name> (only if you work here)
+
+4/ clone your project.
+
+5/ cd to it.
+
+6/ make sure you install maven, jdk (see vps note).
+
+7/ Clean and Install maven: mvn clean install -DskipTests
+
+6/ run docker compose: docker compose up -d
+
+7/ Work with Database to inject some data (see databse note).
+
+8/ work with postman (see postman note)
