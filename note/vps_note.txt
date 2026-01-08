@@ -1,0 +1,42 @@
+# 1. Update system
+apt update && apt upgrade -y
+
+# 2. Install Docker & Maven
+apt install docker.io docker-compose-v2 maven -y
+
+# 3. Install Java 21 (Closest match to your local Java 23)
+apt install openjdk-21-jdk -y
+
+# 4. Create Swap File (To prevent crashes)
+fallocate -l 4G /swapfile
+chmod 600 /swapfile
+mkswap /swapfile
+swapon /swapfile
+echo '/swapfile none swap sw 0 0' | tee -a /etc/fstab
+
+# 5. Configure Firewall
+ufw allow 22/tcp
+ufw allow 80/tcp
+ufw allow 8086/tcp
+ufw --force enable
+
+# 6. Verify Version
+java -version
+
+# 1. Clone your code
+git clone https://github.com/willlkhang/Jobs-Connecting-Platform.git
+cd Jobs-Connecting-Platform
+
+# 2. Update the IP address (CRITICAL STEP)
+# We need to replace "localhost" with your new IP: 170.64.213.198
+sed -i 's/localhost/170.64.213.198/g' docker-compose.yml
+
+# 3. Build the project
+mvn clean install -DskipTests
+
+docker compose up -d --build
+
+
+ufw allow 80/tcp
+ufw allow 8086/tcp
+ufw reload
