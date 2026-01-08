@@ -8,3 +8,15 @@ sudo lsof -i :<port>
 kill -9 <PID>
 
 Enter postgre via docker: docker exec -it postgres_db psql -U postgres -d thirdparty
+
+VPS:
+    1/ Enter postgre via docker: docker exec -it postgres_db psql -U postgres -d <db-name>
+    2/ see schemma: \dn
+    3/ look shemma's table: \dt <schemma-name>.* ex: \dt db_job.*
+
+add data examples:
+INSERT INTO db_job.solution (description, price, processed_number, solution_name, user_id)
+VALUES
+    ('This solution helps people code applications', 5000.00, 17, 'codeApp', 1),
+    ('This solution helps people code web', 4000.00, 7, 'codeWeb', 1),
+    ('This solution helps people code software', 4000.00, 6, 'codeSoft', 1);
