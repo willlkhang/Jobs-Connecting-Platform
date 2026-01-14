@@ -14,11 +14,6 @@ mkswap /swapfile
 swapon /swapfile
 echo '/swapfile none swap sw 0 0' | tee -a /etc/fstab
 
-# 5. Configure Firewall
-ufw allow 22/tcp
-ufw allow 80/tcp
-ufw allow 8086/tcp
-ufw --force enable
 
 # 6. Verify Version
 java -version
@@ -37,6 +32,10 @@ mvn clean install -DskipTests
 docker compose up -d --build
 
 
+# 5. Configure Firewall
+ufw allow 22/tcp
 ufw allow 80/tcp
-ufw allow 8086/tcp
+ufw allow 8060/tcp
+ufw allow 8061/tcp
+ufw --force enable
 ufw reload

@@ -15,7 +15,7 @@ export default function Home() {
   });
 
   const getApi = async () => {
-    const result = await fetch("https://jsonplaceholder.typicode.com/users").catch((error) => {
+    const result = await fetch("http://170.64.179.146:8060/api/job/solution/3").catch((error) => {
       console.log()
   });
     const data = result.json();
