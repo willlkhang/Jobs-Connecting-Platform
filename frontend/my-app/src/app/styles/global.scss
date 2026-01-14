@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+$primary: aqua;
+
+body {
+    background: white;
+    color: #333;
+}
+
+.button {
+    padding: 10px 16px;
+    background: $primary;
+    color: white;
+    border-radius: 4px;
+
+    &:hover {
+        background: darken($primary, 10%);
+    }
+}
