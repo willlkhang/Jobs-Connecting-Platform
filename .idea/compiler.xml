@@ -21,8 +21,8 @@
           <entry name="$MAVEN_REPOSITORY$/org/mapstruct/mapstruct-processor/1.6.3/mapstruct-processor-1.6.3.jar" />
         </processorPath>
         <module name="job-service" />
-        <module name="user-service" />
         <module name="payment-service" />
+        <module name="user-service" />
         <module name="booking-service" />
       </profile>
     </annotationProcessing>
