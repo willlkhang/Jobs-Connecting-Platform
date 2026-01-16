@@ -12,6 +12,7 @@ import com.project.job.domain.Solution;
 import com.project.job.domain.Category;
 
 //rest api spring boot group
+import jakarta.ws.rs.GET;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -28,6 +29,24 @@ public class JobController {
 
     @Autowired
     private CategoryService categoryService;
+
+    @GetMapping("/solutions")
+    public ResponseEntity<?> getAllSolutions() {
+        List<Solution> solutionList = solutionService.getAllSolution();
+        if(solutionList == null) {
+            return ResponseEntity.ok("The category list is empty");
+        }
+        return ResponseEntity.ok().body(solutionList);
+    }
+
+    @GetMapping("/categories")
+    public ResponseEntity<?> getAllCategories() {
+        List<Category> categoryList = categoryService.getAllCategory();
+        if(categoryList == null) {
+            return ResponseEntity.ok("The category list is empty");
+        }
+        return ResponseEntity.ok().body(categoryList);
+    }
 
     @GetMapping("/category/{id}")
     public ResponseEntity<?> getCategoryById(@PathVariable Long id) {

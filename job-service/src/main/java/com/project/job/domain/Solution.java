@@ -1,5 +1,6 @@
 package com.project.job.domain;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.*;
 
@@ -27,6 +28,8 @@ public class Solution {
             joinColumns = @JoinColumn(name = "solution_id"),
             inverseJoinColumns = @JoinColumn(name = "category_id")
     )
+
+    @JsonIgnore
     private Set<Category> categories = new HashSet<>();
 
     @Column(name = "solution_name")

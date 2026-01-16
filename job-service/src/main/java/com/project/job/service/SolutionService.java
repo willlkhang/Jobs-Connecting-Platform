@@ -8,6 +8,8 @@ import java.util.List;
 
 public interface SolutionService {
 
+    List<Solution> getAllSolution();
+
     List<SolutionDTO> getSolutionByCategoryId(Long CategoryId);
 
     //basic save delete group
