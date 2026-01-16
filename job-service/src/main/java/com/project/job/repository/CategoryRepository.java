@@ -13,5 +13,5 @@ import java.util.List;
 public interface CategoryRepository extends JpaRepository<Category, Long> {
 
     @Query("SELECT c FROM Category c WHERE c.categoryId =:categoryId")
-    List<Category> findAllByIs(@Param("categoryId") Long categoryId);
+    Category getCategoryById(@Param("categoryId") Long categoryId);
 }

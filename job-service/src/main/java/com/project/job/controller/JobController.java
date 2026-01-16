@@ -7,7 +7,9 @@ import com.project.base.exception.BusinessException;
 
 //job service group
 import com.project.job.service.SolutionService;
+import com.project.job.service.CategoryService;
 import com.project.job.domain.Solution;
+import com.project.job.domain.Category;
 
 //rest api spring boot group
 import lombok.RequiredArgsConstructor;
@@ -24,6 +26,17 @@ public class JobController {
     @Autowired
     private SolutionService solutionService;
 
+    @Autowired
+    private CategoryService categoryService;
+
+    @GetMapping("/category/{id}")
+    public ResponseEntity<?> getCategoryById(@PathVariable Long id) {
+        Category category = categoryService.getCategoryById(id);
+        if(category == null){
+            return ResponseEntity.notFound().build();
+        }
+        return ResponseEntity.ok().body(category);
+    }
 
     @PostMapping("/solution")
     public ResponseEntity<Solution> addSolution(@RequestBody Solution solution) { //or this can be implied by saving solution

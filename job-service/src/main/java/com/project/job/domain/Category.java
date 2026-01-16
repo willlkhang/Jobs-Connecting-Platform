@@ -1,5 +1,6 @@
 package com.project.job.domain;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.*;
 
@@ -22,10 +23,8 @@ public class Category {
     @Column(name = "description")
     private String description;
 
-//    @OneToMany(mappedBy = "category")
-//    private Set<Solution> solutions;
-
     @ManyToMany(mappedBy = "categories")
+    @JsonIgnore
     private Set<Solution> solutions;
 
     public Long getCategoryId() {
