@@ -5,14 +5,20 @@ import com.project.base.dto.BookingDTO;
 import com.project.base.dto.SolutionDTO;
 import com.project.base.exception.BusinessException;
 
+import com.project.job.domain.Category;
 import com.project.job.domain.Solution;
+import com.project.job.mapper.CategoryMapper;
 import com.project.job.mapper.SolutionMapper;
+import com.project.job.repository.CategoryRepository;
 import com.project.job.repository.SolutionRepository;
 //import com.project.job.repository.
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.awt.*;
+import java.math.BigDecimal;
+import java.util.HashSet;
 import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
@@ -22,15 +28,30 @@ public class SolutionServiceImpl implements SolutionService {
 
     @Autowired
     private SolutionRepository solutionRepository;
-//    @Autowired
-//    private
+    @Autowired
+    private CategoryRepository categoryRepository;
 
     @Autowired
     private SolutionMapper solutionMapper;
 
-
     @Override
-    public void addSolution(Solution solution) {
+    public void addSolution(SolutionDTO solutionDTO) {
+        Solution solution = new Solution();
+
+        solution.setSolutionName(solutionDTO.getSolutionName());
+        solution.setDescription(solutionDTO.getDescription());
+        solution.setPrice(solutionDTO.getPrice());
+        solution.setProcessedNumber(solutionDTO.getProcessedNumber());
+        solution.setUserId(solutionDTO.getUserId());
+
+        if(solutionDTO.getCategoryIds() != null && !solutionDTO.getCategoryIds().isEmpty()) {
+            List<Category> categoryList = categoryRepository.findAllById(solutionDTO.getCategoryIds());
+
+            if (categoryList.isEmpty()) System.out.println("Categories list is empty");
+
+            solution.setCategories(new HashSet<>(categoryList));
+        }
+
         solutionRepository.save(solution);
     }
 

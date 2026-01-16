@@ -13,7 +13,7 @@ public interface SolutionService {
     List<SolutionDTO> getSolutionByCategoryId(Long CategoryId);
 
     //basic save delete group
-    void addSolution(Solution solution);
+    void addSolution(SolutionDTO solutionDTO);
     void delete(Solution solution);
 
     //fetching group

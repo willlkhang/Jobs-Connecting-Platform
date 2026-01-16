@@ -58,9 +58,9 @@ public class JobController {
     }
 
     @PostMapping("/solution")
-    public ResponseEntity<Solution> addSolution(@RequestBody Solution solution) { //or this can be implied by saving solution
-        solutionService.addSolution(solution);
-        return ResponseEntity.ok().body(solution);
+    public ResponseEntity<?> addSolution(@RequestBody SolutionDTO solutionDTO) { //or this can be implied by saving solution
+        solutionService.addSolution(solutionDTO);
+        return ResponseEntity.ok().body(solutionDTO);
     }
 
     @GetMapping("/solution/cateogry/{id}")
