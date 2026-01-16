@@ -11,7 +11,7 @@ public interface SolutionService {
     List<SolutionDTO> getSolutionByCategoryId(Long CategoryId);
 
     //basic save delete group
-    void save(Solution solution);
+    void addSolution(Solution solution);
     void delete(Solution solution);
 
     //fetching group

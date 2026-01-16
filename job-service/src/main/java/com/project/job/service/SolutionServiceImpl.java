@@ -8,6 +8,7 @@ import com.project.base.exception.BusinessException;
 import com.project.job.domain.Solution;
 import com.project.job.mapper.SolutionMapper;
 import com.project.job.repository.SolutionRepository;
+//import com.project.job.repository.
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -21,13 +22,15 @@ public class SolutionServiceImpl implements SolutionService {
 
     @Autowired
     private SolutionRepository solutionRepository;
+//    @Autowired
+//    private
 
     @Autowired
     private SolutionMapper solutionMapper;
 
 
     @Override
-    public void save(Solution solution) {
+    public void addSolution(Solution solution) {
         solutionRepository.save(solution);
     }
 

@@ -27,7 +27,7 @@ public class JobController {
 
     @PostMapping("/solution")
     public ResponseEntity<Solution> addSolution(@RequestBody Solution solution) { //or this can be implied by saving solution
-        solutionService.save(solution);
+        solutionService.addSolution(solution);
         return ResponseEntity.ok().body(solution);
     }
 

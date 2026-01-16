@@ -28,15 +28,9 @@ export default function Home() {
 
   return (
     <>
-      <button onClick={() => {
-        setCount(pre => pre + 1)
-      }}>Count {count} </button>
-
-      <br />
-
-      <button onClick={() => {
-        setSum(pre => pre + pre)
-      }}>Sum {sum}</button>
+      <ul>
+        
+      </ul>
     </>
   );
 }
