@@ -27,10 +27,6 @@ export default function Home() {
   }, []);
 
   return (
-    <>
-      <ul>
-        
-      </ul>
-    </>
+    <div className="content-page"></div>
   );
 }

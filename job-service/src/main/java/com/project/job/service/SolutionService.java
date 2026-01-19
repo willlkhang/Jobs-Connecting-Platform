@@ -2,13 +2,14 @@ package com.project.job.service;
 
 import com.project.base.dto.BookingEvent;
 import com.project.base.dto.SolutionDTO;
+import com.project.base.outputDto.SolutionResponse;
 import com.project.job.domain.Solution;
 
 import java.util.List;
 
 public interface SolutionService {
 
-    List<Solution> getAllSolution();
+    public List<SolutionResponse> getAllSolution();
 
     List<SolutionDTO> getSolutionByCategoryId(Long CategoryId);
 

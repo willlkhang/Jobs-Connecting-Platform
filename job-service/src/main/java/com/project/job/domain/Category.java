@@ -24,7 +24,7 @@ public class Category {
     private String description;
 
     @ManyToMany(mappedBy = "categories")
-    @JsonIgnore
+    //@JsonIgnore
     private Set<Solution> solutions;
 
     public Long getCategoryId() {

@@ -6,6 +6,7 @@ import com.project.base.dto.Result;
 import com.project.base.exception.BusinessException;
 
 //job service group
+import com.project.base.outputDto.SolutionResponse;
 import com.project.job.service.SolutionService;
 import com.project.job.service.CategoryService;
 import com.project.job.domain.Solution;
@@ -32,7 +33,7 @@ public class JobController {
 
     @GetMapping("/solutions")
     public ResponseEntity<?> getAllSolutions() {
-        List<Solution> solutionList = solutionService.getAllSolution();
+        List<SolutionResponse> solutionList = solutionService.getAllSolution();
         if(solutionList == null) {
             return ResponseEntity.ok("The category list is empty");
         }

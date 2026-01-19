@@ -29,7 +29,7 @@ public class Solution {
             inverseJoinColumns = @JoinColumn(name = "category_id")
     )
 
-    @JsonIgnore
+    //@JsonIgnore
     private Set<Category> categories = new HashSet<>();
 
     @Column(name = "solution_name")

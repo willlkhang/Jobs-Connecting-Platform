@@ -5,6 +5,7 @@ import com.project.base.dto.BookingDTO;
 import com.project.base.dto.SolutionDTO;
 import com.project.base.exception.BusinessException;
 
+import com.project.base.outputDto.SolutionResponse;
 import com.project.job.domain.Category;
 import com.project.job.domain.Solution;
 import com.project.job.mapper.CategoryMapper;
@@ -61,8 +62,10 @@ public class SolutionServiceImpl implements SolutionService {
     }
 
     @Override
-    public List<Solution> getAllSolution() {
-        return solutionRepository.getAllSolution();
+    public List<SolutionResponse> getAllSolution() {
+        List<Solution> solutionEntities = solutionRepository.findAll();
+
+        return solutionEntities.stream().map(solutionMapper::toResponse).collect(Collectors.toList());
     }
 
     @Override

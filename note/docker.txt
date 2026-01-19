@@ -6,6 +6,8 @@ docker pull apache/kafka:latest
 docker run -d --name=kafka -p 9092:9092 apache/kafka
 
 //Stop all containers at once
+docker stop $(docker ps -q)
+
 
 //show ID
 docker exec -ti kafka /opt/kafka/bin/kafka-cluster.sh cluster-id --bootstrap-server :9092

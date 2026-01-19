@@ -1,0 +1,19 @@
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    outline: none;
+    padding: 13px 24px;
+    border-radius: 8px;
+    font-size: 16px;
+    line-height: 24px;
+    transition: all 0.3s;
+    font-weight: 600;
+    &-solid {
+        border: 1px solid #198754;
+        background-color: #198754;
+        color: #fff;
+    }
+    &-primary {
+        background-color: burlywood;
+    }
+}
