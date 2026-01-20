@@ -1,19 +1,35 @@
 .btn {
-    display: inline-block;
+    display: inline-flex; //flex is better for entering icon
+    align-items: center;
+    justify-content: center;
     text-decoration: none;
     outline: none;
-    padding: 13px 24px;
-    border-radius: 8px;
+    padding: 10px 20px;
+    border-radius: 9999px;
     font-size: 16px;
     line-height: 24px;
-    transition: all 0.3s;
-    font-weight: 600;
+    transition: all 0.2s ease-in-out;
+    font-weight: 500;
     &-solid {
-        border: 1px solid #198754;
-        background-color: #198754;
-        color: #fff;
+        background-color: #000000;
+        color: #ffffff;
+        
+        &:hover {
+            background-color: #333333; // Dark gray on hover
+            transform: scale(1.02); // subtle pop effect
+        }
     }
     &-primary {
-        background-color: burlywood;
+        background-color: #EEEEEE; // Uber's light gray
+        color: #000000;
+        
+        &:hover {
+            background-color: #E2E2E2; // Slightly darker gray on hover
+        }
+    }
+    &-ghost {
+        border: 1px solid #fff;
+        background-color: #fff;
+        color: #6100d2;
     }
 }

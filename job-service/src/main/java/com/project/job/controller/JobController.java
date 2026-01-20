@@ -6,11 +6,13 @@ import com.project.base.dto.Result;
 import com.project.base.exception.BusinessException;
 
 //job service group
+import com.project.base.outputDto.CategoryResponse;
+import com.project.job.service.CategoryService;
+import com.project.job.domain.Category;
+
 import com.project.base.outputDto.SolutionResponse;
 import com.project.job.service.SolutionService;
-import com.project.job.service.CategoryService;
 import com.project.job.domain.Solution;
-import com.project.job.domain.Category;
 
 //rest api spring boot group
 import jakarta.ws.rs.GET;
@@ -42,7 +44,7 @@ public class JobController {
 
     @GetMapping("/categories")
     public ResponseEntity<?> getAllCategories() {
-        List<Category> categoryList = categoryService.getAllCategory();
+        List<CategoryResponse> categoryList = categoryService.getAllCategories();
         if(categoryList == null) {
             return ResponseEntity.ok("The category list is empty");
         }

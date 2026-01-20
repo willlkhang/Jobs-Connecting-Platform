@@ -1,7 +1,6 @@
 package com.project.base.outputDto;
 
 import com.project.base.dto.CategoryDTO;
-import jdk.jfr.Category;
 
 import java.math.BigDecimal;
 import java.util.Set;
@@ -15,7 +14,7 @@ public class SolutionResponse {
     private BigDecimal price;
     private Integer processedNumber;
 
-    //crucial for sending info to FE
+    //sending info to FE
     private Set<CategoryDTO> categories;
 
     public Long getSolutionId() {
