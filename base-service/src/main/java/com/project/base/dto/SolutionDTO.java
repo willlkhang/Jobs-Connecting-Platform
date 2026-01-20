@@ -16,6 +16,16 @@ public class SolutionDTO {
     private BigDecimal price;
     private Integer processedNumber;
 
+    private String imageUrl;
+
+    public String getImageUrl() {
+        return imageUrl;
+    }
+
+    public void setImageUrl(String imageUrl) {
+        this.imageUrl = imageUrl;
+    }
+
     public Long getSolutionId() {
         return solutionId;
     }

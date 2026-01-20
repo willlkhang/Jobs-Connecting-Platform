@@ -14,6 +14,16 @@ public class SolutionResponse {
     private BigDecimal price;
     private Integer processedNumber;
 
+    private String imageUrl;
+
+    public String getImageUrl() {
+        return imageUrl;
+    }
+
+    public void setImageUrl(String imageUrl) {
+        this.imageUrl = imageUrl;
+    }
+
     //sending info to FE
     private Set<CategoryDTO> categories;
 

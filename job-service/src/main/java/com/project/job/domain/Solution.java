@@ -40,6 +40,16 @@ public class Solution {
     private BigDecimal price;
     @Column(name = "processed_number") //this mean the number of customer I used this service in the past
     private Integer processedNumber;
+    @Column(name = "imageUrl")
+    private String imageUrl;
+
+    public String getImageUrl() {
+        return imageUrl;
+    }
+
+    public void setImageUrl(String imageUrl) {
+        this.imageUrl = imageUrl;
+    }
 
     public Long getSolutionId() {
         return solutionId;

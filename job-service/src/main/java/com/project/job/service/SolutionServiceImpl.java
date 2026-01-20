@@ -44,6 +44,7 @@ public class SolutionServiceImpl implements SolutionService {
         solution.setPrice(solutionDTO.getPrice());
         solution.setProcessedNumber(solutionDTO.getProcessedNumber());
         solution.setUserId(solutionDTO.getUserId());
+        solution.setImageUrl(solutionDTO.getImageUrl());
 
         if(solutionDTO.getCategoryIds() != null && !solutionDTO.getCategoryIds().isEmpty()) {
             List<Category> categoryList = categoryRepository.findAllById(solutionDTO.getCategoryIds());
