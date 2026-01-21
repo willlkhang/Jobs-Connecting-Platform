@@ -79,9 +79,10 @@ public class SolutionServiceImpl implements SolutionService {
             Long userId = solution.getUserId();
             if(userId != null) {
                 ResponseEntity<User> userEntity = userService.getUserById(userId);
+                User user = userEntity.getBody();
 
-                if(userEntity != null) {
-                    UserResponse userResponse = neighborMapper.toUserResponse(userEntity);
+                if(user != null) {
+                    UserResponse userResponse = neighborMapper.toUserResponse(user);
                     solutionResponse.setUser(userResponse);
                 }
             }
