@@ -19,12 +19,13 @@ public interface SolutionMapper {
     //tell map struct to map the categories list in the entity to CategoryID in DTO
     //Note the categories is solution.categories
     //entity -> IDs
-    //Json returns [id1, id2,...]
+    //Json returns [id1, id2,...] not [{id1, name1,..}, {id2, name2,..},..]
     @Mapping(source = "categories", target = "categoryIds", qualifiedByName = "mapCategoriesToIds")
     SolutionDTO entityToDTO(Solution solution);
 
     //entity -> full object.
     //this is used for sending info to FE
+    @Mapping(target = "user", ignore = true)
     SolutionResponse toResponse(Solution solution);
 
     //category -> categoryDTO

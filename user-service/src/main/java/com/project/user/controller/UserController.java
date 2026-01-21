@@ -15,7 +15,7 @@ import com.project.user.repository.AllowedMethodRepository;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
-import org.springframework.security.access.prepost.PreAuthorize;
+//import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 
 import org.springframework.security.crypto.password.PasswordEncoder;
@@ -37,7 +37,7 @@ public class UserController {
     @Autowired
     PasswordEncoder passwordEncoder;
 
-    @GetMapping("/user/{id}")
+    @GetMapping("/{id}")
     public ResponseEntity<User> getUserById(@PathVariable Long id) {
         User user = userService.findUserByUserId(id);
         if (user == null) {
@@ -46,7 +46,7 @@ public class UserController {
         return ResponseEntity.ok().body(user);
     }
 
-    @GetMapping("/user")
+    @GetMapping("/")
     public ResponseEntity<User> getUserByUserName(@RequestParam("name") String username){
         User user = userRepository.findUserByUsername(username);
         if(user == null){
@@ -55,13 +55,13 @@ public class UserController {
         return ResponseEntity.ok().body(user);
     }
 
-    @PostMapping("/user/save")
+    @PostMapping("/save")
     public ResponseEntity<User> saveUser(@RequestBody User user) {
         userService.saveUser(user);
         return ResponseEntity.ok().body(user);
     }
 
-    @PostMapping("/user/register")
+    @PostMapping("/register")
     public ResponseEntity<?> registerNewUser(@RequestBody UserSignUp userSignUp) {
         if (!userService.isDuplicatedEmail(userSignUp.getEmail()) &&
             !userService.isDuplicatedUsername(userSignUp.getUsername())) {
@@ -82,13 +82,13 @@ public class UserController {
         }
     }
 
-    @GetMapping("/user/roles/")
+    @GetMapping("/roles/")
     public ResponseEntity<?> getUserRoleByUsername(@RequestParam("username") String username) {
         return ResponseEntity.ok(roleService.listOfRoleByUsername(username));
     }
 
-    @PreAuthorize("hasRole('ADMIN')")
-    @PatchMapping("/user/admin/assign/{userId}/to/{roleId}")
+    //@PreAuthorize("hasRole('ADMIN')")
+    @PatchMapping("/admin/assign/{userId}/to/{roleId}")
     public ResponseEntity<?> setRoleForUser(@PathVariable Long userId,
                                             @PathVariable Long roleId) {
         User user = userRepository.findUserByUserId(userId);
@@ -102,8 +102,8 @@ public class UserController {
         else return ResponseEntity.ok("User or role is not on database");
     }
 
-    @PreAuthorize("hasRole('ADMIN')")
-    @PostMapping("/user/admin/assign/methods/role")
+    //@PreAuthorize("hasRole('ADMIN')")
+    @PostMapping("/admin/assign/methods/role")
     public ResponseEntity<?> assignMethodsToRole(@RequestParam("method") String methodName,
                                                  @RequestParam("role") String roleName) {
         roleService.updateAllowedMethod(methodName, roleName);
@@ -111,7 +111,7 @@ public class UserController {
         return ResponseEntity.ok("Assign Successfully");
     }
 
-    @PreAuthorize("hasRole('ADMIN')")
+    //@PreAuthorize("hasRole('ADMIN')")
     @PostMapping("/user/admin/update/roles/user")
     public ResponseEntity<?> updateRolesForUser(@RequestParam("username") String username,
                                                 @RequestParam("role") String roleName)

@@ -7,8 +7,8 @@ public class SolutionSummaryDTO {
     private Long solutionId;
     private String solutionName;
     private BigDecimal price;
-
     private String imageUrl;
+
 
     public String getImageUrl() {
         return imageUrl;

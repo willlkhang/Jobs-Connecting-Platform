@@ -8,13 +8,23 @@ import java.util.Set;
 public class SolutionResponse {
 
     private Long solutionId;
-    private Long userId;
+    //private Long userId;
+    private UserResponse user;
     private String solutionName;
     private String description;
     private BigDecimal price;
     private Integer processedNumber;
-
+    //sending info to FE
+    private Set<CategoryDTO> categories;
     private String imageUrl;
+
+    public UserResponse getUser() {
+        return user;
+    }
+
+    public void setUser(UserResponse user) {
+        this.user = user;
+    }
 
     public String getImageUrl() {
         return imageUrl;
@@ -23,9 +33,6 @@ public class SolutionResponse {
     public void setImageUrl(String imageUrl) {
         this.imageUrl = imageUrl;
     }
-
-    //sending info to FE
-    private Set<CategoryDTO> categories;
 
     public Long getSolutionId() {
         return solutionId;
@@ -75,11 +82,11 @@ public class SolutionResponse {
         this.solutionName = solutionName;
     }
 
-    public Long getUserId() {
-        return userId;
-    }
-
-    public void setUserId(Long userId) {
-        this.userId = userId;
-    }
+//    public Long getUserId() {
+//        return userId;
+//    }
+//
+//    public void setUserId(Long userId) {
+//        this.userId = userId;
+//    }
 }

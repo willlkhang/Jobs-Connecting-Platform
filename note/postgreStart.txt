@@ -9,6 +9,9 @@ kill -9 <PID>
 
 Enter postgre via docker: docker exec -it postgres_db psql -U postgres -d thirdparty
 
+remove all rows in a table:
+DELETE FROM db_job.solutions_categories; (This is example)
+
 VPS:
     1/ Enter postgre via docker: docker exec -it postgres_db psql -U postgres -d <db-name>
     2/ see schemma: \dn

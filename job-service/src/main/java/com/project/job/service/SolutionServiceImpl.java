@@ -1,24 +1,26 @@
 package com.project.job.service;
 
+import com.project.base.domain.User;
 import com.project.base.dto.BookingEvent;
 import com.project.base.dto.BookingDTO;
 import com.project.base.dto.SolutionDTO;
 import com.project.base.exception.BusinessException;
 
 import com.project.base.outputDto.SolutionResponse;
+import com.project.base.outputDto.UserResponse;
 import com.project.job.domain.Category;
 import com.project.job.domain.Solution;
 import com.project.job.mapper.CategoryMapper;
+import com.project.job.mapper.NeighborMapper;
 import com.project.job.mapper.SolutionMapper;
 import com.project.job.repository.CategoryRepository;
 import com.project.job.repository.SolutionRepository;
-//import com.project.job.repository.
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
 import java.awt.*;
-import java.math.BigDecimal;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Optional;
@@ -34,6 +36,11 @@ public class SolutionServiceImpl implements SolutionService {
 
     @Autowired
     private SolutionMapper solutionMapper;
+    @Autowired
+    private NeighborMapper neighborMapper;
+
+    @Autowired
+    private UserService userService;
 
     @Override
     public void addSolution(SolutionDTO solutionDTO) {
@@ -66,7 +73,20 @@ public class SolutionServiceImpl implements SolutionService {
     public List<SolutionResponse> getAllSolution() {
         List<Solution> solutionEntities = solutionRepository.findAll();
 
-        return solutionEntities.stream().map(solutionMapper::toResponse).collect(Collectors.toList());
+        return solutionEntities.stream().map(solution -> {
+            SolutionResponse solutionResponse = solutionMapper.toResponse(solution);
+
+            Long userId = solution.getUserId();
+            if(userId != null) {
+                ResponseEntity<User> userEntity = userService.getUserById(userId);
+
+                if(userEntity != null) {
+                    UserResponse userResponse = neighborMapper.toUserResponse(userEntity);
+                    solutionResponse.setUser(userResponse);
+                }
+            }
+            return solutionResponse;
+        }).collect(Collectors.toList());
     }
 
     @Override

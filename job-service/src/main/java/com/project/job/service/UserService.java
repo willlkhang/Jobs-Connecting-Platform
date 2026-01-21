@@ -1,7 +1,6 @@
-package com.project.booking.service;
+package com.project.job.service;
 
 import com.project.base.domain.User;
-
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
