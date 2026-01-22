@@ -1,13 +1,5 @@
 @import "tailwindcss";
-
-//header and footer group
-@import "./../components/header/header.scss";
-
-//components group
-@import "./components/button.scss";
-
-//banner group
-@import "./pages/home.scss";
+@import "./main.scss";
 
 * {
   margin: 0;
