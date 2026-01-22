@@ -6,24 +6,24 @@ import "./styles/global.scss";
 
 export default function Home() {
 
-  const [data, setData] = useState([]);
+  const [dataSolutions, setDataSolutions] = useState([]);
   const [loading, setLoading] = useState(false); 
 
   const getApi = async () => {
     try{
       setLoading(true);
       const result = await fetch(
-        "https://houze-portal-api.houze.io/portal/project-developers?limit=12"
+        "http://170.64.179.146:8060/api/job/solutions"
       );
 
       if(!result.ok) {
         throw new Error(`API Error: ${result.status}`);
       }
 
-      const dataProject = await result.json();
-      console.log("dataProject", dataProject);
+      const res = await result.json();
+      console.log("dataProject", res);
 
-      setData(dataProject.result ?? []);
+      setDataSolutions(res ?? []);
     } catch(error) {
       console.log("Fetch Failed ", error);
     } finally {
@@ -34,6 +34,10 @@ export default function Home() {
   useEffect(() => {
     getApi();
   }, []);
+
+  useEffect(() => {
+    console.log("check", dataSolutions.length);
+  }, [dataSolutions]);
 
   return (
     <div className="content-page">
