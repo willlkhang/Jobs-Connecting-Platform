@@ -35,6 +35,10 @@ export default function Home() {
     getApi();
   }, []);
 
+  useEffect(() => {
+    console.log("check", dataSolutions.length);
+  }, [dataSolutions]);
+
   return (
     <div className="content-page">
       
