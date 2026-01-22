@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: job-service
+  config:
+    import: configserver:${CONFIG_SERVER_URL:http://localhost:8088/}
+
+  kafka:
+    consumer:
+      properties:
+        spring.json.trusted.packages: "*"
