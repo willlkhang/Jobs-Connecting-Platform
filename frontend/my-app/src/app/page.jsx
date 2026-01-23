@@ -53,7 +53,7 @@ export default function Home() {
         <div className="caption-home-banner">
           <h1>All Solutions you need are here</h1>
           <p>Your go-to hub for professional jobs and everyday solutions</p>
-          <a href="" className="btn btn-ghost"> {/*get back to this later*/}
+          <a href="" className="my-btn my-btn-ghost"> {/*get back to this later*/}
             Search Job
           </a>
         </div>
@@ -86,7 +86,7 @@ export default function Home() {
                   <div className="solution-top">
                     <div className="solution-thumbnail-top">
                       <img src={
-                        dataSolutions[0].imageUrl ?? "/solutions/error.png"
+                        dataSolutions[11].imageUrl ?? "/solutions/error.png"
                       } 
                       alt="Error" 
                       // width={300}
@@ -95,23 +95,104 @@ export default function Home() {
                     </div>
                     <div className="solution-content">
                       <h3 className="solution-name">
-                        {dataSolutions[0].solutionName ?? ""}{" "}
+                        {dataSolutions[11].solutionName ?? ""}{" "}
                       </h3>
                       <p className="solution-description">
-                        {dataSolutions[0].description ?? ""}
+                        {dataSolutions[11].description ?? ""}
                       </p>
                       <p>
-                        <label className="me-2" htmlFor="price">
+                        <label className="me-2" htmlFor="generic-box">
                           Price:{" "}
                         </label>
                         <i className="fa-solid fa-dollar-sign"></i>
-                        <span className="price">
-                          <b>{dataSolutions[0].price ?? ""}</b>
+                        <span className="generic-box">
+                          <b>{dataSolutions[11].price ?? ""}</b>
                         </span>
                       </p>
+                      <p>
+                        <label className="me-2" htmlFor="generic-box">
+                          Sold:{" "}
+                        </label>
+                        <i className="fa-solid fa-dollar-sign"></i>
+                        <span className="generic-box">
+                          <b>{dataSolutions[11].processedNumber ?? ""}</b>
+                        </span>
+                      </p>
+                      <p>
+                        <label className="me-2" htmlFor="generic-box">
+                          Provider:{" "}
+                        </label>
+                        <i className="fa-solid fa-dollar-sign"></i>
+                        <span className="generic-box">
+                          <b>Update Later</b>
+                        </span>
+                      </p>
+                      <div className="category-tags">
+                        {dataSolutions[11].categories?.map((object, index) => (
+                          <div className="tag" key={index}>
+                            {object.categoryName}
+                          </div>
+                        ))}
+                      </div>
                     </div>
                   </div>
                 </div>
+                {[1, 2, 3].map((i) => (
+                  <div key={i} className="col-lg-4 col-md-6 col-xs-12">
+                    <Link
+                      className="solution-item"
+                      href={`/solutions/${dataSolutions[i].solutionId}`}
+                    >
+                      <div className="solution-thumbnail">
+                        <img 
+                        src={dataSolutions[i].imageUrl ?? "/solutions/error.png"} 
+                        alt="Error" />
+                      </div>
+                      <div className="solution-content">
+                        <h3 className="solution-name">
+                          {dataSolutions[i].solutionName ?? ""}{" "}
+                        </h3>
+                        <p className="solution-description">
+                          {dataSolutions[i].description ?? ""}
+                        </p>
+                        <p>
+                          <label className="me-2" htmlFor="generic-box">
+                            Price:{" "}
+                          </label>
+                          <i className="fa-solid fa-dollar-sign"></i>
+                          <span className="generic-box">
+                            <b>{dataSolutions[i].price ?? ""}</b>
+                          </span>
+                        </p>
+                        <p>
+                          <label className="me-2" htmlFor="generic-box">
+                            Sold:{" "}
+                          </label>
+                          <i className="fa-solid fa-dollar-sign"></i>
+                          <span className="generic-box">
+                            <b>{dataSolutions[i].processedNumber ?? ""}</b>
+                          </span>
+                        </p>
+                        <p>
+                          <label className="me-2" htmlFor="generic-box">
+                            Provider:{" "}
+                          </label>
+                          <i className="fa-solid fa-dollar-sign"></i>
+                          <span className="generic-box">
+                            <b>Update Later</b>
+                          </span>
+                        </p>
+                        <div className="category-tags">
+                          {dataSolutions[i].categories?.map((object, index) => (
+                            <div className="tag" key={index}>
+                              {object.categoryName}
+                            </div>
+                          ))}
+                        </div>
+                      </div>
+                    </Link>
+                  </div>
+                ))}
               </div>
             ) : (
               <div></div>

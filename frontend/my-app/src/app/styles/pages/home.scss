@@ -1,0 +1,133 @@
+.home-solutions {
+    
+    .solution-top {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 24px;
+
+        .solution-thumbnail-top {
+            width: 50%;
+            img {
+                width: 100%;
+                display: block;
+                height: 374px;
+                -o-object-fit: cover;
+                object-fit: cover;
+                border-radius: 8px;
+                border: 1px solid #eee;
+            }
+        }
+
+        .solution-content {
+            width: 50%;
+            padding-left: 24px;
+
+            .solution-status {
+                background-color: #ffd200;
+                color: #171717;
+            }
+
+            .comming-status {
+                display: inline-block;
+                font-size: 12px;
+                line-height: 18px;
+                padding: 6px 12px;
+                border-radius: 8px;
+                text-transform: uppercase;
+                font-weight: 700;
+            }
+
+            small {
+                font-size: 12px;
+                font-weight: 400;
+                text-transform: none;
+                margin-left: 5px;
+                border-left: 1px solid #b2b2b2;
+                padding-left: 5px;
+            }
+
+            h3 {
+                color: #373737;
+                font-size: 24px;
+                line-height: 36px;
+                font-weight: 700;
+                margin-top: 32px;
+                margin-bottom: 4px;
+                transition: all 0.3s;
+                &:hover {
+                color: #6100d2;
+                }
+            }
+
+            .solution-name {
+                font-family: "Rowdies", sans-serif;
+            }
+
+            .solution-description {
+                display: block;
+                font-size: 16px;
+                line-height: 21px;
+                color: #212020;
+                font-style: italic;
+                padding-bottom: 20px;
+                margin-bottom: 20px;
+                position: relative;
+                &::after {
+                    content: "";
+                    position: absolute;
+                    top: 50px;
+                    left: 0;
+                    background-color: #eaeaea;
+                    width: 100%;
+                    height: 2px;
+                }
+            }
+
+            .generic-box {
+                margin-bottom: 20px;
+            }
+
+            .category-tags {
+                display: flex;
+                flex-wrap: flex;
+                gap: 8px;
+
+                .tag {
+                    padding: 4px 10px;
+                    font-size: 15px;
+                    line-height: 1.4;
+                    border-radius: 999px; //pill shape
+                    background-color: #f1f3f5;
+                    color: #333;
+                    white-space: nowrap; 
+
+                    transition: all 0.2s ease;
+                    cursor: pointer;
+
+                    &:hover {
+                        background-color: #989ccb;
+                    }
+                }
+            }
+        }
+    }
+    .solution-item {
+        text-decoration: none;
+        font-weight: 500;
+        color: #212020;
+        width: 100%;
+        display: block;
+
+        .solution-thumbnail {
+            position: relative; 
+            width: 100%;
+            margin-bottom: 12px;
+            border: 1px solid #eaeaea;
+            border-radius: 8px;
+            overflow: hidden;
+            transition: all 0.2s;
+            aspect-ratio: 16 / 9;
+        }
+    }
+}
