@@ -17,8 +17,8 @@ const Header = () => {
           </div>
         </div>
         <div className="group-right">
-          <button className='btn btn-primary'>Login</button>
-          <button className='btn btn-solid'>Sign up</button>
+          <button className='my-btn my-btn-primary'>Login</button>
+          <button className='my-btn my-btn-solid'>Sign up</button>
         </div>
       </div>
     </div>

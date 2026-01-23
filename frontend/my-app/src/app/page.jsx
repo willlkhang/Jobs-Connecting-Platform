@@ -2,7 +2,8 @@
 
 import { useEffect, useState } from "react";
 import Image from "next/image"
-import "./styles/global.scss";
+import "bootstrap/dist/css/bootstrap.min.css";
+import Link from "next/link";
 
 export default function Home() {
 
@@ -88,14 +89,26 @@ export default function Home() {
                         dataSolutions[0].imageUrl ?? "/solutions/error.png"
                       } 
                       alt="Error" 
+                      // width={300}
+                      // height={200}
                       />
                     </div>
                     <div className="solution-content">
-                      <h3>
-                        <p className="solution-description">
-                          {dataSolutions[0].description ?? ""}
-                        </p>
+                      <h3 className="solution-name">
+                        {dataSolutions[0].solutionName ?? ""}{" "}
                       </h3>
+                      <p className="solution-description">
+                        {dataSolutions[0].description ?? ""}
+                      </p>
+                      <p>
+                        <label className="me-2" htmlFor="price">
+                          Price:{" "}
+                        </label>
+                        <i className="fa-solid fa-dollar-sign"></i>
+                        <span className="price">
+                          <b>{dataSolutions[0].price ?? ""}</b>
+                        </span>
+                      </p>
                     </div>
                   </div>
                 </div>
