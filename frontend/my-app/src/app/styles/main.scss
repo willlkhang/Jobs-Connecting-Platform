@@ -1,11 +1,12 @@
 //header and footer group
 @use "./../components/header/header.scss";
+@use "./../components/footer/footer.scss"; 
+@use "./../components/pillSliderCategory/PillSliderCategory.scss";
 
 //components group
 @use "./components/button.scss";
 
-//banner group
-@use "./pages/bannerhome.scss";
-
 //Home elements group
-@use "./pages/home.scss";
+@use "./pages/solutionhome.scss"; //solutoin information
+@use "./pages/bannerhome.scss"; // banner
+@use "./pages/categoryhome.scss";

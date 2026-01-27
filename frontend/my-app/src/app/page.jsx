@@ -5,6 +5,8 @@ import Image from "next/image"
 import "bootstrap/dist/css/bootstrap.min.css";
 import Link from "next/link";
 
+import CategorySlider from "./components/pillSliderCategory/pillSilderCategory";
+
 export default function Home() {
 
   const [dataSolutions, setDataSolutions] = useState([]);
@@ -58,23 +60,12 @@ export default function Home() {
           </a>
         </div>
       </div>
-      {/* <div>
-        {!loading && dataSolutions && dataSolutions.length > 0 ? (
-          <>
-            {dataSolutions.map((object, i) => (
-              <div key={i}>
-                <p>{object.solutionName ?? ""}</p>
-              </div>
-            ))}
-          </>
-        ) : (
-          <>
-            <p>No solutions found (or loading...)</p>
-          </>
-        )}
-      </div> */}
 
-      
+      <div className="home-categories">
+        <h2 className="mb-4">Solution Categories</h2>
+        <CategorySlider />
+      </div>
+
       <div className="home-solutions">
         <div className="container">
           <h1>Popular Solutions</h1>
@@ -85,12 +76,12 @@ export default function Home() {
                 <div className="col-md-12">
                   <div className="solution-top">
                     <div className="solution-thumbnail-top">
-                      <img src={
+                      <Image src={
                         dataSolutions[11].imageUrl ?? "/solutions/error.png"
                       } 
                       alt="Error" 
-                      // width={300}
-                      // height={200}
+                      width={300}
+                      height={200}
                       />
                     </div>
                     <div className="solution-content">
@@ -136,8 +127,9 @@ export default function Home() {
                       </div>
                     </div>
                   </div>
+
                 </div>
-                {[1, 2, 3].map((i) => (
+                {[5, 6, 7].map((i) => (
                   <div key={i} className="col-lg-4 col-md-6 col-xs-12">
                     <Link
                       className="solution-item"

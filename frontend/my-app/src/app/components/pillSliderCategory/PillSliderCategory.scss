@@ -1,0 +1,54 @@
+.cateogry-slider-wrapper {
+  width: 100%;
+  padding: 20px 0;
+
+  .slick-list {
+    padding: 0 10px;
+  }
+
+  .category-slide-item {
+    margin-right: 12px;
+    outline: none;
+  }
+
+  .category-pill {
+    display: flex; 
+    align-items: center;
+    gap: 16px;
+
+    background-color: #f1f1f1;
+    padding: 10px 16px;
+    border-radius: 999px;
+
+    cursor: pointer;
+    transition: all 0.2s ease;
+  
+    .category-icon {
+      font-size: 25px;
+    }
+
+    &:hover {
+      background-color: #e2e2e2;
+      transform: translateY(-1px);
+    }
+  }
+
+  .slick-prev, .slick-next {
+    width: 30px;
+    height: 30px;
+    z-index: 10;
+    
+    &::before {
+      color: #333; // Dark arrows instead of white
+      font-size: 24px;
+    }
+  }
+
+  .slick-prev { left: -10px; }
+  .slick-next { right: -10px; }
+  
+  .slick-disabled {
+    opacity: 0;
+    pointer-events: none;
+  }
+}
