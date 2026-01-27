@@ -1,6 +1,6 @@
 .cateogry-slider-wrapper {
   width: 100%;
-  padding: 20px 0;
+  padding: 20px 10px;
 
   .slick-list {
     padding: 0 10px;
@@ -8,7 +8,11 @@
 
   .category-slide-item {
     margin-right: 12px;
-    outline: none;
+    display: block;
+  }
+
+  .slick-slide {
+    margin-right: 12px;
   }
 
   .category-pill {

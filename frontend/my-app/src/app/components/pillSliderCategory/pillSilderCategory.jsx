@@ -30,7 +30,10 @@ export default function CategorySlider( {id} ) {
         slidesToShow: 1,
         slidesToScroll: 2,
         variableWidth: true, //pill slider
+        swipeToSlides: true,
+        swipe: true,
         arrow: true,
+        draggable: true
     };
     
     return (

@@ -1,7 +1,10 @@
 package com.project.user.service;
 
 import com.project.base.domain.User;
+import com.project.base.outputDto.UserResponse;
 import com.project.user.dto.UserSignUp;
+
+import java.util.List;
 
 public interface UserService {
 
@@ -12,4 +15,6 @@ public interface UserService {
 
     boolean isDuplicatedEmail(String email);
     boolean isDuplicatedUsername(String username);
+
+    List<UserResponse> getAllUsers();
 }

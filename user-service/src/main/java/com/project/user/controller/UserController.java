@@ -6,19 +6,27 @@ import com.project.base.domain.User;
 
 import com.project.user.dto.UserSignUp;
 
+import com.project.base.outputDto.UserResponse;
+
 import com.project.user.service.UserService;
 import com.project.user.service.RoleService;
+
+import com.project.user.mapper.UserMapper;
 
 import com.project.user.repository.UserRepository;
 import com.project.user.repository.RoleRepository;
 import com.project.user.repository.AllowedMethodRepository;
 
+import com.project.user.service.UserServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 //import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 
 import org.springframework.security.crypto.password.PasswordEncoder;
+
+import java.util.List;
+import java.util.stream.Collectors;
 
 @RestController
 public class UserController {
@@ -28,6 +36,8 @@ public class UserController {
     @Autowired
     UserRepository userRepository;
     @Autowired
+    UserMapper userMapper;
+    @Autowired
     RoleService roleService;
     @Autowired
     RoleRepository roleRepository;
@@ -36,6 +46,16 @@ public class UserController {
 
     @Autowired
     PasswordEncoder passwordEncoder;
+
+    @GetMapping("/all")
+    public ResponseEntity<?> getAllUsers() {
+        List<UserResponse> userEntities = userService.getAllUsers();
+
+        if (userEntities == null) {
+            return ResponseEntity.ok("There is not user stored in Data base");
+        }
+        return ResponseEntity.ok().body(userEntities);
+    }
 
     @GetMapping("/{id}")
     public ResponseEntity<User> getUserById(@PathVariable Long id) {
