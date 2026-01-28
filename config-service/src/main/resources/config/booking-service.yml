@@ -1,3 +1,7 @@
+spring:
+  profiles:
+    active: dev
+
 server:
   port: 8082
 
@@ -34,14 +38,6 @@ spring:
       hibernate.cache.use_query_cache: false
       hibernate.generate_statistics: false
 
----
-spring:
-  security:
-    oauth2:
-      resourceserver:
-        jwt:
-          issuer-uri: http://localhost:8086
-
 #config kafka
 ---
 spring:
@@ -62,3 +58,27 @@ spring:
       properties:
         spring.json.trusted.packages: "*"
         allow.auto.create.topics: false
+
+---
+#local development
+spring:
+  config:
+    activate:
+      on-profile: dev
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: http://192.168.8.200:8086
+
+---
+#vps production config
+spring:
+  config:
+    activate:
+      on-profile: prod
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: http://170.64.179.146:8060
