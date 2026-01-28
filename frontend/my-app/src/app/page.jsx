@@ -71,7 +71,7 @@ export default function Home() {
           <h1>Popular Solutions</h1>
           <p>Lists of high-demand solutions</p>
           {
-            dataSolutions.length > 4 ? (
+            dataSolutions.length >= 4 ? (
               <div className="row">
                 <div className="col-md-12">
                   <div className="solution-top">
@@ -136,7 +136,7 @@ export default function Home() {
                       href={`/solutions/${dataSolutions[i].solutionId}`}
                     >
                       <div className="solution-thumbnail">
-                        <img 
+                        <Image 
                         src={dataSolutions[i].imageUrl ?? "/solutions/error.png"} 
                         alt="Error" />
                       </div>
