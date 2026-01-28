@@ -126,7 +126,7 @@ services:
       - SPRING_DATASOURCE_URL=jdbc:postgresql://postgres:5432/thirdparty
       - EUREKA_CLIENT_SERVICEURL_DEFAULTZONE=http://discovery-service:8061/eureka/
 
-      - JWT_ISSUER_URI=http://170.64.179.146:8060
+      - JWT_ISSUER_URI=http://170.64.179.146:8086
 
       - SPRING_SECURITY_OAUTH2_RESOURCESERVER_JWT_JWK_SET_URI=http://authorization-service:8086/oauth2/jwks
 
@@ -152,7 +152,7 @@ services:
 
       - EUREKA_CLIENT_SERVICEURL_DEFAULTZONE=http://discovery-service:8061/eureka/
       - SPRING_SECURITY_OAUTH2_RESOURCESERVER_JWT_JWK_SET_URI=http://authorization-service:8086/oauth2/jwks
-      - JWT_ISSUER_URI=http://170.64.179.146:8060
+      - JWT_ISSUER_URI=http://170.64.179.146:8086
 
       - CONFIG_SERVER_URL=http://config-service:8088
       - SPRING_CLOUD_CONFIG_URI=http://config-service:8088
@@ -175,7 +175,7 @@ services:
       - SPRING_KAFKA_BOOTSTRAP_SERVERS=kafka:29092
       - EUREKA_CLIENT_SERVICEURL_DEFAULTZONE=http://discovery-service:8061/eureka/
       - SPRING_SECURITY_OAUTH2_RESOURCESERVER_JWT_JWK_SET_URI=http://authorization-service:8086/oauth2/jwks
-      - JWT_ISSUER_URI=http://170.64.179.146:8060
+      - JWT_ISSUER_URI=http://170.64.179.146:8086
       - CONFIG_SERVER_URL=http://config-service:8088
       - SPRING_CLOUD_CONFIG_URI=http://config-service:8088
       - SPRING_CONFIG_IMPORT=configserver:http://config-service:8088
@@ -197,7 +197,7 @@ services:
       - SPRING_KAFKA_BOOTSTRAP_SERVERS=kafka:29092
       - EUREKA_CLIENT_SERVICEURL_DEFAULTZONE=http://discovery-service:8061/eureka/
       - SPRING_SECURITY_OAUTH2_RESOURCESERVER_JWT_JWK_SET_URI=http://authorization-service:8086/oauth2/jwks
-      - JWT_ISSUER_URI=http://170.64.179.146:8060
+      - JWT_ISSUER_URI=http://170.64.179.146:8086
       - CONFIG_SERVER_URL=http://config-service:8088
       - SPRING_CLOUD_CONFIG_URI=http://config-service:8088
       - SPRING_CONFIG_IMPORT=configserver:http://config-service:8088
