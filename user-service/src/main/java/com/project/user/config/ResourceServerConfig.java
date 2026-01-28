@@ -21,7 +21,7 @@ public class ResourceServerConfig {
         http.csrf(csrf -> csrf.disable());
         http.authorizeHttpRequests(authorize ->
                 authorize
-                        .requestMatchers("/user/register").permitAll()
+                        .requestMatchers("/register").permitAll()
                         //.requestMatchers("/register/**").hasAuthority("USER")
                         //.requestMatchers("/get-user-role-by-username/**").permitAll()
                         .anyRequest().authenticated());
