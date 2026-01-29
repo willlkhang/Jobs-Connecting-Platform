@@ -5,6 +5,10 @@ import org.springframework.cloud.gateway.route.builder.RouteLocatorBuilder;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
+//import org.springframework.security.config.Customizer;
+//import org.springframework.security.config.web.server.ServerHttpSecurity;
+//import org.springframework.security.web.server.SecurityWebFilterChain;
+import org.springframework.http.HttpMethod;
 import org.springframework.web.cors.CorsConfiguration;
 import org.springframework.web.cors.reactive.CorsWebFilter;
 import org.springframework.web.cors.reactive.UrlBasedCorsConfigurationSource;
@@ -18,6 +22,10 @@ public class GatewayConfig {
     @Bean
     public RouteLocator routes(RouteLocatorBuilder builder) {
         return builder.routes()
+                .route("login-rewrite", r -> r.path("/login")
+                        .and().method(HttpMethod.POST)
+                        .filters(f -> f.rewritePath("/login", "/oauth2/token"))
+                        .uri("lb://authorization-service"))
                 .route("authorization-service", r -> r.path("/api/authen/**")
                         .filters(f -> f.stripPrefix(2))
                         .uri("lb://authorization-service"))
