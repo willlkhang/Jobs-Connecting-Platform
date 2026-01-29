@@ -26,7 +26,8 @@ public class FeignClientConfig {
 
             if (attributes != null) {
                 //extract authorization header (bearer token)
-                String authHeader = attributes.getRequest().getHeader("Authorization");
+                HttpServletRequest request = attributes.getRequest();
+                String authHeader = request.getHeader("Authorization");
 
                 //if token exists, attach it to feign request
                 if (authHeader != null) {
