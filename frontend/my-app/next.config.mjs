@@ -4,7 +4,7 @@ const nextConfig = {
     remotePatterns: [
       {
         protocol: 'https',
-        hostname: 'images.contentstack.io',
+        hostname: '**',
         port: '',
         pathname: '/**', // Allow all paths from this domain
       },

@@ -80,8 +80,8 @@ export default function Home() {
                         dataSolutions[11].imageUrl ?? "/solutions/error.png"
                       } 
                       alt="Error" 
-                      width={300}
-                      height={200}
+                      width={600} 
+                      height={374}
                       />
                     </div>
                     <div className="solution-content">
@@ -138,7 +138,9 @@ export default function Home() {
                       <div className="solution-thumbnail">
                         <Image 
                         src={dataSolutions[i].imageUrl ?? "/solutions/error.png"} 
-                        alt="Error" />
+                        alt="Error" 
+                        fill
+                        />
                       </div>
                       <div className="solution-content">
                         <h3 className="solution-name">
