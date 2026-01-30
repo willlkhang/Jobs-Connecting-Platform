@@ -1,12 +1,23 @@
-import React from 'react';
+"use client";
+import { redirect } from "next/navigation";
+import React from "react";
+import { useEffect, useState } from "react";
 
 const Header = () => {
+  const [hasToken, setHasToken] = useState(false);
+
+  useEffect(() => {
+    const token = localStorage.getItem("accessToken");
+    setHasToken(!!token);
+  }, []);
+
+  if (!hasToken) return null;
+
   return (
     <div className='header'>
 
       <div className="header-top">
         <div className="logo-group">
-          {/* <button className='btn-toggleMenu hide-desktop'>Button </button> */}
           <div className="block-center">
             <div className="logo">
               <a href="">
@@ -18,7 +29,15 @@ const Header = () => {
         </div>
         <div className="group-right">
           <button className='my-btn my-btn-primary'>Login</button>
-          <button className='my-btn my-btn-solid'>Sign up</button>
+          <button className='my-btn my-btn-solid'
+            onClick={() => {
+              localStorage.removeItem("accessToken");
+              localStorage.removeItem("user");
+              redirect("/login");
+            }}
+          >
+            Logout
+          </button>
         </div>
       </div>
     </div>

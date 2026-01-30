@@ -6,11 +6,17 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Link from "next/link";
 
 import CategorySlider from "./components/pillSliderCategory/pillSilderCategory";
+import { redirect } from "next/navigation";
+
 
 export default function Home() {
 
   const [dataSolutions, setDataSolutions] = useState([]);
-  const [loading, setLoading] = useState(false); 
+  const [loading, setLoading] = useState(false);
+
+  //login varibales groups
+  const [accessToken, setAccessToken] = useState();
+  const [user, setUsetr] = useState({});
 
   const getApi = async () => {
     try{
@@ -41,6 +47,23 @@ export default function Home() {
   useEffect(() => {
     console.log("check", dataSolutions.length);
   }, [dataSolutions]);
+
+  useEffect(() => {
+    const token = localStorage.getItem("accessToken");
+    const user = localStorage.getItem("user");
+
+    if (token) {
+      setAccessToken(token);
+    }
+
+    if (user) {
+      setUser(JSON.parse(user));
+    }
+
+    if (!token) {
+      redirect('/login');
+    }
+  }, []);
 
   return (
     <div className="content-page">

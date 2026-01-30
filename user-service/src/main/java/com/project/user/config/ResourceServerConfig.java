@@ -23,7 +23,7 @@ public class ResourceServerConfig {
                 authorize
                         .requestMatchers("/register").permitAll()
                         //.requestMatchers("/register/**").hasAuthority("USER")
-                        .requestMatchers("/all").permitAll()
+                        //.requestMatchers("/all").permitAll()
                         .requestMatchers("/{id}").permitAll()
                         .anyRequest().authenticated());
         http.oauth2ResourceServer(oauth2ResourceServer -> oauth2ResourceServer.jwt(Customizer.withDefaults()));
