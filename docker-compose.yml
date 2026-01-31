@@ -104,6 +104,8 @@ services:
       - config-service
       - postgres
     environment:
+      - SPRING_PROFILES_ACTIVE=prod
+
       - SPRING_DATASOURCE_URL=jdbc:postgresql://postgres:5432/thirdparty
       - EUREKA_CLIENT_SERVICEURL_DEFAULTZONE=http://discovery-service:8061/eureka/
 
