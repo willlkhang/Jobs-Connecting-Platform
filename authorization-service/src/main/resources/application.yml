@@ -3,5 +3,3 @@ spring:
     name: authorization-service
   config:
     import: configserver:${CONFIG_SERVER_URL:http://localhost:8088/}
-#  app:
-#    oauth-url: http://170.64.179.146:${server.port}/oauth2/token

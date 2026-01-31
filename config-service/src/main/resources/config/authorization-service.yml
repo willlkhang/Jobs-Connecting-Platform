@@ -33,6 +33,8 @@ spring:
       hibernate.cache.use_second_level_cache: false
       hibernate.cache.use_query_cache: false
       hibernate.generate_statistics: false
+  app:
+    oauth-url: http://localhost:${server.port}/oauth2/token
 
 security:
   client-id: ${CLIENT_ID:project}

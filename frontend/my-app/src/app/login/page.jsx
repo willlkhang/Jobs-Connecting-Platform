@@ -10,6 +10,8 @@ export default function LoginPage() {
     const [errors, setErrors] = useState({});
     const [loading, setLoading] = useState(false);
 
+    const clientCredentials = btoa("project:secret");
+
     const handleSubmit = async () => {
         if (loading) return;
 
@@ -33,6 +35,7 @@ export default function LoginPage() {
                 headers: { 
                 "Content-Type": "application/x-www-form-urlencoded",
                 "Accept": "application/json",
+                "Authorization": `Basic ${clientCredentials}`,
                 },
                 body: bodyParams.toString(),
             });
