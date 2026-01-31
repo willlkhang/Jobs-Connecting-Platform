@@ -41,3 +41,21 @@ security:
   client-secret: ${CLIENT_SECRET:secret}
   jwt:
     duration: ${JWT_DURATION:6000}
+
+---
+#local development
+spring:
+  config:
+    activate:
+      on-profile: dev
+  app:
+    oauth-url: http://192.168.8.200:${server.port}/oauth2/token
+
+---
+#vps production config
+spring:
+  config:
+    activate:
+      on-profile: prod
+  app:
+    oauth-url: http://170.64.179.146:${server.port}/oauth2/token

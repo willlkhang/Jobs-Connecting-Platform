@@ -22,10 +22,13 @@ public class AuthController {
 
     private final RestTemplate restTemplate = new RestTemplate();
 
-    @Value("${app.oauth-url}")
+    @Value("${spring.profiles.active}")
+    private String whoami;
+
+    @Value("${spring.app.oauth-url}")
     private String oauthTokenUrl;
 
-    @Value("${spring.security.oauth2.resourceserver.jwt.client-id:client}")
+    @Value("${spring.security.oauth2.resourceserver.jwt.client-id:project}")
     private String clientId;
 
     @Value("${spring.security.oauth2.resourceserver.jwt.client-secret:secret}")
@@ -34,6 +37,10 @@ public class AuthController {
     @Autowired
     private AllowedMethodService allowedMethodService;
 
+    @GetMapping("/test")
+    public ResponseEntity<?> test(){
+        return ResponseEntity.ok(whoami); //test print value from yml properties
+    }
 
     @PostMapping("/login")
     public ResponseEntity<?> login(@RequestBody LoginRequest request) {
