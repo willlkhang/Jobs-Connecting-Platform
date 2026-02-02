@@ -100,7 +100,7 @@ export default function Home() {
                   <div className="solution-top">
                     <div className="solution-thumbnail-top">
                       <Image src={
-                        dataSolutions[11].imageUrl ?? "/solutions/error.png"
+                        dataSolutions[11].imageUrl ?? "/error/error.png"
                       } 
                       alt="Error" 
                       width={600} 

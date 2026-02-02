@@ -2,6 +2,7 @@
 
 import { redirect } from "next/navigation";
 import { useState } from "react";
+import Image from "next/image"
 
 export default function LoginPage() {
   
@@ -23,39 +24,36 @@ export default function LoginPage() {
         }
         setLoading(true);
 
+        //prepare Basic authen profiles
         try {
-            //prepare data format for x-www-form-urlencoded
-            const bodyParams = new URLSearchParams();
-            bodyParams.append("username", username);
-            bodyParams.append("password", password);
-            bodyParams.append("grant_type", "password");
+                const loginData = {
+                    username: username,
+                    password: password,
+                    grant_type: "password"
+                };
 
-            const result = await fetch("http://170.64.179.146:8060/login", {
+            const result = await fetch("http://170.64.179.146:8060/api/authen/login", {
                 method: "POST",
                 headers: { 
-                "Content-Type": "application/x-www-form-urlencoded",
-                "Accept": "application/json",
-                "Authorization": `Basic ${clientCredentials}`,
+                    //convert content-type to application/json
+                    "Content-Type": "application/json",
+                    "Accept": "application/json",
+                    "Authorization": `Basic ${clientCredentials}`,
                 },
-                body: bodyParams.toString(),
+                //make stringify data to json body
+                body: JSON.stringify(loginData),
             });
-
-            //console.log("result.status", result.status);
 
             if (result.ok) {
                 const res = await result.json();
-                console.log("res", res);
-
-                localStorage.setItem("accessToken", res.access_token);
-
-                window.location.href = "/";
-
+                localStorage.setItem("accessToken", res.access_token); // store token access to local storage, however, this token has expired time
+                window.location.href = "/"; //redirection to home page
             } else {
                 setErrors({ general: "Invalid username or password" });
             }
         } catch(e) {
-            console.log("Fetch Error:", e);
-            setErrors({ general: "Network error. Please try again later." });
+            console.error("Fetch Error:", e);
+            setErrors({ general: "Network error. Please check your connection or CORS settings." });
         } finally {
             setLoading(false);
         }
@@ -70,6 +68,13 @@ export default function LoginPage() {
 
     return (
         <div className="login-container">
+            <div className="login-banner">
+                <Image
+                    src={ "/login/banner.png" }
+                    alt={ "/error/error.png" }
+                    fill
+                />
+            </div>
             <div className="login-card">
                 <div className="login-header">
                     <h1>Login</h1>
@@ -81,23 +86,25 @@ export default function LoginPage() {
                 <div className="login-form">
                     <div className="input-group">
                         <input
-                        type="text"
-                        placeholder="Username"
-                        value={username}
-                        onChange={(e) => setUsername(e.target.value)}
-                        className={errors.username ? "input-error" : ""}
+                            type="text"
+                            placeholder="Username"
+                            value={username}
+                            onChange={(e) => setUsername(e.target.value)}
+                            className={errors.username ? "input-error" : ""}
                         />
+
                         {errors.username && <span className="error-text">{errors.username}</span>}
                     </div>
 
-                    <div className="input-group">
+                   <div className="input-group">
                         <input
-                        type="password"
-                        placeholder="Password"
-                        value={password}
-                        onChange={(e) => setPassword(e.target.value)}
-                        className={errors.password ? "input-error" : ""}
+                            type="password"
+                            placeholder="Password"
+                            value={password}
+                            onChange={(e) => setPassword(e.target.value)}
+                            className={errors.password ? "input-error" : ""}
                         />
+
                         {errors.password && <span className="error-text">{errors.password}</span>}
                     </div>
 
@@ -108,11 +115,13 @@ export default function LoginPage() {
                     >
                         {loading ? "Processing..." : "Login"}
                     </button>
-                </div>
 
-                <div className="login-footer">
-                    Do not have an account? <span>Reset password</span>
-                </div>
+                    <div className="login-footer">
+                        Do not have an account?
+                        <span>Reset Password</span>
+                    </div>
+
+                </div>  
             </div>
         </div>
     );
