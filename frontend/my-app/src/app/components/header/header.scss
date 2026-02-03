@@ -21,7 +21,7 @@
 
         .logo-group {
             display: flex;
-            align-items: flex-end;
+            align-items: center;
 
             .block-center {
                 display: flex;
@@ -38,12 +38,22 @@
                     }
                 }
 
-                .slogan {
-                    font-size: 20px;
-                    font-weight: 600;
-                    font-style: italic;
-                    color: black;
-                    margin-left: 10px;
+                // .slogan {
+                //     font-size: 20px;
+                //     font-weight: 600;
+                //     font-style: italic;
+                //     color: black;
+                //     margin-left: 10px;
+                // }
+
+                .search-bar-wrapper { 
+                    flex: 1; // Grow to fill all available space
+                    margin: 0 40px; // Extra breathing room on sides
+                    width: 100%;
+                    max-width: 100%;
+                    // Center it if the screen is huge
+                    margin-left: auto;
+                    margin-right: auto;
                 }
             }
         }

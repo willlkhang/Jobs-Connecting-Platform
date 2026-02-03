@@ -60,9 +60,10 @@ export default function Home() {
       setUser(JSON.parse(user));
     }
 
-    if (!token) {
-      redirect('/login');
-    }
+    // //this part is for test onlys
+    // if (!token) {
+    //   redirect('/login');
+    // }
   }, []);
 
   return (

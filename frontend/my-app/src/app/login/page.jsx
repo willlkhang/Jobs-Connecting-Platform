@@ -70,7 +70,7 @@ export default function LoginPage() {
         <div className="login-container">
             <div className="login-banner">
                 <Image
-                    src={ "/login/banner.png" }
+                    src={ "/login/banner.png" ??  "/error/error.png" }
                     alt={ "/error/error.png" }
                     fill
                 />
@@ -117,8 +117,7 @@ export default function LoginPage() {
                     </button>
 
                     <div className="login-footer">
-                        Do not have an account?
-                        <span>Reset Password</span>
+                        Do not have an account? <span>Reset Password</span>
                     </div>
 
                 </div>  

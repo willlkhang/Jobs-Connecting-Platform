@@ -10,16 +10,16 @@ import Image from "next/image";
 import "./PillSliderCategory.scss";
 
 const categories = [
-    { name: "Fast Food", icon: "🍟" },
-    { name: "Burgers", icon: "🍔" },
-    { name: "Deals", icon: "🏷️" },
-    { name: "Sushi", icon: "🍣" },
-    { name: "Healthy", icon: "🥗" },
-    { name: "Asian", icon: "🍜" },
-    { name: "Chicken", icon: "🍗" },
-    { name: "Breakfast", icon: "🥞" },
-    { name: "Mexican", icon: "🌮" },
-    { name: "Pizza", icon: "🍕" },
+    { name: "Information Technology", icon: "💻" },
+    { name: "Cooking", icon: "🍳" },
+    { name: "Handiworks", icon: "🛠️" },
+    { name: "Plumbing", icon: "🪠" },
+    { name: "Electricity", icon: "⚡" },
+    { name: "Cleaning", icon: "🧹" },
+    { name: "Education", icon: "🎓" },
+    { name: "Well Being", icon: "🧘" },
+    { name: "Health", icon: "⚕️" },
+    { name: "Accounting", icon: "📊" }
 ];
 
 export default function CategorySlider( {id} ) {
@@ -30,6 +30,7 @@ export default function CategorySlider( {id} ) {
         slidesToShow: 1,
         slidesToScroll: 2,
         variableWidth: true, //pill slider
+        
         swipeToSlides: true,
         swipe: true,
         arrow: true,
