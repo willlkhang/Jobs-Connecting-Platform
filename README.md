@@ -39,7 +39,7 @@
 ---
 
 # Database
-
+![Jobs_Connecting_Platform.png](note/Jobs_Connecting_Platform.png)
 
 ---
 
