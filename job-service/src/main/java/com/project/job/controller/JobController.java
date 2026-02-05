@@ -34,6 +34,11 @@ public class JobController {
     private CategoryService categoryService;
 
     @GetMapping("/solutions")
+    public ResponseEntity<?> test() {
+        return null;
+    }
+
+    @GetMapping("/solutions")
     public ResponseEntity<?> getAllSolutions() {
         List<SolutionResponse> solutionList = solutionService.getAllSolution();
         if(solutionList == null) {
