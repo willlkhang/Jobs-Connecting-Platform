@@ -1,2 +1,4 @@
 gguf_model_scratch_fixed/
 unsloth_compiled_cache/
+
+__pycache__/

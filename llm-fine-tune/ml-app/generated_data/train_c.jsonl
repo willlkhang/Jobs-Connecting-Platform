@@ -1,0 +1,1372 @@
+{"input": "The requests must sound like REAL customers (some angry, some polite, some urgent, some short, some detailed).", "output": "Handiworks"}
+{"input": "I'm trying to reset my password, but the system is not accepting my new password.", "output": "Information Technology"}
+{"input": "My son is interested in learning piano; can you find a teacher who can give him lessons?", "output": "Education"}
+{"input": "The bathroom grout is stained, could you clean it for me?", "output": "Cleaning"}
+{"input": "I'm feeling very weak and need someone to check my blood pressure, can you help?", "output": "Health"}
+{"input": "I'm looking for a coding lesson for my daughter; she wants to learn Python.", "output": "Education"}
+{"input": "I'm looking for a professional to install a new ceiling fan in my study.", "output": "Electricity"}
+{"input": "The water pressure in my shower is so low, it's almost unusable.", "output": "Plumbing"}
+{"input": "Looking for a chef who can cater to a group with specific dietary needs for a fundraiser.", "output": "Cooking"}
+{"input": "The Wi-Fi on my desktop computer is not working, even though it's plugged in.", "output": "Information Technology"}
+{"input": "The requests must sound like REAL customers (some angry, some polite, some urgent, some short, some detailed).", "output": "Well Being"}
+{"input": "My kitchen outlet stopped working out of the blue, and I'm worried about the food in the fridge.", "output": "Electricity"}
+{"input": "I'm having trouble with the installation of a new software suite on my laptop.", "output": "Information Technology"}
+{"input": "My son needs help with his essay; can you recommend a tutor who can help him improve his writing skills?", "output": "Education"}
+{"input": "I'm looking for a chef who can cater to a group with diverse dietary preferences for a charity event.", "output": "Cooking"}
+{"input": "I'm feeling very anxious about my health, can you come over to help?", "output": "Health"}
+{"input": "I need help with my Spanish homework; can you recommend a tutor?", "output": "Education"}
+{"input": "My fence gate is stuck, can you fix it?", "output": "Handiworks"}
+{"input": "I've got a lot of laundry and need a service that can handle it quickly.", "output": "Cleaning"}
+{"input": "I need a service to help me with my bookkeeping and accounting.", "output": "Accounting"}
+{"input": "My garage door opener stopped working; I suspect it's an electrical issue.", "output": "Electricity"}
+{"input": "My son is interested in learning piano; can you find a teacher who can give him lessons?", "output": "Education"}
+{"input": "I'm in a rush; I need someone to prep meals for my family for the next two weeks.", "output": "Cooking"}
+{"input": "The paint on my fence is chipping, can you repaint it?", "output": "Handiworks"}
+{"input": "I'm looking for a coding lesson for my daughter; she wants to learn JavaScript.", "output": "Education"}
+{"input": "My bathroom light keeps flickering, and I'm concerned it might be an electrical issue.", "output": "Electricity"}
+{"input": "I'm looking for a coding lesson for my daughter; she wants to learn JavaScript.", "output": "Education"}
+{"input": "I'm having trouble with the installation of a new software suite on my laptop.", "output": "Information Technology"}
+{"input": "I'm having trouble with the Wi-Fi on my laptop; it connects but doesn't stay connected.", "output": "Information Technology"}
+{"input": "I'm moving out and need a professional to clean my entire apartment.", "output": "Cleaning"}
+{"input": "I require a service to help me with my company's audit assistance.", "output": "Accounting"}
+{"input": "I'm planning to buy an electric vehicle and need to install a charging station at home.", "output": "Electricity"}
+{"input": ":00:20.000 --> 00:00:22.000", "output": "Cooking"}
+{"input": "I need a chef who can bake a custom wedding cake with a specific flavor profile.", "output": "Cooking"}
+{"input": "I'm looking for an electrician to fix the outlet in my home office.", "output": "Electricity"}
+{"input": "My door handle is wobbly, can you fix it?", "output": "Handiworks"}
+{"input": "My aunt needs assistance with her daily activities, can you provide help?", "output": "Health"}
+{"input": "My garage door opener stopped working; I suspect it's an electrical issue.", "output": "Electricity"}
+{"input": "I need a meditation coach who can help me with insomnia.", "output": "Well Being"}
+{"input": "My son is interested in learning piano; can you find a teacher who can give him lessons?", "output": "Education"}
+{"input": "The driveway is a mess after the storm, can you power wash it?", "output": "Cleaning"}
+{"input": "The paint on my fence is chipping, can you repaint it?", "output": "Handiworks"}
+{"input": "The windows in my bedroom are filthy, could you clean them for me?", "output": "Cleaning"}
+{"input": "The bathroom grout is stained, could you clean it for me?", "output": "Cleaning"}
+{"input": "The flickering lights in my dining room are driving me crazy; I need a solution.", "output": "Electricity"}
+{"input": "Please find a chef who can offer a personalized meal prep service for a family with picky eaters.", "output": "Cooking"}
+{"input": "I'm struggling to get my application to run on the server.", "output": "Information Technology"}
+{"input": "I'm trying to build a new feature for our app, but I'm stuck on the implementation.", "output": "Information Technology"}
+{"input": "Do NOT number the list.", "output": "Accounting"}
+{"input": "I need someone to assemble a new bookshelf.", "output": "Handiworks"}
+{"input": "I've lost access to my cloud storage, and I need to retrieve my files.", "output": "Information Technology"}
+{"input": "I've got a clogged drain in my bathroom, and I'm not sure how to clear it.", "output": "Plumbing"}
+{"input": "My apartment is a mess after the party, can you clean it up?", "output": "Cleaning"}
+{"input": "Please find a chef who can offer a personalized meal prep service for busy professionals.", "output": "Cooking"}
+{"input": "I'm looking for a professional to paint my fence.", "output": "Handiworks"}
+{"input": "The windows in my living room are filthy, could you clean them for me?", "output": "Cleaning"}
+{"input": "I'm looking for a chef who can cater to a group with diverse dietary preferences for a charity event.", "output": "Cooking"}
+{"input": "I require a chef who can prepare a vegan and gluten-free menu for a bridal shower.", "output": "Cooking"}
+{"input": "Do not use the category name in the request (e.g., don't say I need plumbing, say my pipe burst).", "output": "Accounting"}
+{"input": "My son is interested in learning piano; can you find a teacher who can give him lessons?", "output": "Education"}
+{"input": "I require a service to help me with my company' house's financial statements.", "output": "Accounting"}
+{"input": "I've lost access to my cloud storage, and I need to retrieve my files.", "output": "Information Technology"}
+{"input": "I'm looking for an electrician to fix the light switch in my hallway.", "output": "Electricity"}
+{"input": "I'm looking for an electrician to fix the light switch in my hallway.", "output": "Electricity"}
+{"input": "The flickering lights in my dining room are driving me crazy; I need a solution.", "output": "Electricity"}
+{"input": "My fence gate is squeaky, can you oil the hinges?", "output": "Handiworks"}
+{"input": "The driveway is a mess after the storm, can you power wash it?", "output": "Cleaning"}
+{"input": "I need a handyman to fix my fence gate.", "output": "Handiworks"}
+{"input": "Context keywords to inspire you: laptop won't turn on, building web, building application, building software, wifi broken, server crash, screen, printer offline, install software, recover files, virus removal, coding help, password reset", "output": "Information Technology"}
+{"input": "I need assistance with my company's payroll help.", "output": "Accounting"}
+{"input": "Looking for a chef who can cater to a group with specific dietary needs for a fundraiser.", "output": "Cooking"}
+{"input": "I'm having trouble with the installation of a new software tool on my workstation.", "output": "Information Technology"}
+{"input": "My printer is not responding to print commands from my computer.", "output": "Information Technology"}
+{"input": "I'm moving out and need a professional to clean my entire apartment.", "output": "Cleaning"}
+{"input": "I need to install a new outlet in my garage for a workshop.", "output": "Electricity"}
+{"input": "I need help with my SAT prep; can you recommend a tutor who can help me with the critical reading section?", "output": "Education"}
+{"input": "Output ONLY the requests, one per line.", "output": "Health"}
+{"input": "The fuse in my garage blown again, and I'm tired of replacing them.", "output": "Electricity"}
+{"input": "I need assistance with my company's payroll help.", "output": "Accounting"}
+{"input": "I'm in need of a chef who can handle a last-minute request for a corporate event dinner.", "output": "Cooking"}
+{"input": "I've lost access to my cloud storage, and I need to retrieve my files.", "output": "Information Technology"}
+{"input": "I'm looking for a chef who can cater to a group with specific dietary needs for a fundraiser.", "output": "Cooking"}
+{"input": "My computer is running a virus scan, but it's taking longer than expected.", "output": "Information Technology"}
+{"input": "The paint on my hallway wall is peeling off, can you touch it up?", "output": "Handiworks"}
+{"input": "I'm looking for a private chef who can create a themed dinner party menu.", "output": "Cooking"}
+{"input": "Context keywords to inspire you: private chef needed, baking cakes, meal prep for week, catering for party, vegan menu, teaching how to cook, food delivery for event, baking lessons, dietary restrictions", "output": "Cooking"}
+{"input": "I'm looking for an English teacher who can help my son with his grammar.", "output": "Education"}
+{"input": "I'm having trouble with the installation of a new software suite on my laptop.", "output": "Information Technology"}
+{"input": "Please repair the fence in my backyard, it's got a few cracks.", "output": "Handiworks"}
+{"input": "I'm looking for a chef who can provide a lesson on making gourmet pizzas.", "output": "Cooking"}
+{"input": "The web page I'm building keeps crashing when I try to add images.", "output": "Information Technology"}
+{"input": "My fence needs a new coat of paint, it's looking old.", "output": "Handiworks"}
+{"input": "My father needs help with his medication schedule, can you assist?", "output": "Health"}
+{"input": "I require a chef who can handle a last-min0min request for a family reunion dinner.", "output": "Cooking"}
+{"input": "My father is having trouble with his diabetes management, can you provide guidance?", "output": "Health"}
+{"input": "I've lost access to my cloud storage, and I need to retrieve my files.", "output": "Information Technology"}
+{"input": "I've lost access to my email account; can you help me reset my password?", "output": "Information Technology"}
+{"input": "I'm looking for a reliable laundry service to handle my weekly wardrobe.", "output": "Cleaning"}
+{"input": "I'm trying to build a new feature for our app, but I'm stuck on the implementation.", "output": "Information Technology"}
+{"input": "My wall paint is chipping, can you repaint it?", "output": "Handiworks"}
+{"input": "The water heater in my garage is not heating water properly, what could be the issue?", "output": "Plumbing"}
+{"input": "Context keywords to inspire you: file taxes, bookkeeping for small business, audit assistance, financial planning, payroll help, quickbooks support, tax return, expense tracking", "output": "Accounting"}
+{"input": "I'm experiencing a slow drip from my faucet, but I'm not sure if it's serious.", "output": "Plumbing"}
+{"input": "I've got a clogged drain in my bathroom, it's been like this for days.", "output": "Plumbing"}
+{"input": "I'm experiencing frequent power surges; I need to get my electrical system checked.", "output": "Electricity"}
+{"input": "I require a chef who can prepare a vegan and gluten-free menu for a bridal shower.", "output": "Cooking"}
+{"input": "The requests must sound like REAL customers (some angry, some polite, some urgent, some short, some detailed).", "output": "Cooking"}
+{"input": "Do NOT number the list.", "output": "Cooking"}
+{"input": "I'm looking for a service to help me with my company's financial planning.", "output": "Accounting"}
+{"input": "I'm looking for a reliable electrician to install a ceiling fan in my bedroom.", "output": "Electricity"}
+{"input": "I need a math tutor for my daughter; she's having trouble with calculus.", "output": "Education"}
+{"input": "My apartment is a mess after the party, can you clean it up?", "output": "Cleaning"}
+{"input": "I need help with my SAT prep; can you recommend a tutor who can help me with the math section?", "output": "Education"}
+{"input": "Context keywords to inspire you: outlet not working, light switch broken, breaker keeps tripping, install ceiling fan, rewire house, flickering lights, install EV charger, fuse blown", "output": "Electricity"}
+{"input": "The faucet in my bathroom is dripping constantly, it's driving me crazy.", "output": "Plumbing"}
+{"input": "My computer is running a virus scan, but it's taking longer than expected.", "output": "Information Technology"}
+{"input": "I'm having trouble accessing the internet on my new device.", "output": "Information Technology"}
+{"input": "Do not start lines with I need every time. Vary the phrasing.", "output": "Cooking"}
+{"input": "I'm looking for a chef who can cater to a group with specific dietary needs for a fundraiser.", "output": "Cooking"}
+{"input": "The requests must sound like REAL customers (some angry, some polite, some urgent, some short, some detailed).", "output": "Accounting"}
+{"input": "I've forgotten my password and can't log in to my email account.", "output": "Information Technology"}
+{"input": ":00:20.000 --> 00:00:22.000", "output": "Cooking"}
+{"input": "Context keywords to inspire you: outlet not working, light switch broken, breaker keeps tripping, install ceiling fan, rewire house, flickering lights, install EV charger, fuse blown", "output": "Electricity"}
+{"input": "My carpet is full of pet hair, can you clean it thoroughly?", "output": "Cleaning"}
+{"input": "I've accidentally deleted a file from my computer; can you guide me through the recovery process?", "output": "Information Technology"}
+{"input": "I need a chef who can prepare a keto-friendly menu for a health retreat.", "output": "Cooking"}
+{"input": "The water heater in my garage is not heating water properly, what could be the issue?", "output": "Plumbing"}
+{"input": "I've got a small leak under my sink, but I'm not sure where it's coming from.", "output": "Plumbing"}
+{"input": "I'm looking for a professional to help me with my company's audit assistance.", "output": "Accounting"}
+{"input": "My computer'usted to build a new feature for our app, but I'm not sure how to proceed.", "output": "Information Technology"}
+{"input": "I'm looking for a quick clean-up service for my office before a client visit.", "output": "Cleaning"}
+{"input": "I need a chef who can prepare a specialized menu for a children's birthday party.", "output": "Cooking"}
+{"input": "I require a chef who can prepare a vegan and gluten-free menu for a bridal shower.", "output": "Cooking"}
+{"input": "I need someone to install a new fence gate.", "output": "Handiworks"}
+{"input": "The water heater in my garage is not heating water properly, what could be the issue?", "output": "Plumbing"}
+{"input": "My son needs help with his essay; can you recommend a tutor who can help him improve his writing skills?", "output": "Education"}
+{"input": "My fence gate is squeaky, can you oil the hinges?", "output": "Handiworks"}
+{"input": "I'm worried about a possible pipe burst in my basement, it's making a loud noise.", "output": "Plumbing"}
+{"input": "The outlet in my bedroom is not providing power to my laptop charger.", "output": "Electricity"}
+{"input": "Can you recommend a baking class that specializes in French pastries?", "output": "Cooking"}
+{"input": "I'm looking for a quick clean-up service for my office before a client visit.", "output": "Cleaning"}
+{"input": "I'm looking for an English teacher who can help my son with his public speaking.", "output": "Education"}
+{"input": "Can you recommend a life coach who specializes in career change?", "output": "Well Being"}
+{"input": "Can you suggest a mindfulness session for my daily routine?", "output": "Well Being"}
+{"input": "My father needs help with his post-surgery care, can you assist?", "output": "Health"}
+{"input": "Looking for a chef who can cater to a group with specific dietary needs for a fundraiser.", "output": "Cooking"}
+{"input": "I require a professional to help me with my company's financial planning.", "output": "Accounting"}
+{"input": "My bathroom light keeps flickering, and I'm concerned it might be an electrical issue.", "output": "Electricity"}
+{"input": "I need assistance with my payroll help, can you provide a solution?", "output": "Accounting"}
+{"input": ":00:12.000 --> 00:00:14.000", "output": "Cooking"}
+{"input": "I'm facing a cash flow problem, can you help me with financial planning?", "output": "Accounting"}
+{"input": "The driveway is covered in mud from the rain, can you power wash it?", "output": "Cleaning"}
+{"input": "My son is interested in learning piano; can you find a teacher who can give him lessons?", "output": "Education"}
+{"input": "I'm looking for a Spanish tutor who can help my son with his accent.", "output": "Education"}
+{"input": "I need a chef who can prepare a specialized menu for a children' house.", "output": "Cooking"}
+{"input": "I'm having trouble with my fence gate, it won't latch properly.", "output": "Handiworks"}
+{"input": "I'm searching for a chef who can teach me how to prepare sushi at home.", "output": "Cooking"}
+{"input": "I need help with my SAT prep; can you recommend a tutor who can help me with the critical reading section?", "output": "Education"}
+{"input": "I've accidentally deleted a file from my computer; can you guide me through the recovery process?", "output": "Information Technology"}
+{"input": "Please find a chef who can offer a personalized meal prep service for a family with picky eaters.", "output": "Cooking"}
+{"input": "My son is having trouble with physics; can you find a tutor who can explain the concepts better?", "output": "Education"}
+{"input": "The bathroom grout is stained, could you clean it for me?", "output": "Cleaning"}
+{"input": "My carpet is full of pet hair, can you clean it thoroughly?", "output": "Cleaning"}
+{"input": "I'm searching for a chef who can teach me how to make sourdough bread from scratch.", "output": "Cooking"}
+{"input": "Do NOT number the list.", "output": "Handiworks"}
+{"input": "I'm searching for a chef who can teach me how to make sourdough bread from scratch.", "output": "Cooking"}
+{"input": "Do NOT number the list.", "output": "Cleaning"}
+{"input": "My company's website is down, and I suspect a server issue.", "output": "Information Technology"}
+{"input": "My printer is not printing from my computer, even though it's connected.", "output": "Information Technology"}
+{"input": "Do not use the category name in the request (e.g., don't say I need plumbing, say my pipe burst).", "output": "Health"}
+{"input": "My fence gate is squeaky, can you oil the hinges?", "output": "Handiworks"}
+{"input": "My computer is running a virus scan, but it's taking longer than expected.", "output": "Information Technology"}
+{"input": "I require expertise in financial planning for my growing business.", "output": "Accounting"}
+{"input": "The requests must sound like REAL customers (some angry, some polite, some urgent, some short, some detailed).", "output": "Health"}
+{"input": "Context keywords to inspire you: sink leaking, toilet clogged, low water pressure, pipe burst, install faucet, shower not draining, water heater broken, blocked drain, leak detection", "output": "Plumbing"}
+{"input": "The bathroom grout is stained, could you clean it for me?", "output": "Cleaning"}
+{"input": "Do not use the category name in the request (e.g., don't say I need plumbing, say my pipe burst).", "output": "Cooking"}
+{"input": "I'm facing a cash flow problem, can you help me with financial planning?", "output": "Accounting"}
+{"input": "I'm moving out and need a professional to clean my entire apartment.", "output": "Cleaning"}
+{"input": "The Wi-Fi on my desktop computer is not working, even though it's plugged in.", "output": "Information Technology"}
+{"input": "I need help with my SAT prep; can you recommend a tutor who can help me with the math section?", "output": "Education"}
+{"input": "I need assistance with my company's bookkeeping for small business.", "output": "Accounting"}
+{"input": "My printer is not responding to print commands from my computer.", "output": "Information Technology"}
+{"input": "I need help with my Spanish homework; can you recommend a tutor?", "output": "Education"}
+{"input": "Please find a chef who can offer a personalized meal prep service for a family with picky eaters.", "output": "Cooking"}
+{"input": "My son is having trouble with physics; can you find a tutor who can explain the concepts better?", "output": "Education"}
+{"input": "My faucet in the kitchen is leaking, and I'm worried about the water damage.", "output": "Plumbing"}
+{"input": "Please find a chef who can provide a detailed lesson on baking artisanal bread.", "output": "Cooking"}
+{"input": "I'm worried about my mother's wound, it looks infected, can you come to dress it?", "output": "Health"}
+{"input": "I'm in need of a chef who can bake a custom wedding cake with a specific flavor profile.", "output": "Cooking"}
+{"input": "I'm looking for a history tutor who can help my son with his project on World War II.", "output": "Education"}
+{"input": "I'm experiencing frequent power surges; I need to get my electrical system checked.", "output": "Electricity"}
+{"input": "My computer is running a virus scan, but it's taking longer than expected.", "output": "Information Technology"}
+{"input": "My computer'usted to build a new feature for our app, but I'm not sure how to proceed.", "output": "Information Technology"}
+{"input": "My kitchen lights are flickering, and I'm worried about the electrical wiring.", "output": "Electricity"}
+{"input": "I'm having trouble with my fence gate, it won't latch properly.", "output": "Handiworks"}
+{"input": "Looking for a private chef who can cater to my gluten-free dietary needs for a weekend getaway.", "output": "Cooking"}
+{"input": "I need to rewire my house to accommodate a new appliance.", "output": "Electricity"}
+{"input": "Output ONLY the requests, one per line.", "output": "Education"}
+{"input": "The living room carpet is looking dull, can you give it a revitalizing clean?", "output": "Cleaning"}
+{"input": "Can you recommend a baking class that specializes in French pastries?", "output": "Cooking"}
+{"input": "My computer screen flickers and sometimes goes black.", "output": "Information Technology"}
+{"input": "My garage door opener stopped working; I suspect it's an electrical issue.", "output": "Electricity"}
+{"input": "Could you suggest a chef who can accommodate a nut allergy while preparing a birthday dinner?", "output": "Cooking"}
+{"input": "I'm looking for an English teacher who can help my son with his public speaking.", "output": "Education"}
+{"input": "You are a synthetic data generator. Generate 60 unique, diverse, and realistic user job requests for the category: Information Technology.", "output": "Information Technology"}
+{"input": "My blood pressure has been high lately, could you monitor it for me?", "output": "Health"}
+{"input": "I need someone to install a new fence gate.", "output": "Handiworks"}
+{"input": "Can you repair the broken window in my garage?", "output": "Handiworks"}
+{"input": "I need help with my SAT prep; can you recommend a tutor who can help me with the critical reading section?", "output": "Education"}
+{"input": "I need assistance with my company's bookkeeping for small business.", "output": "Accounting"}
+{"input": "I'm looking for a Spanish tutor who can help my son with his accent.", "output": "Education"}
+{"input": "My faucet in the kitchen is leaking, and I'm worried about the water damage.", "output": "Plumbing"}
+{"input": "My apartment is a mess after the party, can you clean it up?", "output": "Cleaning"}
+{"input": "I need a handyman to fix my fence gate.", "output": "Handiworks"}
+{"input": "I need a chef who can bake a custom wedding cake with a specific flavor profile.", "output": "Cooking"}
+{"input": "The breaker in my house keeps tripping when I use my hairdryer.", "output": "Electricity"}
+{"input": "I need a chef who can prepare a specialized menu for a children's birthday party.", "output": "Cooking"}
+{"input": "I need a chef who can prepare a specialized menu for a children's birthday party.", "output": "Cooking"}
+{"input": "My kitchen floor is a disaster, need a deep clean before the guests arrive.", "output": "Cleaning"}
+{"input": "Do not use the category name in the request (e.g., don't say I need plumbing, say my pipe burst).", "output": "Plumbing"}
+{"input": "I need a service to help me with my bookkeeping and accounting.", "output": "Accounting"}
+{"input": "My shower isn't draining properly, and I'm afraid it might overflow.", "output": "Plumbing"}
+{"input": "My son is having trouble with physics; can you find a tutor who can explain the concepts better?", "output": "Education"}
+{"input": "I'm feeling really under the weather, could you come over to check on me?", "output": "Health"}
+{"input": "I'm moving out and need a professional to clean my entire apartment.", "output": "Cleaning"}
+{"input": "My toilet is running constantly, and I'm worried about the water bill.", "output": "Plumbing"}
+{"input": "I'm moving out and need a professional to clean my entire apartment.", "output": "Cleaning"}
+{"input": "The windows in my living room are filthy, could you clean them for me?", "output": "Cleaning"}
+{"input": "I'm facing a cash flow problem, can you help me with financial planning?", "output": "Accounting"}
+{"input": "I'm looking for a coding lesson for my daughter; she wants to learn Python.", "output": "Education"}
+{"input": "I'm experiencing a slow drip from my faucet, but I'm not sure if it's serious.", "output": "Plumbing"}
+{"input": "I'm in need of a professional to rewire my old house for safety.", "output": "Electricity"}
+{"input": "The windows in my living room are filthy, could you clean them for me?", "output": "Cleaning"}
+{"input": "Do not start lines with I need every time. Vary the phrasing.", "output": "Handiworks"}
+{"input": "My son needs help with his essay; can you recommend a tutor who can help him improve his writing skills?", "output": "Education"}
+{"input": "My laptop won't start despite being fully charged.", "output": "Information Technology"}
+{"input": "The breaker in my house keeps tripping when I use my microwave.", "output": "Electricity"}
+{"input": "I've lost access to my cloud storage, and I need to retrieve my files.", "output": "Information Technology"}
+{"input": "I need a chef who can prepare a specialized menu for a children's birthday party.", "output": "Cooking"}
+{"input": ":00:12.000 --> 00:00:14.000", "output": "Cooking"}
+{"input": "I've got a lot of laundry and need a service that can handle it quickly.", "output": "Cleaning"}
+{"input": "I require a chef who can prepare a vegan and gluten-free menu for a bridal shower.", "output": "Cooking"}
+{"input": "I've noticed my kitchen appliances are not working properly; could it be a wiring problem?", "output": "Electricity"}
+{"input": "I'm experiencing lag when using my computer for graphic design work.", "output": "Information Technology"}
+{"input": "I'm in need of a chef who can handle a last-minute request for a corporate event dinner.", "output": "Cooking"}
+{"input": "I'm concerned about a possible burst pipe in my home, it's making a loud banging noise.", "output": "Plumbing"}
+{"input": "My bathroom light switch is unresponsive; I'm concerned about a potential electrical fault.", "output": "Electricity"}
+{"input": "My computer'usted to build a new feature for our app, but I'm not sure how to proceed.", "output": "Information Technology"}
+{"input": "I need assistance with installing the latest security update on my computer.", "output": "Information Technology"}
+{"input": "I'm looking for a quick clean-up service for my office before a client visit.", "output": "Cleaning"}
+{"input": "I need a coding lesson for my daughter; can you find a tutor who can teach her Python?", "output": "Education"}
+{"input": "My computer is running a virus scan, but it's taking longer than expected.", "output": "Information Technology"}
+{"input": "I need someone to assemble a new desk.", "output": "Handiworks"}
+{"input": "I need to rewire my house to accommodate a new appliance.", "output": "Electricity"}
+{"input": "My son is having trouble with physics; can you find a tutor who can explain the concepts better?", "output": "Education"}
+{"input": "The windows in my living room are filthy, could you clean them for me?", "output": "Cleaning"}
+{"input": "I need help with my SAT prep; can you recommend a tutor who can help me with the critical reading section?", "output": "Education"}
+{"input": "I need assistance with preparing for the SATs; who can help me with practice tests?", "output": "Education"}
+{"input": "Do not use the category name in the request (e.g., don't say I need plumbing, say my pipe burst).", "output": "Handiworks"}
+{"input": "I'm looking for a Spanish tutor who can help my son with his vocabulary.", "output": "Education"}
+{"input": "My bathroom light switch is unresponsive; I'm concerned about a potential electrical fault.", "output": "Electricity"}
+{"input": "I'm looking for a coding lesson for my daughter; she wants to learn JavaScript.", "output": "Education"}
+{"input": "I'm having trouble with my payroll software, can you troubleshoot it?", "output": "Accounting"}
+{"input": "I'm in a hurry to find a relaxation technique for my high-stress job.", "output": "Well Being"}
+{"input": "Please find a chef who can offer a personalized meal prep service for busy professionals.", "output": "Cooking"}
+{"input": "I need someone to assemble a new bookshelf.", "output": "Handiworks"}
+{"input": "The paint on my fence is chipping, can you repaint it?", "output": "Handiworks"}
+{"input": "Please handle the deep cleaning of my apartment before I move out, it's a mess.", "output": "Cleaning"}
+{"input": "My mother needs help with her physiotherapy exer01111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111", "output": "Health"}
+{"input": "I'm experiencing frequent power surges; I need to get my electrical system checked.", "output": "Electricity"}
+{"input": "You are a synthetic data generator. Generate 60 unique, diverse, and realistic user job requests for the category: Education.", "output": "Education"}
+{"input": "I've lost access to my cloud storage, and I need to retrieve my files.", "output": "Information Technology"}
+{"input": "The faucet in my kitchen is leaking, and I'm concerned about water damage.", "output": "Plumbing"}
+{"input": "My bathroom light switch is unresponsive; I'm concerned about a potential electrical fault.", "output": "Electricity"}
+{"input": "I've lost access to my cloud storage, and I need to retrieve my files.", "output": "Information Technology"}
+{"input": "I'm looking for a chef who can cater to a group with diverse dietary preferences for a charity event.", "output": "Cooking"}
+{"input": "The paint on my fence is chipping, can you repaint it?", "output": "Handiworks"}
+{"input": "I've lost access to my cloud storage, and I need to retrieve my files.", "output": "Information Technology"}
+{"input": "The requests must sound like REAL customers (some angry, some polite, some urgent, some short, some detailed).", "output": "Health"}
+{"input": "You are a synthetic data generator. Generate 60 unique, diverse, and realistic user job requests for the category: Accounting.", "output": "Accounting"}
+{"input": "I'm looking for a coding lesson for my daughter; she wants to learn JavaScript.", "output": "Education"}
+{"input": "My computer is running a virus scan, but it's taking longer", "output": "Information Technology"}
+{"input": "My son needs help with his essay; can you recommend a tutor who can help him improve his writing skills?", "output": "Education"}
+{"input": "I need to install a new outlet in my garage for a workshop.", "output": "Electricity"}
+{"input": "My fence gate is squeaky, can you oil the hinges?", "output": "Handiworks"}
+{"input": "My son needs a tutor for his SAT prep; who can help him with the critical reading section?", "output": "Education"}
+{"input": "Do not start lines with I need every time. Vary the phrasing.", "output": "Cleaning"}
+{"input": "I'm concerned about a possible burst pipe in my home, it's making a loud banging noise.", "output": "Plumbing"}
+{"input": "I need help with my SAT prep; can you recommend a tutor who can help me with the math section?", "output": "Education"}
+{"input": "My fence gate is squeaky, can you oil the hinges?", "output": "Handiworks"}
+{"input": "My computer'usted to build a new feature for our app, but I'm not sure how to proceed.", "output": "Information Technology"}
+{"input": "I'm in urgent need of a life coach to help with my career transition.", "output": "Well Being"}
+{"input": "I need a handyman to fix my fence gate.", "output": "Handiworks"}
+{"input": "Please find a personal mentor who can help me with my creative block.", "output": "Well Being"}
+{"input": "I'm feeling dizzy and weak, could you come over to help me feel better?", "output": "Health"}
+{"input": "My son needs help with his essay; can you recommend a tutor who can help him improve his writing skills?", "output": "Education"}
+{"input": "I'm seeking a service to help with my company's expense tracking and reporting.", "output": "Accounting"}
+{"input": "I'm looking for a reliable laundry service to handle my weekly wardrobe.", "output": "Cleaning"}
+{"input": "You are a synthetic data generator. Generate 60 unique, diverse, and realistic user job requests for the category: Cooking.", "output": "Cooking"}
+{"input": "I need to rewire my house to accommodate a new appliance.", "output": "Electricity"}
+{"input": "I've noticed a strange noise coming from my pipes, could it be a leak?", "output": "Plumbing"}
+{"input": "My computer'usted to build a new feature for our app, but I'm not sure how to proceed.", "output": "Information Technology"}
+{"input": "My fence gate is stuck, can you fix it?", "output": "Handiworks"}
+{"input": "There's a weird smell coming from my drains, could it be a blockage?", "output": "Plumbing"}
+{"input": "I need a chef who can prepare a specialized menu for a children's birthday party.", "output": "Cooking"}
+{"input": "Context keywords to inspire you: assemble furniture, fix door handle, hang shelves, painting wall, repair fence, fix roof leak, drywall patch, carpentry, broken window, lock replacement", "output": "Handiworks"}
+{"input": "I'm having trouble with the installation of a new software suite on my laptop.", "output": "Information Technology"}
+{"input": "Output ONLY the requests, one per line.", "output": "Electricity"}
+{"input": "My son is having trouble with physics; can you find a tutor who can explain the concepts better?", "output": "Education"}
+{"input": ":00:06.000 --> 00:00:08.000", "output": "Cooking"}
+{"input": "My grandmother's leg isn't healing right after her surgery, can you help?", "output": "Health"}
+{"input": "Can you suggest a mindfulness session for my daily routine?", "output": "Well Being"}
+{"input": "I'm having trouble with the installation of a new software suite on my laptop.", "output": "Information Technology"}
+{"input": "I'm looking for an English teacher who can help my son with his grammar.", "output": "Education"}
+{"input": "I'm looking for a professional to help me with my company's financial planning.", "output": "Accounting"}
+{"input": "Do not use the category name in the request (e.g., don't say I need plumbing, say my pipe burst).", "output": "Education"}
+{"input": "I've got a lot of laundry and need a service that can handle it quickly.", "output": "Cleaning"}
+{"input": "I need a coding lesson for my daughter; can you find a tutor who can teach her Python?", "output": "Education"}
+{"input": "My faucet in the kitchen is leaking, and I'm worried about the water damage.", "output": "Plumbing"}
+{"input": "I'm in need of a professional to help me with my company's financial statements.", "output": "Accounting"}
+{"input": "I've lost access to my cloud storage, and I need to retrieve my files.", "output": "Information Technology"}
+{"input": "I'm looking for a Spanish tutor who can help my son with his vocabulary.", "output": "Education"}
+{"input": "The bathroom grout is stained, could you clean it for me?", "output": "Cleaning"}
+{"input": "I'm looking for an English teacher who can help my son with his grammar.", "output": "Education"}
+{"input": "I need a math tutor for my daughter; she's having trouble with geometry.", "output": "Education"}
+{"input": "You are a synthetic data generator. Generate 60 unique, diverse, and realistic user job requests for the category: Cleaning.", "output": "Cleaning"}
+{"input": "Context keywords to inspire you: yoga instructor, meditation coach, life coaching, stress management, mindfulness session, spiritual guidance, relaxation techniques, personal mentor", "output": "Well Being"}
+{"input": "I'm looking for a reliable service to handle my payroll, any recommendations?", "output": "Accounting"}
+{"input": "My faucet in the kitchen is leaking, and I'm worried about the water damage.", "output": "Plumbing"}
+{"input": "The fuse in my garage blown again, and I'm tired of replacing them.", "output": "Electricity"}
+{"input": "I'm moving out and need a professional to clean my entire apartment.", "output": "Cleaning"}
+{"input": "I'm moving out and need a professional to clean my entire apartment.", "output": "Cleaning"}
+{"input": "I've got a lot of laundry and need a service that can handle it quickly.", "output": "Cleaning"}
+{"input": ":00:02.000 --> 00:00:04.000", "output": "Cooking"}
+{"input": "My water pressure is inconsistent, sometimes it's fine, other times it's weak.", "output": "Plumbing"}
+{"input": "My son is interested in learning piano; can you find a teacher who can give him lessons?", "output": "Education"}
+{"input": "I'm having trouble with the installation of a new software suite on my laptop.", "output": "Information Technology"}
+{"input": "Can you help me with a leaky roof, it's causing water damage.", "output": "Handiworks"}
+{"input": "I've lost access to my cloud storage, and I need to retrieve my files.", "output": "Information Technology"}
+{"input": "My computer'usted to build a new feature for our app, but I'm not sure how to proceed.", "output": "Information Technology"}
+{"input": "I'm struggling with my daily exercises after my knee operation, can you assist?", "output": "Health"}
+{"input": "I'm having trouble with the installation of a new software tool on my workstation.", "output": "Information Technology"}
+{"input": "The paint on my fence is chipping, can you repaint it?", "output": "Handiworks"}
+{"input": "My grandmother's leg isn't healing right after her surgery, can you help?", "output": "Health"}
+{"input": "I'm searching for a chef who can teach me how to make sourdough bread from scratch.", "output": "Cooking"}
+{"input": "My wall has a large hole, can you patch it up?", "output": "Handiworks"}
+{"input": "My toilet is completely clogged, I can't flush it at all.", "output": "Plumbing"}
+{"input": "Please find a chef who can offer a personalized meal prep service for busy professionals.", "output": "Cooking"}
+{"input": "I'm looking for a professional to paint my fence.", "output": "Handiworks"}
+{"input": "The printer I'm using for my home office is not printing documents.", "output": "Information Technology"}
+{"input": ":00:08.000 --> 00:00:10.000", "output": "Cooking"}
+{"input": "I'm looking for an English teacher who can help my son with his public speaking.", "output": "Education"}
+{"input": "My fence gate is squeaky, can you oil the hinges?", "output": "Handiworks"}
+{"input": "I'm in a rush; I need someone to prep meals for my family for the next two weeks.", "output": "Cooking"}
+{"input": "I've accidentally deleted a file from my computer; can you guide me through the recovery process?", "output": "Information Technology"}
+{"input": "I'm trying to reset my password, but the system is not accepting my new password.", "output": "Information Technology"}
+{"input": "Do not use the category name in the request (e.g., don't say I need plumbing, say my pipe burst).", "output": "Health"}
+{"input": "I need someone to assemble a new bookshelf.", "output": "Handiworks"}
+{"input": "The windows in my living room are filthy, could you clean them for me?", "output": "Cleaning"}
+{"input": "You are a synthetic data generator. Generate 60 unique, diverse, and realistic user job requests for the category: Health.", "output": "Health"}
+{"input": "I'm experien", "output": "Plumbing"}
+{"input": "I'm in need of a service to help me with my company's expense tracking.", "output": "Accounting"}
+{"input": "I need to prepare for an upcoming audit, can you provide a checklist?", "output": "Accounting"}
+{"input": "You are a synthetic data generator. Generate 60 unique, diverse, and realistic user job requests for the category: Plumbing.", "output": "Plumbing"}
+{"input": "Need a reliable food delivery service for a wedding reception with a diverse menu.", "output": "Cooking"}
+{"input": "I'm feeling really under the weather, could you come over to check on me?", "output": "Health"}
+{"input": "I'm interested in installing a smart home system that includes lighting.", "output": "Electricity"}
+{"input": "My fence gate is squeaky, can you oil the hinges?", "output": "Handiworks"}
+{"input": "The outlet in my bedroom is not providing power to my laptop charger.", "output": "Electricity"}
+{"input": "I'm interested in installing a new lighting system in my living room.", "output": "Electricity"}
+{"input": "I'm looking for a Spanish tutor who can help my son with his vocabul0ary.", "output": "Education"}
+{"input": "I'm experiencing a slow drip from my faucet, but I'm not sure if it's serious.", "output": "Plumbing"}
+{"input": "My computer is infected with malware, and I need to remove it.", "output": "Information Technology"}
+{"input": "My toilet is running constantly, and I'm worried about the water bill.", "output": "Plumbing"}
+{"input": "Do not use the category name in the request (e.g., don't say I need plumbing, say my pipe burst).", "output": "Electricity"}
+{"input": "I'm in a hurry, my fence gate is broken, and I need it fixed.", "output": "Handiworks"}
+{"input": "My kitchen sink is clogged, can you unclog it?", "output": "Handiworks"}
+{"input": "I'm looking for a professional to install a new ceiling fan in my bedroom.", "output": "Electricity"}
+{"input": "My son needs help with his essay; can you recommend a tutor who can help him improve his writing skills?", "output": "Education"}
+{"input": "Please find a chef who can cater to a group with diverse dietary preferences for a corporate event.", "output": "Cooking"}
+{"input": "Looking for a chef who can cater to a group with diverse dietary preferences for a charity event.", "output": "Cooking"}
+{"input": "Do not start lines with I need every time. Vary the phrasing.", "output": "Information Technology"}
+{"input": "I'm in a rush, need someone to clean my office before the big meeting tomorrow.", "output": "Cleaning"}
+{"input": "Could you recommend a good yoga instructor for my weekly practice?", "output": "Well Being"}
+{"input": "I'm in need of a chef who can handle a last-minute request for a corporate event dinner.", "output": "Cooking"}
+{"input": "My faucet in the kitchen is leaking, and I'm worried about the water damage.", "output": "Plumbing"}
+{"input": "I'm in need of a chef who can handle a last-minute request for a corporate event dinner.", "output": "Cooking"}
+{"input": "Context keywords to inspire you: assemble furniture, fix door handle, hang shelves, painting wall, repair fence, fix roof leak, drywall patch, carpentry, broken window, lock replacement", "output": "Handiworks"}
+{"input": "The bathroom grout is stained, could you clean it for me?", "output": "Cleaning"}
+{"input": "Can you help me with a leaky roof, it's causing water damage.", "output": "Handiworks"}
+{"input": "I've lost access to my cloud storage, and I need to retrieve my files.", "output": "Information Technology"}
+{"input": "I need a handyman to fix my fence gate.", "output": "Handiworks"}
+{"input": "I accidentally deleted a critical file; can you guide me through the recovery process?", "output": "Information Technology"}
+{"input": "I need a math tutor for my daughter; she's having trouble with geometry.", "output": "Education"}
+{"input": "You are a synthetic data generator. Generate 60 unique, diverse, and realistic user job requests for the category: Plumbing.", "output": "Plumbing"}
+{"input": "My small business is struggling with bookkeeping, can you help streamline the process?", "output": "Accounting"}
+{"input": "I'm in a hurry, my fence gate is broken, and I need it fixed.", "output": "Handiworks"}
+{"input": "I'm in need of a financial advisor to help me plan for the future.", "output": "Accounting"}
+{"input": "The requests must sound like REAL customers (some angry, some polite, some urgent, some short, some detailed).", "output": "Education"}
+{"input": "Output ONLY the requests, one per line.", "output": "Cleaning"}
+{"input": "I'm looking for a coding lesson for my daughter; she wants to learn JavaScript.", "output": "Education"}
+{"input": "My computer screen is flickering, and I'm worried it might be a hardware issue.", "output": "Information Technology"}
+{"input": "My apartment is a mess after the party, can you clean it up?", "output": "Cleaning"}
+{"input": "I've lost access to my cloud storage, and I need to retrieve my files.", "output": "Information Technology"}
+{"input": "Do not use the category name in the request (e.g., don't say I need plumbing, say my pipe burst).", "output": "Information Technology"}
+{"input": "My fence gate is stuck, can you fix it?", "output": "Handiworks"}
+{"input": "I'm looking for a professional to help me with my company's financial planning.", "output": "Accounting"}
+{"input": "I'm looking for a quick clean-up service for my office before a client visit.", "output": "Cleaning"}
+{"input": "I'm having trouble with the installation of a new software tool on my workstation.", "output": "Information Technology"}
+{"input": "I'm looking for a Spanish tutor who can help my son with his accent.", "output": "Education"}
+{"input": "Please find a chef who can offer a personalized meal prep service for a family with picky eaters.", "output": "Cooking"}
+{"input": "I need a handyman to fix my fence gate.", "output": "Handiworks"}
+{"input": "My computer is running a virus scan, but it's taking longer than expected.", "output": "Information Technology"}
+{"input": "The water heater in my laundry room is making strange noises, should I be worried?", "output": "Plumbing"}
+{"input": "My bathroom light flickers when the shower is on; I'm concerned about the wiring.", "output": "Electricity"}
+{"input": "My toilet is running constantly, and I'm worried about the water bill.", "output": "Plumbing"}
+{"input": "I've got a lot of laundry and need a service that can handle it quickly.", "output": "Cleaning"}
+{"input": "I'm experien", "output": "Plumbing"}
+{"input": "I'm experiencing frequent power outages; I need to get my electrical system checked.", "output": "Electricity"}
+{"input": "I'm looking for an English teacher who can help my son with his grammar.", "output": "Education"}
+{"input": "I'm overwhelmed with managing my finances, can you offer some advice?", "output": "Accounting"}
+{"input": "I require a professional to help me with my company's financial planning.", "output": "Accounting"}
+{"input": "Do NOT number the list.", "output": "Health"}
+{"input": "My fence gate is stuck, can you fix it?", "output": "Handiworks"}
+{"input": "There's a leak in my roof, can you take a look?", "output": "Handiworks"}
+{"input": "I'm in need of a service to help me with my company's expense tracking.", "output": "Accounting"}
+{"input": ":00:06.000 --> 00:00:08.000", "output": "Cooking"}
+{"input": "My mother needs help with her wound dressing, can you come over to assist?", "output": "Health"}
+{"input": "I've accidentally deleted a file from my computer; can you guide me through the recovery process?", "output": "Information Technology"}
+{"input": "I'm in need of a chef who can handle a last-minute request for a corporate event dinner.", "output": "Cooking"}
+{"input": "You are a synthetic data generator. Generate 60 unique, diverse, and realistic user job requests for the category: Cleaning.", "output": "Cleaning"}
+{"input": "Context keywords to inspire you: yoga instructor, meditation coach, life coaching, stress management, mindfulness session, spiritual guidance, relaxation techniques, personal mentor", "output": "Well Being"}
+{"input": "I'm looking for an English teacher who can help my son with his grammar.", "output": "Education"}
+{"input": "I'm facing a cash flow problem, can you help me with financial planning?", "output": "Accounting"}
+{"input": "My printer is not responding to print commands from my computer.", "output": "Information Technology"}
+{"input": "I'm looking for a chef who can cater to a group with diverse dietary preferences for a charity event.", "output": "Cooking"}
+{"input": "My mother needs help with her wound dressing, can you come over to assist?", "output": "Health"}
+{"input": "The requests must sound like REAL customers (some angry, some polite, some urgent, some short, some detailed).", "output": "Information Technology"}
+{"input": "The flickering lights in my dining room are driving me crazy; I need a solution.", "output": "Electricity"}
+{"input": "I'm looking for a yoga instructor who can teach me breathing exer", "output": "Well Being"}
+{"input": "My son is having trouble with physics; can you find a tutor who can explain the concepts better?", "output": "Education"}
+{"input": "My son needs help with his essay; can you recommend a tutor who can help him improve his writing skills?", "output": "Education"}
+{"input": "I'm in need of a chef who can handle a last-minute request for a corporate event dinner.", "output": "Cooking"}
+{"input": "I need assistance with my company's payroll help.", "output": "Accounting"}
+{"input": "I've got a clogged drain in my bathroom, and I'm not sure how to clear it.", "output": "Plumbing"}
+{"input": "I'm facing a cash flow problem, can you help me with financial planning?", "output": "Accounting"}
+{"input": "I'm trying to set up a new software tool for my team, but it's not compatible with our system.", "output": "Information Technology"}
+{"input": "I require assistance with setting up QuickBooks for my freelance work.", "output": "Accounting"}
+{"input": "I need to track my business expenses more efficiently, what software would you suggest?", "output": "Accounting"}
+{"input": "I need a handyman to fix my fence gate.", "output": "Handiworks"}
+{"input": "I'm in a hurry, my fence gate is broken, and I need it fixed.", "output": "Handiworks"}
+{"input": "My grandmother needs help with her medication, can you come over to assist?", "output": "Health"}
+{"input": "I've accidentally deleted a file from my computer; can you guide me through the recovery process?", "output": "Information Technology"}
+{"input": "I'm having trouble with the installation of a new software suite on my laptop.", "output": "Information Technology"}
+{"input": "I'm looking for a carpenter to build a custom bookshelf.", "output": "Handiworks"}
+{"input": "I'm hosting a dinner party and need my place to be spotless.", "output": "Cleaning"}
+{"input": "The breaker in my house keeps tripping when I use my microwave.", "output": "Electricity"}
+{"input": "My computer's performance has degraded significantly; could it be a virus?", "output": "Information Technology"}
+{"input": "I'm in a hurry, my fence needs fixing before the storm hits.", "output": "Handiworks"}
+{"input": "I need assistance with my company's bookkeeping for small business.", "output": "Accounting"}
+{"input": "I'm in a hurry, my fence gate is broken, and I need it fixed.", "output": "Handiworks"}
+{"input": "I'm looking for a professional to paint my fence.", "output": "Handiworks"}
+{"input": "I'm in a rush, need someone to clean my office before the big meeting tomorrow.", "output": "Cleaning"}
+{"input": "I need assistance with my company's bookkeeping for small business.", "output": "Accounting"}
+{"input": "I've lost access to my email account; can you help me reset my password?", "output": "Information Technology"}
+{"input": "I'm hosting a dinner party and need my place to be spotless.", "output": "Cleaning"}
+{"input": "I'm experiencing a slow drip from my faucet, but I'm not sure if it's serious.", "output": "Plumbing"}
+{"input": "I need a handyman to fix my fence gate.", "output": "Handiworks"}
+{"input": "I'm looking for a quick clean-up service for my office before a client visit.", "output": "Cleaning"}
+{"input": "Do not use the category name in the request (e.g., don't say I need plumbing, say my pipe burst).", "output": "Cooking"}
+{"input": "I'm looking for an English teacher who can help my son with his public speaking.", "output": "Education"}
+{"input": "Can you guide me through the audit process for my company to ensure compliance?", "output": "Accounting"}
+{"input": "My wall has a large hole, can you patch it up?", "output": "Handiworks"}
+{"input": "I'm seeking spiritual guidance to help me with my grief.", "output": "Well Being"}
+{"input": "I'm moving out and need a professional to clean my entire apartment.", "output": "Cleaning"}
+{"input": "I'm looking for a quick clean-up service for my office before a client visit.", "output": "Cleaning"}
+{"input": "My computer is running a virus scan, but it's taking longer than expected.", "output": "Information Technology"}
+{"input": "I require a service to help me with my company's audit assistance.", "output": "Accounting"}
+{"input": "The bathroom grout is stained, could you clean it for me?", "output": "Cleaning"}
+{"input": "Can you recommend a life coach who specializes in career change?", "output": "Well Being"}
+{"input": "My son needs help with his essay; can you recommend a tutor who can help him improve his writing skills?", "output": "Education"}
+{"input": "I require a chef who can handle a last-min0min request for a family reunion dinner.", "output": "Cooking"}
+{"input": "Do NOT number the list.", "output": "Cooking"}
+{"input": "I'm in a rush to file my taxes before the deadline, any quick tips?", "output": "Accounting"}
+{"input": "I'm having trouble accessing the internet on my new device.", "output": "Information Technology"}
+{"input": ":00:00.000 --> 00:00:02.000", "output": "Cooking"}
+{"input": "Can you guide me through the audit process for my company to ensure compliance?", "output": "Accounting"}
+{"input": "My mother needs help with her physiotherapy exer01111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111", "output": "Health"}
+{"input": ":00:16.000 --> 00:00:18.000", "output": "Cooking"}
+{"input": "I've lost access to my cloud storage, and I need to retrieve my files.", "output": "Information Technology"}
+{"input": "The windows in my living room are filthy, could you clean them for me?", "output": "Cleaning"}
+{"input": "I'm in a rush, my fence gate is broken, and I need it fixed.", "output": "Handiworks"}
+{"input": "Context keywords to inspire you: deep clean apartment, carpet cleaning, window washing, move-out cleaning, office cleaning, power wash driveway, tidy up messy room, laundry service", "output": "Cleaning"}
+{"input": "My son is interested in learning piano; can you find a teacher who can give him lessons?", "output": "Education"}
+{"input": "The paint on my fence is chipping, can you repaint it?", "output": "Handiworks"}
+{"input": "The paint on my fence is chipping, can you repaint it?", "output": "Handiworks"}
+{"input": "My computer screen flickers and sometimes goes black.", "output": "Information Technology"}
+{"input": "The faucet in my bathroom is dripping constantly, it's driving me crazy.", "output": "Plumbing"}
+{"input": "My kitchen sink is leaking water all over the floor, it's a mess!", "output": "Plumbing"}
+{"input": "I'm moving out and need a professional to clean my entire apartment.", "output": "Cleaning"}
+{"input": "Do not use the category name in the request (e.g., don't say I need plumbing, say my pipe burst).", "output": "Information Technology"}
+{"input": "My Wi-Fi connection is intermittent and drops frequently.", "output": "Information Technology"}
+{"input": "I need to install a new outlet in my garage for a workshop.", "output": "Electricity"}
+{"input": "I've accidentally deleted a file from my computer; can you guide me through the recovery process?", "output": "Information Technology"}
+{"input": "I've accidentally deleted a file from my computer; can you guide me through the recovery process?", "output": "Information Technology"}
+{"input": "I need assistance with my company's bookkeeping for small business.", "output": "Accounting"}
+{"input": "I need a chef who can prepare a keto-friendly menu for a health retreat.", "output": "Cooking"}
+{"input": "Context keywords to inspire you: math tutor, piano lessons, learn spanish, sat prep, help with history homework, physics tutor, coding lessons, essay writing help, english teacher", "output": "Education"}
+{"input": "I'm looking for a professional to paint my fence.", "output": "Handiworks"}
+{"input": "I'm facing penalties for late tax returns, can you help me rectify this situation?", "output": "Accounting"}
+{"input": "I need assistance with my company's payroll help.", "output": "Accounting"}
+{"input": "My fence gate is squeaky, can you oil the hinges?", "output": "Handiworks"}
+{"input": "My son needs help with his essay; can you recommend a tutor who can help him improve his writing skills?", "output": "Education"}
+{"input": "I'm experiencing frequent power outages; I need to get my electrical system checked.", "output": "Electricity"}
+{"input": "I need assistance with assembling a new desk I bought.", "output": "Handiworks"}
+{"input": "My bathroom light switch is unresponsive; I'm concerned about a potential electrical fault.", "output": "Electricity"}
+{"input": "My son is interested in learning piano; can you find a teacher who can give him lessons?", "output": "Education"}
+{"input": "I'm seeking spiritual guidance to help me with my grief.", "output": "Well Being"}
+{"input": "Do not use the category name in the request (e.g., don't say I need plumbing, say my pipe burst).", "output": "Cleaning"}
+{"input": "I've got a lot of laundry and need a service that can handle it quickly.", "output": "Cleaning"}
+{"input": "I'm in a hurry to file my taxes, can you expedite the process?", "output": "Accounting"}
+{"input": "I've accidentally deleted a file from my computer; can you guide me through the recovery process?", "output": "Information Technology"}
+{"input": "I've got a clogged drain in my bathroom, and I'm not sure how to clear it.", "output": "Plumbing"}
+{"input": "I'm looking for a professional to help me with my company's financial statements.", "output": "Accounting"}
+{"input": "The requests must sound like REAL customers (some angry, some polite, some urgent, some short, some detailed).", "output": "Well Being"}
+{"input": "My kitchen lights are flickering, and I'm worried about the electrical wiring.", "output": "Electricity"}
+{"input": "The driveway is a mess after the storm, can you power wash it?", "output": "Cleaning"}
+{"input": "Please find a chef who can offer a personalized meal prep service for a family with picky eaters.", "output": "Cooking"}
+{"input": "Could you recommend a good yoga instructor for my weekly practice?", "output": "Well Being"}
+{"input": "Please find a chef who can offer a personalized meal prep service for busy professionals.", "output": "Cooking"}
+{"input": "I've lost access to my email account; can you help me reset my password?", "output": "Information Technology"}
+{"input": "I'm looking for a reliable electrician to install a ceiling fan in my bedroom.", "output": "Electricity"}
+{"input": "The software I'm developing keeps crashing on startup.", "output": "Information Technology"}
+{"input": "Do NOT number the list.", "output": "Information Technology"}
+{"input": "I'm looking for a quick clean-up service for my office before a client visit.", "output": "Cleaning"}
+{"input": "My bathroom light flickers when the shower is on; I'm concerned about the wiring.", "output": "Electricity"}
+{"input": "I need to install a new outlet in my garage for a workshop.", "output": "Electricity"}
+{"input": "I've accidentally deleted a file from my computer; can you guide me through the recovery process?", "output": "Information Technology"}
+{"input": "I'm looking for an English teacher who can help my son with his grammar", "output": "Education"}
+{"input": "I'm experiencing frequent power surges; I need to get my electrical system checked.", "output": "Electricity"}
+{"input": "I'm hosting a dinner party and need my place to be spotless.", "output": "Cleaning"}
+{"input": "I require a professional to help me with my company's expense tracking.", "output": "Accounting"}
+{"input": "I'm looking for a Spanish tutor who can help my son with his accent.", "output": "Education"}
+{"input": "Could you recommend a good math tutor for my son's upcoming exams?", "output": "Education"}
+{"input": "The web page I'm building keeps crashing when I try to add images.", "output": "Information Technology"}
+{"input": "Output ONLY the requests, one per line.", "output": "Education"}
+{"input": "I require a chef who can prepare a vegan and gluten-free menu for a bridal shower.", "output": "Cooking"}
+{"input": "The outlet in my bedroom is not providing power to my laptop charger.", "output": "Electricity"}
+{"input": "I'm in a hurry, my fence gate is broken, and I need it fixed.", "output": "Handiworks"}
+{"input": "I'm facing a cash flow problem, can you help me with financial planning?", "output": "Accounting"}
+{"input": "I need assistance with my company's bookkeeping for small business.", "output": "Accounting"}
+{"input": "I need to rewire my house to accommodate a new appliance.", "output": "Electricity"}
+{"input": "I require a chef who can provide a lesson on making artisanal cheese.", "output": "Cooking"}
+{"input": "I'm looking for a coding lesson plan for beginners.", "output": "Education"}
+{"input": "Do NOT number the list.", "output": "Electricity"}
+{"input": "I need a handyman to fix my fence gate.", "output": "Handiworks"}
+{"input": "My laptop won't start despite being fully charged.", "output": "Information Technology"}
+{"input": "The paint on my fence is chipping, can you repaint it?", "output": "Handiworks"}
+{"input": "I'm searching for an English teacher who can help with my son's reading comprehension.", "output": "Education"}
+{"input": "I need someone to assemble a new desk.", "output": "Handiworks"}
+{"input": "I'm looking for a coding lesson for my daughter; she wants to learn Python.", "output": "Education"}
+{"input": "I've got a clogged drain in my bathroom, and I'm not sure how to clear it.", "output": "Plumbing"}
+{"input": "My water pressure is inconsistent, sometimes it's fine, other times it's weak.", "output": "Plumbing"}
+{"input": "I need help with my SAT prep; can you recommend a tutor who can help me with the math section?", "output": "Education"}
+{"input": "I'm in need of a chef who can bake a wedding cake with a unique design.", "output": "Cooking"}
+{"input": "My son needs help with his essay; can you recommend a tutor who can help him improve his writing skills?", "output": "Education"}
+{"input": "My toilet is running constantly, it's really annoying and I'm worried about the water bill.", "output": "Plumbing"}
+{"input": "I need a chef who can prepare a specialized menu for a children's birthday party.", "output": "Cooking"}
+{"input": "My son needs help with his essay; can you recommend a tutor who can help him improve his writing skills?", "output": "Education"}
+{"input": "I require a service to help me with my company's audit assistance.", "output": "Accounting"}
+{"input": "The bathroom tiles are stained, could you clean them for me?", "output": "Cleaning"}
+{"input": "I need a math tutor for my daughter; she's having trouble with geometry.", "output": "Education"}
+{"input": "Please find a chef who can offer a personalized meal prep service for a family with picky eaters.", "output": "Cooking"}
+{"input": "I've lost access to my cloud storage, and I need to retrieve my files.", "output": "Information Technology"}
+{"input": ":00:10.000 --> 00:00:12.000", "output": "Cooking"}
+{"input": "I'm looking for a professional to install a new ceiling fan in my bedroom.", "output": "Electricity"}
+{"input": "I've lost all my work files from last week; can you help me recover them?", "output": "Information Technology"}
+{"input": "Output ONLY the requests, one per line.", "output": "Handiworks"}
+{"input": "My fence gate is squeaky, can you oil the hinges?", "output": "Handiworks"}
+{"input": ":00:02.000 --> 00:00:04.000", "output": "Cooking"}
+{"input": "My kitchen floor is a disaster, need a deep clean before the guests arrive.", "output": "Cleaning"}
+{"input": "I require a service to help me with my company's expense tracking.", "output": "Accounting"}
+{"input": "I've got a leak in my bathroom sink, but I'm not sure how to fix it.", "output": "Plumbing"}
+{"input": "My husband needs assistance with his physiotherapy exercises, can you help?", "output": "Health"}
+{"input": "My windows are looking grimy, could you give them a good wash?", "output": "Cleaning"}
+{"input": "My son needs help with his essay; can you recommend a tutor who can help him improve his writing skills?", "output": "Education"}
+{"input": "My computer'usted to build a new feature for our app, but I'm not sure how to proceed.", "output": "Information Technology"}
+{"input": "I need a chef who can bake a custom wedding cake with a specific flavor profile.", "output": "Cooking"}
+{"input": "Can you repair the broken window in my garage?", "output": "Handiworks"}
+{"input": "The water pressure in my shower is so low, it's almost unusable.", "output": "Plumbing"}
+{"input": "Context keywords to inspire you: math tutor, piano lessons, learn spanish, sat prep, help with history homework, physics tutor, coding lessons, essay writing help, english teacher", "output": "Education"}
+{"input": "I need to rewire my house to accommodate a new appliance.", "output": "Electricity"}
+{"input": "I'm moving out and need a professional to clean my entire apartment.", "output": "Cleaning"}
+{"input": "I'm looking for a professional to install a new ceiling fan in my study.", "output": "Electricity"}
+{"input": "I've lost access to my cloud storage, and I need to retrieve my files.", "output": "Information Technology"}
+{"input": "I'm looking for a Spanish tutor who can help my son with his vocabulary.", "output": "Education"}
+{"input": "Do not use the category name in the request (e.g., don't say I need plumbing, say my pipe burst).", "output": "Electricity"}
+{"input": "My son is struggling with Spanish vocabulary; can you suggest a tutor?", "output": "Education"}
+{"input": "I'm experiencing a slow drip from my faucet, but I'm not sure if it's serious.", "output": "Plumbing"}
+{"input": "The bathroom grout is stained, could you clean it for me?", "output": "Cleaning"}
+{"input": "My kitchen lights are flickering, and I'm worried about the electrical wiring.", "output": "Electricity"}
+{"input": "I'm feeling very unwell and need someone to check my temperature, can you help?", "output": "Health"}
+{"input": "I'm looking for a professional to help me with my financial statements for the year.", "output": "Accounting"}
+{"input": "My fence gate is stuck, can you fix it?", "output": "Handiworks"}
+{"input": "I require a service to help me with my company's audit assistance.", "output": "Accounting"}
+{"input": "I require a chef who can provide a lesson on making artisanal cheese.", "output": "Cooking"}
+{"input": "I'm trying to build a new feature for our app, but I'm not sure how to proceed.", "output": "Information Technology"}
+{"input": "I require a chef who can provide a lesson on making artisanal cheese.", "output": "Cooking"}
+{"input": "I'm having trouble with the installation of a new software suite on my laptop.", "output": "Information Technology"}
+{"input": "I've lost access to my cloud storage, and I need to retrieve my files.", "output": "Information Technology"}
+{"input": "Please find a caterer who can handle a large party with a variety of dietary restrictions.", "output": "Cooking"}
+{"input": "I'm looking for a professional to paint my fence.", "output": "Handiworks"}
+{"input": "Can you help me with a leaky roof, it's causing water damage.", "output": "Handiworks"}
+{"input": "I'm looking for a piano teacher who can give my daughter private lessons.", "output": "Education"}
+{"input": "I need a math tutor for my daughter; she's having trouble with calculus.", "output": "Education"}
+{"input": "I'm looking for a professional to install a new ceiling fan in my bedroom.", "output": "Electricity"}
+{"input": "I need to track my business expenses more efficiently, what software would you suggest?", "output": "Accounting"}
+{"input": "I require a catering service for a summer barbecue that can handle a large crowd.", "output": "Cooking"}
+{"input": "I've got a clogged drain in my bathroom, it's been like this for days.", "output": "Plumbing"}
+{"input": "I'm concerned about a possible burst pipe in my home, it's making a loud banging noise.", "output": "Plumbing"}
+{"input": "I'm experien", "output": "Electricity"}
+{"input": "My computer is running a virus scan, but it's taking longer than expected.", "output": "Information Technology"}
+{"input": "My house feels unsafe; the flickering lights are giving me a headache.", "output": "Electricity"}
+{"input": "I'm struggling to get my application to run on the server.", "output": "Information Technology"}
+{"input": "The flickering lights in my dining room are driving me crazy; I need a solution.", "output": "Electricity"}
+{"input": "I require a chef who can prepare a vegan and gluten-free menu for a bridal shower.", "output": "Cooking"}
+{"input": "I've got a clogged drain in my bathroom, and I'm not sure how to clear it.", "output": "Plumbing"}
+{"input": "I'm trying to build a new feature for our app, but I'm not sure how to proceed.", "output": "Information Technology"}
+{"input": "My friend is seeking spiritual guidance to find inner peace.", "output": "Well Being"}
+{"input": "I'm looking for a professional to paint my fence.", "output": "Handiworks"}
+{"input": "My son is having trouble with physics; can you find a tutor who can explain the concepts better?", "output": "Education"}
+{"input": "I'm looking for a chef who can cater to a group with diverse dietary preferences for a charity event.", "output": "Cooking"}
+{"input": "The paint on my fence is chipping, can you repaint it?", "output": "Handiworks"}
+{"input": "My computer is running a virus scan, but it's taking longer than expected.", "output": "Information Technology"}
+{"input": "Please find a personal mentor who can assist with personal development.", "output": "Well Being"}
+{"input": "My fence gate is squeaky, can you oil the hinges?", "output": "Handiworks"}
+{"input": "I require a service to help me with my company's audit assistance.", "output": "Accounting"}
+{"input": "The bathroom grout is stained, could you clean it for me?", "output": "Cleaning"}
+{"input": "My computer'usted to build a new feature for our app, but I'm not sure how to proceed.", "output": "Information Technology"}
+{"input": "I'm hosting a dinner party and need my place to be spotless.", "output": "Cleaning"}
+{"input": "I'm hosting a dinner party and need my place to be spotless.", "output": "Cleaning"}
+{"input": "The water pressure in my shower is so low, it's almost unusable.", "output": "Plumbing"}
+{"input": "I require a chef who can prepare a vegan and gluten-free menu for a bridal shower.", "output": "Cooking"}
+{"input": "My kitchen lights are flickering, and I'm worried about the electrical wiring.", "output": "Electricity"}
+{"input": "My father needs help with his post-surgery care, can you assist?", "output": "Health"}
+{"input": "Do NOT number the list.", "output": "Well Being"}
+{"input": "I need assistance with my company's bookkeeping for small business.", "output": "Accounting"}
+{"input": "The requests must sound like REAL customers (some angry, some polite, some urgent, some short, some detailed).", "output": "Education"}
+{"input": "I'm hosting a dinner party and need my place to be spotless.", "output": "Cleaning"}
+{"input": "I've got a clogged drain in my bathroom, and I'm not sure how to clear it.", "output": "Plumbing"}
+{"input": "I'm in need of a professional to help me with my company's financial statements.", "output": "Accounting"}
+{"input": "Can you help me with a leaky roof, it's causing water damage.", "output": "Handiworks"}
+{"input": "Please find a chef who can cater to a group with diverse dietary preferences for a corporate event.", "output": "Cooking"}
+{"input": "I'm searching for a culinary instructor to teach me how to make authentic Italian cuisine.", "output": "Cooking"}
+{"input": "My son is having trouble with physics; can you find a tutor who can explain the concepts better?", "output": "Education"}
+{"input": "I'm looking for a handyman to fix my door hinges.", "output": "Handiworks"}
+{"input": "I'm looking for a Spanish tutor who can help my son with his vocabulary.", "output": "Education"}
+{"input": "My son is having trouble with physics; can you find a tutor who can explain the concepts better?", "output": "Education"}
+{"input": "The paint on my hallway wall is peeling off, can you touch it up?", "output": "Handiworks"}
+{"input": "My son is having trouble with physics; can you find a tutor who can explain the concepts better?", "output": "Education"}
+{"input": "The bathroom grout is stained, could you clean it for me?", "output": "Cleaning"}
+{"input": "You are a synthetic data generator. Generate 60 unique, diverse, and realistic user job requests for the category: Handiworks.", "output": "Handiworks"}
+{"input": "My son is having trouble with physics; can you find a tutor who can explain the concepts better?", "output": "Education"}
+{"input": "I'm having trouble with the Wi-Fi on my laptop; it connects but doesn't stay connected.", "output": "Information Technology"}
+{"input": "I'm looking for a carpenter to build a custom bookshelf.", "output": "Handiworks"}
+{"input": "I need help with my SAT prep; can you recommend a tutor who can help me with the math section?", "output": "Education"}
+{"input": "The living room carpet is looking dull, can you give it a revitalizing clean?", "output": "Cleaning"}
+{"input": "My computer'usted to build a new feature for our app, but I'm not sure how to proceed.", "output": "Information Technology"}
+{"input": "I'm looking for an electrician to fix the light switch in my hallway.", "output": "Electricity"}
+{"input": "I've accidentally deleted a file from my computer; can you guide me through the recovery process?", "output": "Information Technology"}
+{"input": "I'm looking for an electrician to fix the light switch in my hallway.", "output": "Electricity"}
+{"input": "I'm searching for a chef who can teach me how to prepare sushi at home.", "output": "Cooking"}
+{"input": "My son is having trouble with physics; can you find a tutor who can explain the concepts better?", "output": "Education"}
+{"input": "I require a service to help me with my company's audit assistance.", "output": "Accounting"}
+{"input": "Please find a chef who can offer a personalized meal prep service for a family with picky eaters.", "output": "Cooking"}
+{"input": "I've got a leak in my bathroom sink, but I'm not sure how to fix it.", "output": "Plumbing"}
+{"input": "The water pressure in my shower is so low, it's almost unusable.", "output": "Plumbing"}
+{"input": "I need a chef who can prepare a specialized menu for a children's birthday party.", "output": "Cooking"}
+{"input": "I'm interested in relaxation techniques to manage my anxiety.", "output": "Well Being"}
+{"input": "My computer is running a virus scan, but it's taking longer than expected.", "output": "Information Technology"}
+{"input": "I'm having trouble with my shower drain, the water just sits there.", "output": "Plumbing"}
+{"input": "My son is struggling with his Spanish homework; can you find a tutor who can help him?", "output": "Education"}
+{"input": "My computer is running a virus scan, but it's taking longer than expected.", "output": "Information Technology"}
+{"input": "I've accidentally deleted a file from my computer; can you guide me through the recovery process?", "output": "Information Technology"}
+{"input": "I'm looking for a professional to paint my front porch.", "output": "Handiworks"}
+{"input": "I'm concerned about a possible burst pipe in my home, it's making a loud banging noise.", "output": "Plumbing"}
+{"input": "The bathroom tiles are stained, could you clean them for me?", "output": "Cleaning"}
+{"input": "I'm hosting a dinner party and need my place to be spotless.", "output": "Cleaning"}
+{"input": "I'm experiencing lag when using my computer for graphic design work.", "output": "Information Technology"}
+{"input": "My computer is running a virus scan, but it's taking longer than expected.", "output": "Information Technology"}
+{"input": "Could you suggest a chef who can accommodate a nut allergy while preparing a birthday dinner?", "output": "Cooking"}
+{"input": "My computer'usted to build a new feature for our app, but I'm not sure how to proceed.", "output": "Information Technology"}
+{"input": "My computer'usted to build a new feature for our app, but I'm not sure how to proceed.", "output": "Information Technology"}
+{"input": "I'm in need of a service to help me with my company's payroll help.", "output": "Accounting"}
+{"input": "The requests must sound like REAL customers (some angry, some polite, some urgent, some short, some detailed).", "output": "Information Technology"}
+{"input": "My toilet is running constantly, and I'm worried about the water bill.", "output": "Plumbing"}
+{"input": "My son is interested in learning piano; can you find a teacher who can give him lessons?", "output": "Education"}
+{"input": "My son is having trouble with physics; can you find a tutor who can explain the concepts better?", "output": "Education"}
+{"input": "I need a meditation coach who can help me with my PTSD.", "output": "Well Being"}
+{"input": "My bedroom light switch is unresponsive; I'm worried about a potential electrical fault.", "output": "Electricity"}
+{"input": ":00:14.000 --> 00:00:16.000", "output": "Cooking"}
+{"input": "I need a math tutor for my daughter; she's having trouble with calculus.", "output": "Education"}
+{"input": "My kitchen lights are flickering, and I'm worried about the electrical wiring.", "output": "Electricity"}
+{"input": "I'm having trouble with a piece of code I wrote; it's not functioning as expected.", "output": "Information Technology"}
+{"input": "Please find a chef who can offer a personalized meal prep service for a family with picky eaters.", "output": "Cooking"}
+{"input": "Context keywords to inspire you: nursing care for elderly, feel sick, need medicine, physiotherapy, wound dressing, post-surgery care, check blood pressure, medical assistance, home nurse, injection service", "output": "Health"}
+{"input": "I've accidentally deleted a file from my computer; can you guide me through the recovery process?", "output": "Information Technology"}
+{"input": "I've accidentally deleted a file from my computer; can you guide me through the recovery process?", "output": "Information Technology"}
+{"input": "My son needs help with his essay; can you recommend a tutor who can help him improve his writing skills?", "output": "Education"}
+{"input": "I need assistance with my company's payroll help.", "output": "Accounting"}
+{"input": "I'm looking for an electrician to fix the outlet in my home office.", "output": "Electricity"}
+{"input": "The flickering lights in my dining room are driving me crazy; I need a solution.", "output": "Electricity"}
+{"input": "I need to rewire my house to accommodate a new appliance.", "output": "Electricity"}
+{"input": "Do NOT number the list.", "output": "Handiworks"}
+{"input": "My small business is struggling with bookkeeping, can you help streamline the process?", "output": "Accounting"}
+{"input": "My computer is running a virus scan, but it's taking longer than expected.", "output": "Information Technology"}
+{"input": "My water heater just stopped working, no hot water in the house.", "output": "Plumbing"}
+{"input": "I've accidentally deleted a file from my computer; can you guide me through the recovery process?", "output": "Information Technology"}
+{"input": "My fence gate is stuck, can you fix it?", "output": "Handiworks"}
+{"input": "I need help with my SAT prep; can you recommend a tutor who can help me with the critical reading section?", "output": "Education"}
+{"input": "I need a math tutor for my daughter; she's having trouble with geometry.", "output": "Education"}
+{"input": "Do not start lines with I need every time. Vary the phrasing.", "output": "Well Being"}
+{"input": "I'm looking for a professional to help me with my company's financial planning.", "output": "Accounting"}
+{"input": "The Wi-Fi on my desktop computer is not working, even though it's plugged in.", "output": "Information Technology"}
+{"input": "I'm concerned about a possible burst pipe in my home, it's making a loud banging noise.", "output": "Plumbing"}
+{"input": "I'm in need of a financial advisor to help me plan for the future.", "output": "Accounting"}
+{"input": "My son needs help with his essay; can you recommend a tutor who can help him improve his writing skills?", "output": "Education"}
+{"input": "I need to install a new outlet in my garage for a workshop.", "output": "Electricity"}
+{"input": "My computer'usted to build a new feature for our app, but I'm not sure how to proceed.", "output": "Information Technology"}
+{"input": "My daughter needs help with her essay writing; can you recommend a tutor?", "output": "Education"}
+{"input": "I'm searching for a chef who can teach me how to make sourdough bread from scratch.", "output": "Cooking"}
+{"input": "I'm searching for a chef who can teach me how to make sourdough bread from scratch.", "output": "Cooking"}
+{"input": "My computer'usted to build a new feature for our app, but I'm not sure how to proceed.", "output": "Information Technology"}
+{"input": "I need a chef who can prepare a specialized menu for a children's birthday party.", "output": "Cooking"}
+{"input": "I need someone to assemble a new bookshelf.", "output": "Handiworks"}
+{"input": "I'm experiencing a slow drip from my faucet, but I'm not sure if it's serious.", "output": "Plumbing"}
+{"input": "Urgent: I require a chef to prepare a vegan menu for a corporate event this Friday.", "output": "Cooking"}
+{"input": "Looking for a chef who can cater to a group with diverse dietary preferences for a charity event.", "output": "Cooking"}
+{"input": "I'm looking for a professional to help me with my company's financial planning.", "output": "Accounting"}
+{"input": "I'm hosting a dinner party and need my place to be spotless.", "output": "Cleaning"}
+{"input": "I'm trying to set up a new software tool for my team, but it's not compatible with our system.", "output": "Information Technology"}
+{"input": "I need assistance with my company's bookkeeping for small business.", "output": "Accounting"}
+{"input": "The printer I'm using for my home office is not printing documents.", "output": "Information Technology"}
+{"input": "My apartment is a mess after the party, can you clean it up?", "output": "Cleaning"}
+{"input": "I'm having trouble with the installation of a new software suite on my laptop.", "output": "Information Technology"}
+{"input": "My computer'usted to build a new feature for our app, but I'm not sure how to proceed.", "output": "Information Technology"}
+{"input": "My son is interested in learning piano; can you find a teacher who can give him lessons?", "output": "Education"}
+{"input": "Output ONLY the requests, one per line.", "output": "Well Being"}
+{"input": "I've lost access to my email account; can you help me reset my password?", "output": "Information Technology"}
+{"input": "I need a math tutor for my daughter; she's having trouble with calculus.", "output": "Education"}
+{"input": "The faucet in my kitchen is leaking, and I'm concerned about water damage.", "output": "Plumbing"}
+{"input": "I'm hosting a dinner party and need my place to be spotless.", "output": "Cleaning"}
+{"input": "My faucet in the kitchen is leaking, and I'm worried about the water damage.", "output": "Plumbing"}
+{"input": "I need a chef who can bake a custom wedding cake with a specific flavor profile.", "output": "Cooking"}
+{"input": "My fence gate is stuck, can you fix it?", "output": "Handiworks"}
+{"input": "I'm in a rush to file my taxes before the deadline, any quick tips?", "output": "Accounting"}
+{"input": "I'm in a hurry; I need a math tutor for my daughter's homework today.", "output": "Education"}
+{"input": "I'm looking for a coding lesson plan for beginners.", "output": "Education"}
+{"input": "Do not start lines with I need every time. Vary the phrasing.", "output": "Cooking"}
+{"input": ":00:16.000 --> 00:00:18.000", "output": "Cooking"}
+{"input": "I need someone to assemble a new bookshelf.", "output": "Handiworks"}
+{"input": "My kitchen outlet stopped working out of the blue, and I'm worried about the food in the fridge.", "output": "Electricity"}
+{"input": "My son needs help with his essay; can you recommend a tutor who can help him improve his writing skills?", "output": "Education"}
+{"input": "I'm looking for an electrician to fix the light switch in my hallway.", "output": "Electricity"}
+{"input": "I'm facing a cash flow problem, can you help me with financial planning?", "output": "Accounting"}
+{"input": "My computer screen is flickering, and I'm worried it might be a hardware issue.", "output": "Information Technology"}
+{"input": "I need help with my SAT prep; can you recommend a tutor who can help me with the critical reading section?", "output": "Education"}
+{"input": "I've got a lot of laundry and need a service that can handle it quickly.", "output": "Cleaning"}
+{"input": "I'm having trouble with the installation of a new software suite on my laptop.", "output": "Information Technology"}
+{"input": "My faucet in the kitchen is leaking, and I'm worried about the water damage.", "output": "Plumbing"}
+{"input": "My fence gate is squeaky, can you oil the hinges?", "output": "Handiworks"}
+{"input": "Do not use the category name in the request (e.g., don't say I need plumbing, say my pipe burst).", "output": "Handiworks"}
+{"input": "Please find a chef who can offer a personalized meal prep service for busy professionals.", "output": "Cooking"}
+{"input": "I'm in a hurry to file my taxes, can you expedite the process?", "output": "Accounting"}
+{"input": "The light switch in my hallway is stuck, and I can't get the lights to turn on.", "output": "Electricity"}
+{"input": "I need help with my SAT prep; can you recommend a tutor who can help me with the critical reading section?", "output": "Education"}
+{"input": "The water heater in my garage is not heating water properly, what could be the issue?", "output": "Plumbing"}
+{"input": "I require a service to help me with my company's expense tracking.", "output": "Accounting"}
+{"input": "Could you recommend a good math tutor for my son's upcoming exams?", "output": "Education"}
+{"input": "Do NOT number the list.", "output": "Education"}
+{"input": "My computer is running slow, and I suspect it's a virus.", "output": "Information Technology"}
+{"input": "Looking for a chef who can cater to a group with specific dietary needs for a fundraiser.", "output": "Cooking"}
+{"input": "I'm looking for a coding lesson for my daughter; she wants to learn Python.", "output": "Education"}
+{"input": "I'm having trouble with the installation of a new software suite on my laptop.", "output": "Information Technology"}
+{"input": "I've got a lot of laundry and need a service that can handle it quickly.", "output": "Cleaning"}
+{"input": "My fence needs a new coat of paint, it's looking old.", "output": "Handiworks"}
+{"input": "The paint on my fence is chipping, can you repaint it?", "output": "Handiworks"}
+{"input": "I'm looking for a professional to paint my fence.", "output": "Handiworks"}
+{"input": "I'm looking for a professional to paint my front porch.", "output": "Handiworks"}
+{"input": "I'm looking for a professional to help me with my company's financial planning.", "output": "Accounting"}
+{"input": "I'm experiencing a slow drip from my faucet, but I'm not sure if it's serious.", "output": "Plumbing"}
+{"input": "I'm in need of a professional to rewire my old house for safety.", "output": "Electricity"}
+{"input": "I require a chef who can prepare a vegan and gluten-free menu for a bridal shower.", "output": "Cooking"}
+{"input": "I'm looking for an electrician to fix the light switch in my hallway.", "output": "Electricity"}
+{"input": "I'm moving out and need a professional to clean my entire apartment.", "output": "Cleaning"}
+{"input": "You are a synthetic data generator. Generate 60 unique, diverse, and realistic user job requests for the category: Cooking.", "output": "Cooking"}
+{"input": "I'm trying to reset my password, but the system keeps asking for verification.", "output": "Information Technology"}
+{"input": "The requests must sound like REAL customers (some angry, some polite, some urgent, some short, some detailed).", "output": "Electricity"}
+{"input": "I'm having trouble with the installation of a new software suite on my laptop.", "output": "Information Technology"}
+{"input": "I'm in a hurry, my fence gate is broken, and I need it fixed.", "output": "Handiworks"}
+{"input": "The Wi-Fi on my desktop computer is not working, even though it's plugged in.", "output": "Information Technology"}
+{"input": "My son is having trouble with physics; can you find a tutor who can explain the concepts better?", "output": "Education"}
+{"input": "I need help with my SAT prep; can you recommend a tutor who can help me with the critical reading section?", "output": "Education"}
+{"input": ":00:00.000 --> 00:00:02.000", "output": "Cooking"}
+{"input": "I need a handyman to fix my fence gate.", "output": "Handiworks"}
+{"input": "I've noticed a drop in water pressure in my entire house, what could be wrong?", "output": "Plumbing"}
+{"input": "My room's in disarray after the party last night, could you help me tidy it up?", "output": "Cleaning"}
+{"input": "I'm looking for a quick clean-up service for my office before a client visit.", "output": "Cleaning"}
+{"input": "I'm searching for a chef who can teach me how to make sourdough bread from scratch.", "output": "Cooking"}
+{"input": "Can you do a thorough carpet cleaning? My dog has been shedding a lot lately.", "output": "Cleaning"}
+{"input": "I'm in need of a chef who can handle a last-minute request for a corporate event dinner.", "output": "Cooking"}
+{"input": "Please find a caterer who can handle a large party with a variety of dietary restrictions.", "output": "Cooking"}
+{"input": "I'm in need of a chef who can bake a wedding cake with a unique design.", "output": "Cooking"}
+{"input": "I've accidentally deleted a file from my computer; can you guide me through the recovery process?", "output": "Information Technology"}
+{"input": "My computer is running a virus scan, but it's taking longer than expected.", "output": "Information Technology"}
+{"input": "The breaker in my house keeps tripping when I use multiple appliances.", "output": "Electricity"}
+{"input": "You are a synthetic data generator. Generate 60 unique, diverse, and realistic user job requests for the category: Health.", "output": "Health"}
+{"input": "I'm in a hurry, my fence gate is broken, and I need it fixed.", "output": "Handiworks"}
+{"input": "I'm experien", "output": "Electricity"}
+{"input": "I need help with my SAT prep; can you recommend a tutor who can help me with the math section?", "output": "Education"}
+{"input": "I'm looking for someone to hang some shelves in my living room.", "output": "Handiworks"}
+{"input": "I'm looking for a professional to help me with my company's audit assistance.", "output": "Accounting"}
+{"input": "I'm in a hurry, my fence gate is broken, and I need it fixed.", "output": "Handiworks"}
+{"input": "Looking for a chef who can cater to a group with specific dietary needs for a charity event.", "output": "Cooking"}
+{"input": "The water pressure in my shower is so low, it's almost unusable.", "output": "Plumbing"}
+{"input": "I require a service to help me with my company's expense tracking.", "output": "Accounting"}
+{"input": "Looking for a chef who can cater to a group with specific dietary needs for a fundraiser.", "output": "Cooking"}
+{"input": "My kitchen sink is clogged, can you unclog it?", "output": "Handiworks"}
+{"input": "I'm having trouble with my shower drain, the water just sits there.", "output": "Plumbing"}
+{"input": "The driveway is a mess after the storm, can you power wash it?", "output": "Cleaning"}
+{"input": "My son is having trouble with physics; can you find a tutor who can explain the concepts better?", "output": "Education"}
+{"input": "Do not start lines with I need every time. Vary the phrasing.", "output": "Education"}
+{"input": "I've got a lot of laundry and need a service that can handle it quickly.", "output": "Cleaning"}
+{"input": "My bedroom light switch is unresponsive; I'm worried about a potential electrical fault.", "output": "Electricity"}
+{"input": "My computer is running a virus scan, but it's taking longer", "output": "Information Technology"}
+{"input": "I require a service to help me with my company's expense tracking.", "output": "Accounting"}
+{"input": "I'm having trouble with the installation of a new software suite on my laptop.", "output": "Information Technology"}
+{"input": "Please find a chef who can offer a personalized meal prep service for busy professionals.", "output": "Cooking"}
+{"input": "I require a chef who can provide a lesson on making artisanal cheese.", "output": "Cooking"}
+{"input": "I'm looking for a Spanish tutor who can help my son with his vocabul0ary.", "output": "Education"}
+{"input": "Do NOT number the list.", "output": "Electricity"}
+{"input": "I need assistance with preparing for the SATs; who can help me with practice tests?", "output": "Education"}
+{"input": "I need someone to assemble a new desk.", "output": "Handiworks"}
+{"input": "I'm feeling very weak and need someone to check my blood pressure, can you help?", "output": "Health"}
+{"input": "Do not start lines with I need every time. Vary the phrasing.", "output": "Cleaning"}
+{"input": "I need a math tutor for my daughter; she's having trouble with calculus.", "output": "Education"}
+{"input": "Please find a chef who can offer a personalized meal prep service for busy professionals.", "output": "Cooking"}
+{"input": "The water heater in my laundry room is making strange noises, should I be worried?", "output": "Plumbing"}
+{"input": "I need a meditation coach who can help me with insomnia.", "output": "Well Being"}
+{"input": "I require a chef who can provide a lesson on making artisanal cheese.", "output": "Cooking"}
+{"input": "The water pressure in my shower is so low, it's almost unusable.", "output": "Plumbing"}
+{"input": "Please find a chef who can offer a personalized meal prep service for a family with picky eaters.", "output": "Cooking"}
+{"input": "Context keywords to inspire you: private chef needed, baking cakes, meal prep for week, catering for party, vegan menu, teaching how to cook, food delivery for event, baking lessons, dietary restrictions", "output": "Cooking"}
+{"input": "I need assistance with assembling a new desk I bought.", "output": "Handiworks"}
+{"input": "The driveway is a mess after the storm, can you power wash it?", "output": "Cleaning"}
+{"input": "I'm looking for a chef who can cater to a group with diverse dietary preferences for a charity event.", "output": "Cooking"}
+{"input": "My room's in disarray after the party last night, could you help me tidy it up?", "output": "Cleaning"}
+{"input": "Context keywords to inspire you: deep clean apartment, carpet cleaning, window washing, move-out cleaning, office cleaning, power wash driveway, tidy up messy room, laundry service", "output": "Cleaning"}
+{"input": "I'm in a rush; I need a tutor for my daughter's math homework today.", "output": "Education"}
+{"input": "The screen on my tablet is unresponsive, and I can't turn it on.", "output": "Information Technology"}
+{"input": "The paint on my fence is chipping, can you repaint it?", "output": "Handiworks"}
+{"input": "I require a chef who can provide a lesson on making artisanal cheese.", "output": "Cooking"}
+{"input": "The water heater in my garage is not heating water properly, what could be the issue?", "output": "Plumbing"}
+{"input": "My garage door opener stopped working; I suspect it's an electrical issue.", "output": "Electricity"}
+{"input": "I'm looking for a piano teacher who can help my daughter improve her technique.", "output": "Education"}
+{"input": "I'm having trouble with the installation of a new application on my workstation.", "output": "Information Technology"}
+{"input": "I'm trying to build a new feature for our app, but I'm not sure how to proceed.", "output": "Information Technology"}
+{"input": "Please fix the broken window in my bedroom, it's a safety hazard.", "output": "Handiworks"}
+{"input": "I'm interested in installing a smart home system that includes lighting.", "output": "Electricity"}
+{"input": "Please find a personal mentor who can help me with my self-esteem issues.", "output": "Well Being"}
+{"input": "The water heater in my garage is not heating water properly, what could be the issue?", "output": "Plumbing"}
+{"input": "The breaker in my house keeps tripping when I use my hairdryer.", "output": "Electricity"}
+{"input": "My fence gate is stuck, can you fix it?", "output": "Handiworks"}
+{"input": "The requests must sound like REAL customers (some angry, some polite, some urgent, some short, some detailed).", "output": "Cooking"}
+{"input": "I'm experiencing frequent power outages; I need to get my electrical system checked.", "output": "Electricity"}
+{"input": "I'm in a rush; I need a tutor for my daughter's math homework today.", "output": "Education"}
+{"input": "I require a service to help me with my company's audit assistance.", "output": "Accounting"}
+{"input": "I need someone to assemble a new desk.", "output": "Handiworks"}
+{"input": ":00:14.000 --> 00:00:16.000", "output": "Cooking"}
+{"input": "Do not start lines with I need every time. Vary the phrasing.", "output": "Health"}
+{"input": "I'm struggling with my daily exercises after my knee operation, can you assist?", "output": "Health"}
+{"input": "I need a new lock for my front door, the old one's jammed.", "output": "Handiworks"}
+{"input": "Looking for a private chef who can cater to my gluten-free dietary needs for a weekend getaway.", "output": "Cooking"}
+{"input": "I've lost access to my cloud storage, and I need to retrieve my files.", "output": "Information Technology"}
+{"input": "I'm experiencing a slow drip from my faucet, but I'm not sure if it's serious.", "output": "Plumbing"}
+{"input": "Context keywords to inspire you: sink leaking, toilet clogged, low water pressure, pipe burst, install faucet, shower not draining, water heater broken, blocked drain, leak detection", "output": "Plumbing"}
+{"input": "Can you help me with a leaky roof, it's causing water damage.", "output": "Handiworks"}
+{"input": "Can you find a history tutor who specializes in American Civil War?", "output": "Education"}
+{"input": "The driveway is a mess after the storm, can you power wash it?", "output": "Cleaning"}
+{"input": "I need help with my SAT prep; can you recommend a tutor who can help me with the math section?", "output": "Education"}
+{"input": "I'm in a hurry, my fence gate is broken, and I need it fixed.", "output": "Handiworks"}
+{"input": "I'm having trouble with my payroll software, can you troubleshoot it?", "output": "Accounting"}
+{"input": "I'm looking for a coding lesson for my daughter; she wants to learn JavaScript.", "output": "Education"}
+{"input": "Can you help me with a leaky roof, it's causing water damage.", "output": "Handiworks"}
+{"input": "I'm interested in installing a smart home system that includes lighting.", "output": "Electricity"}
+{"input": "My apartment is a mess after the party, can you clean it up?", "output": "Cleaning"}
+{"input": "The software I'm developing keeps crashing on startup.", "output": "Information Technology"}
+{"input": "I'm looking for a history tutor who can help my son with his project on World War II.", "output": "Education"}
+{"input": "I'm looking for a coding lesson for my daughter; she wants to learn JavaScript.", "output": "Education"}
+{"input": "I'm worried about my mother's wound, it looks infected, can you come to dress it?", "output": "Health"}
+{"input": "My fence gate is stuck, can you fix it?", "output": "Handiworks"}
+{"input": "Output ONLY the requests, one per line.", "output": "Accounting"}
+{"input": ":00:04.000 --> 00:00:06.000", "output": "Cooking"}
+{"input": "I'm having trouble with the installation of a new software suite on my laptop.", "output": "Information Technology"}
+{"input": "My fence gate is stuck, can you fix it?", "output": "Handiworks"}
+{"input": "I'm having trouble with the installation of a new software suite on my laptop.", "output": "Information Technology"}
+{"input": ":00:08.000 --> 00:00:10.000", "output": "Cooking"}
+{"input": "My son needs help with his essay; can you recommend a tutor who can help him improve his writing skills?", "output": "Education"}
+{"input": "You are a synthetic data generator. Generate 60 unique, diverse, and realistic user job requests for the category: Electricity.", "output": "Electricity"}
+{"input": "I'm having trouble with the installation of a new software suite on my laptop.", "output": "Information Technology"}
+{"input": "I require a chef who can prepare a vegan and gluten-free menu for a bridal shower.", "output": "Cooking"}
+{"input": "My computer is running a virus scan, but it's taking longer than expected.", "output": "Information Technology"}
+{"input": "I'm looking for a professional to install a new ceiling fan in my bedroom.", "output": "Electricity"}
+{"input": "Output ONLY the requests, one per line.", "output": "Information Technology"}
+{"input": "I'm looking for a Spanish tutor who can help my son with his accent.", "output": "Education"}
+{"input": "You are a synthetic data generator. Generate 60 unique, diverse, and realistic user job requests for the category: Accounting.", "output": "Accounting"}
+{"input": "I've lost access to my cloud storage, and I need to retrieve my files.", "output": "Information Technology"}
+{"input": "I require a chef who can provide a lesson on making artisanal cheese.", "output": "Cooking"}
+{"input": "Looking for a chef who can cater to a group with specific dietary needs for a fundraiser.", "output": "Cooking"}
+{"input": "I'm trying to build a new feature for our app, but I'm not sure how to proceed.", "output": "Information Technology"}
+{"input": "I've accidentally deleted a file from my computer; can you guide me through the recovery process?", "output": "Information Technology"}
+{"input": "The breaker in my house keeps tripping when I use my hairdryer.", "output": "Electricity"}
+{"input": "I'm in a hurry, my fence gate is broken, and I need it fixed.", "output": "Handiworks"}
+{"input": "I've forgotten my password and can't log in to my email account.", "output": "Information Technology"}
+{"input": "I need assistance with my company's payroll help.", "output": "Accounting"}
+{"input": "The driveway is a mess after the storm, can you power wash it?", "output": "Cleaning"}
+{"input": "The requests must sound like REAL customers (some angry, some polite, some urgent, some short, some detailed).", "output": "Cleaning"}
+{"input": "Can you help me with a leaky roof, it's causing water damage.", "output": "Handiworks"}
+{"input": "I've accidentally deleted a folder with important documents; how can I recover them?", "output": "Information Technology"}
+{"input": "Output ONLY the requests, one per line.", "output": "Plumbing"}
+{"input": "Please find a chef who can offer a personalized meal prep service for busy professionals.", "output": "Cooking"}
+{"input": "Please fix the broken window in my bedroom, it's a safety hazard.", "output": "Handiworks"}
+{"input": "I'm looking for a meditation coach who specializes in stress relief.", "output": "Well Being"}
+{"input": ":00:04.000 --> 00:00:06.000", "output": "Cooking"}
+{"input": "I'm facing a cash flow problem, can you help me with financial planning?", "output": "Accounting"}
+{"input": "I require a chef who can prepare a vegan and gluten-free menu for a bridal shower.", "output": "Cooking"}
+{"input": "I'm hosting a dinner party and need my place to be spotless.", "output": "Cleaning"}
+{"input": "My son needs help with his essay; can you recommend a tutor who can help him improve his writing skills?", "output": "Education"}
+{"input": "My son is having trouble with physics; can you find a tutor who can explain the concepts better?", "output": "Education"}
+{"input": "I'm in need of a professional to help me with my company's financial statements.", "output": "Accounting"}
+{"input": "I'm worried about my grandfather's mobility, can you provide physiotherapy?", "output": "Health"}
+{"input": "I'm looking for a piano teacher who can give my daughter private lessons.", "output": "Education"}
+{"input": "I need assistance with my company's payroll help.", "output": "Accounting"}
+{"input": "Can you help me with a leaky roof, it's causing water damage.", "output": "Handiworks"}
+{"input": "The requests must sound like REAL customers (some angry, some polite, some urgent, some short, some detailed).", "output": "Plumbing"}
+{"input": "Do not start lines with I need every time. Vary the phrasing.", "output": "Handiworks"}
+{"input": "I'm looking for a chef who can cater to a group with diverse dietary preferences for a charity event.", "output": "Cooking"}
+{"input": "The driveway is a mess after the storm, can you power wash it?", "output": "Cleaning"}
+{"input": "I'm seeking a service to help with my company's expense tracking and reporting.", "output": "Accounting"}
+{"input": "I'm in need of a professional to help me with my company's financial statements.", "output": "Accounting"}
+{"input": "My fence gate is squeaky, can you oil the hinges?", "output": "Handiworks"}
+{"input": "I've got a leak in my bathroom sink, but I'm not sure how to fix it.", "output": "Plumbing"}
+{"input": "My apartment is a mess after the party, can you clean it up?", "output": "Cleaning"}
+{"input": "Please find a personal mentor who can assist with personal development.", "output": "Well Being"}
+{"input": "Do not start lines with I need every time. Vary the phrasing.", "output": "Electricity"}
+{"input": "My grandmother needs help with her medication, can you come over to assist?", "output": "Health"}
+{"input": "My son is having trouble with physics; can you find a tutor who can explain the concepts better?", "output": "Education"}
+{"input": "I'm facing a cash flow problem, can you help me with financial planning?", "output": "Accounting"}
+{"input": "Please handle the deep cleaning of my apartment before I move out, it's a mess.", "output": "Cleaning"}
+{"input": "I require a service to help me with my company's audit assistance.", "output": "Accounting"}
+{"input": "I need a handyman to fix my fence gate.", "output": "Handiworks"}
+{"input": "I require a chef who can prepare a vegan and gluten-free menu for a bridal shower.", "output": "Cooking"}
+{"input": "The paint on my fence is chipping, can you repaint it?", "output": "Handiworks"}
+{"input": "I'm looking for an English teacher who can help my son with his grammar.", "output": "Education"}
+{"input": "I'm in need of a chef who can bake a custom wedding cake with a specific flavor profile.", "output": "Cooking"}
+{"input": "Do not use the category name in the request (e.g., don't say I need plumbing, say my pipe burst).", "output": "Education"}
+{"input": ":00:18.000 --> 00:00:20.000", "output": "Cooking"}
+{"input": "Output ONLY the requests, one per line.", "output": "Plumbing"}
+{"input": "My son needs help with his essay; can you recommend a tutor who can help him improve his writing skills?", "output": "Education"}
+{"input": "I'm looking for a meditation coach who specializes in stress relief.", "output": "Well Being"}
+{"input": "I'm looking for a professional to assist with my company's tax return.", "output": "Accounting"}
+{"input": "My toilet is running constantly, it's really annoying and I'm worried about the water bill.", "output": "Plumbing"}
+{"input": "I'm interested in installing a smart home system that includes lighting.", "output": "Electricity"}
+{"input": "My computer screen is flickering, and I'm worried it might be a hardware issue.", "output": "Information Technology"}
+{"input": "The paint on my fence is chipping, can you repaint it?", "output": "Handiworks"}
+{"input": "I need a math tutor for my daughter; she's having trouble with calculus.", "output": "Education"}
+{"input": "I've got a leak in my bathroom sink, but I'm not sure how to fix it.", "output": "Plumbing"}
+{"input": "I've lost access to my cloud storage, and I need to retrieve my files.", "output": "Information Technology"}
+{"input": "I'm hosting a dinner party and need my place to be spotless.", "output": "Cleaning"}
+{"input": "The water heater in my garage is not heating water properly, what could be the issue?", "output": "Plumbing"}
+{"input": "The requests must sound like REAL customers (some angry, some polite, some urgent, some short, some detailed).", "output": "Cleaning"}
+{"input": "I need a math tutor for my daughter; she's having trouble with calculus.", "output": "Education"}
+{"input": "My son is having trouble with physics; can you find a tutor who can explain the concepts better?", "output": "Education"}
+{"input": "I'm looking for a private chef who can create a themed dinner party menu.", "output": "Cooking"}
+{"input": "My computer is running a virus scan, but it's taking longer than expected.", "output": "Information Technology"}
+{"input": "The bathroom grout is stained, could you clean it for me?", "output": "Cleaning"}
+{"input": "You are a synthetic data generator. Generate 60 unique, diverse, and realistic user job requests for the category: Information Technology.", "output": "Information Technology"}
+{"input": "I require expertise in financial planning for my growing business.", "output": "Accounting"}
+{"input": "I'm having trouble with the installation of a new software tool on my workstation.", "output": "Information Technology"}
+{"input": "My son is struggling with his Spanish homework; can you find a tutor who can help him?", "output": "Education"}
+{"input": "I require a service to help me with my company's audit assistance.", "output": "Accounting"}
+{"input": "I need help with my SAT prep; can you recommend a tutor who can help me with the critical reading section?", "output": "Education"}
+{"input": "My company's website is down, and I suspect a server issue.", "output": "Information Technology"}
+{"input": "Do NOT number the list.", "output": "Plumbing"}
+{"input": "My shower isn't draining properly, and I'm afraid it might overflow.", "output": "Plumbing"}
+{"input": "I'm in a hurry; I need a math tutor for my daughter's homework today.", "output": "Education"}
+{"input": "I'm having trouble with the installation of a new software suite on my laptop.", "output": "Information Technology"}
+{"input": "My computer'usted to build a new feature for our app, but I'm not sure how to proceed.", "output": "Information Technology"}
+{"input": "I require a service to help me with my company's expense tracking.", "output": "Accounting"}
+{"input": "Do NOT number the list.", "output": "Well Being"}
+{"input": "Can you help me with a leaky roof, it's causing water damage.", "output": "Handiworks"}
+{"input": "My father needs help with his medication schedule, can you assist?", "output": "Health"}
+{"input": "My wife needs help with her insulin injections, can you come over to assist?", "output": "Health"}
+{"input": "I've accidentally deleted a file from my computer; can you guide me through the recovery process?", "output": "Information Technology"}
+{"input": "My son is having trouble with physics; can you find a tutor who can explain the concepts better?", "output": "Education"}
+{"input": "The light switch in my hallway is stuck, and I can't get the lights to turn on.", "output": "Electricity"}
+{"input": "I'm in need of a professional to help me with my company's financial statements.", "output": "Accounting"}
+{"input": "I'm trying to reset my password, but the system keeps asking for verification.", "output": "Information Technology"}
+{"input": "My son is struggling with his essay; can you recommend a tutor who can help him improve his writing skills?", "output": "Education"}
+{"input": "My toilet is running constantly, and I'm worried about the water bill.", "output": "Plumbing"}
+{"input": "Do not start lines with I need every time. Vary the phrasing.", "output": "Plumbing"}
+{"input": "The driveway is a mess after the storm, can you power wash it?", "output": "Cleaning"}
+{"input": "My husband needs assistance with his physiotherapy exercises, can you help?", "output": "Health"}
+{"input": "I've lost access to my cloud storage, and I need to retrieve my files.", "output": "Information Technology"}
+{"input": "Do not start lines with I need every time. Vary the phrasing.", "output": "Well Being"}
+{"input": "I'm in a rush, my fence gate is broken, and I need it fixed.", "output": "Handiworks"}
+{"input": "I'm looking for a yoga instructor who can accommodate my schedule.", "output": "Well Being"}
+{"input": "My daughter needs help with her essay writing; can you recommend a tutor?", "output": "Education"}
+{"input": "My son is interested in learning piano; can you find a teacher who can give him lessons?", "output": "Education"}
+{"input": "The requests must sound like REAL customers (some angry, some polite, some urgent, some short, some detailed).", "output": "Accounting"}
+{"input": "I'm in need of a professional to help me with my company's financial statements.", "output": "Accounting"}
+{"input": "I'm concerned about my elderly neighbor's health, can you check on her?", "output": "Health"}
+{"input": "I'm interested in installing a smart home system that includes lighting.", "output": "Electricity"}
+{"input": "I've lost access to my cloud storage, and I need to retrieve my files.", "output": "Information Technology"}
+{"input": "I'm looking for a reliable service to handle my payroll, any recommendations?", "output": "Accounting"}
+{"input": "I need a new lock for my front door, the old one's jammed.", "output": "Handiworks"}
+{"input": "Looking for a chef who can cater to a group with specific dietary needs for a fundraiser.", "output": "Cooking"}
+{"input": "I'm planning to buy an electric vehicle and need to install a charging station at home.", "output": "Electricity"}
+{"input": "I need a handyman to fix my fence gate.", "output": "Handiworks"}
+{"input": "I'm looking for an English teacher who can help my son with his public speaking.", "output": "Education"}
+{"input": "Output ONLY the requests, one per line.", "output": "Handiworks"}
+{"input": "The breaker in my house keeps tripping when I use my microwave.", "output": "Electricity"}
+{"input": "Do NOT number the list.", "output": "Information Technology"}
+{"input": "My apartment is a mess after the party, can you clean it up?", "output": "Cleaning"}
+{"input": "My garage door opener stopped working; I suspect it's an electrical issue.", "output": "Electricity"}
+{"input": "The flickering lights in my dining room are driving me crazy; I need a solution.", "output": "Electricity"}
+{"input": "I'm having trouble with the installation of a new software suite on my laptop.", "output": "Information Technology"}
+{"input": "I require a chef who can provide a lesson on making artisanal cheese.", "output": "Cooking"}
+{"input": "I've accidentally deleted a file from my computer; can you guide me through the recovery process?", "output": "Information Technology"}
+{"input": "I'm searching for a chef who can teach me how to make sourdough bread from scratch.", "output": "Cooking"}
+{"input": "I need someone to assemble a new bookshelf.", "output": "Handiworks"}
+{"input": "I require a chef who can provide a lesson on making artisanal cheese.", "output": "Cooking"}
+{"input": "My garage door opener stopped working; I suspect it's an electrical issue.", "output": "Electricity"}
+{"input": "I'm facing a cash flow problem, can you help me with financial planning?", "output": "Accounting"}
+{"input": "My computer is infected with malware, and I need to remove it.", "output": "Information Technology"}
+{"input": "I'm looking for an English teacher who can help my son with his grammar.", "output": "Education"}
+{"input": "I require a catering service for a summer barbecue that can handle a large crowd.", "output": "Cooking"}
+{"input": "I'm looking for a Spanish tutor who can help my son with his accent.", "output": "Education"}
+{"input": "I require a service to help me with my company' house's financial statements.", "output": "Accounting"}
+{"input": "My computer is running a virus scan, but it's taking longer than expected.", "output": "Information Technology"}
+{"input": "My computer is running a virus scan, but it's taking longer than expected.", "output": "Information Technology"}
+{"input": "I'm looking for a handyman to fix my door hinges.", "output": "Handiworks"}
+{"input": "I've noticed a strange noise coming from my pipes, could it be a leak?", "output": "Plumbing"}
+{"input": "I'm concerned about a possible burst pipe in my home, it's making a loud banging noise.", "output": "Plumbing"}
+{"input": "Every time I turn on the living room light, the breaker trips immediately.", "output": "Electricity"}
+{"input": "My apartment is a mess after the party, can you clean it up?", "output": "Cleaning"}
+{"input": "I'm moving out and need a professional to clean my entire apartment.", "output": "Cleaning"}
+{"input": "I need a handyman to fix my fence gate.", "output": "Handiworks"}
+{"input": "My fence gate is stuck, can you fix it?", "output": "Handiworks"}
+{"input": "My fence gate is squeaky, can you oil the hinges?", "output": "Handiworks"}
+{"input": "I'm having trouble with the installation of a new software suite on my laptop.", "output": "Information Technology"}
+{"input": "I've got a lot of laundry and need a service that can handle it quickly.", "output": "Cleaning"}
+{"input": "My wall paint is chipping, can you repaint it?", "output": "Handiworks"}
+{"input": "I'm looking for an English teacher who can help my son with his public speaking.", "output": "Education"}
+{"input": "I'm looking for a coding lesson for my daughter; she wants to learn Python.", "output": "Education"}
+{"input": "The breaker in my house keeps tripping when I use my microwave.", "output": "Electricity"}
+{"input": "I need assistance with my payroll help, can you provide a solution?", "output": "Accounting"}
+{"input": "I'm looking for a yoga instructor who can teach me breathing exer", "output": "Well Being"}
+{"input": "I'm feeling very anxious about my health, can you come over to help?", "output": "Health"}
+{"input": "Can you help me with a leaky roof, it's causing water damage.", "output": "Handiworks"}
+{"input": "I need someone to assemble a new desk.", "output": "Handiworks"}
+{"input": "My computer is running a virus scan, but it's taking longer than expected.", "output": "Information Technology"}
+{"input": "Do NOT number the list.", "output": "Cleaning"}
+{"input": "I'm having trouble with the installation of a new software suite on my laptop.", "output": "Information Technology"}
+{"input": "I'm concerned about a possible burst pipe in my home, it's making a loud banging noise.", "output": "Plumbing"}
+{"input": "I'm feeling dizzy and weak, could you come over to help me feel better?", "output": "Health"}
+{"input": "My computer is running slow, and I suspect it's a virus.", "output": "Information Technology"}
+{"input": "Can you find a history tutor who specializes in American Civil War?", "output": "Education"}
+{"input": "I'm looking for a Spanish tutor who can help my son with his vocabulary.", "output": "Education"}
+{"input": "I'm in a hurry to find a relaxation technique for my anxiety.", "output": "Well Being"}
+{"input": "I need a math tutor for my daughter; she's having trouble with geometry.", "output": "Education"}
+{"input": "I need someone to assemble a new desk.", "output": "Handiworks"}
+{"input": "I'm trying to reset my password, but the system is not accepting my new password.", "output": "Information Technology"}
+{"input": "I need help with my SAT prep; can you recommend a tutor who can help me with the critical reading section?", "output": "Education"}
+{"input": "The driveway is covered in mud from the rain, can you power wash it?", "output": "Cleaning"}
+{"input": "I've accidentally deleted a file from my computer; can you guide me through the recovery process?", "output": "Information Technology"}
+{"input": "Output ONLY the requests, one per line.", "output": "Cooking"}
+{"input": "My fence gate is stuck, can you fix it?", "output": "Handiworks"}
+{"input": "The water pressure in my shower is so low, it's almost unusable.", "output": "Plumbing"}
+{"input": "My wife needs help with her insulin injections, can you come over to assist?", "output": "Health"}
+{"input": "My Wi-Fi connection is intermittent and drops frequently.", "output": "Information Technology"}
+{"input": "I'm trying to reset my password, but the system is not accepting my new password.", "output": "Information Technology"}
+{"input": "My computer's performance has degraded significantly; could it be a virus?", "output": "Information Technology"}
+{"input": "I need a math tutor for my daughter; she's having trouble with geometry.", "output": "Education"}
+{"input": "Can you do a thorough carpet cleaning? My dog has been shedding a lot lately.", "output": "Cleaning"}
+{"input": "My son is struggling with Spanish vocabulary; can you suggest a tutor?", "output": "Education"}
+{"input": "The bathroom grout is stained, could you clean it for me?", "output": "Cleaning"}
+{"input": "I'm having trouble with the installation of a new application on my workstation.", "output": "Information Technology"}
+{"input": "I'm looking for a coding lesson for my daughter; she wants to learn Python.", "output": "Education"}
+{"input": "Do not start lines with I need every time. Vary the phrasing.", "output": "Accounting"}
+{"input": "The water pressure in my shower is so low, it's barely a trickle.", "output": "Plumbing"}
+{"input": "I've got a clogged drain in my bathroom, and I'm not sure how to clear it.", "output": "Plumbing"}
+{"input": "My door handle is wobbly, can you fix it?", "output": "Handiworks"}
+{"input": "The windows in my living room are filthy, could you clean them for me?", "output": "Cleaning"}
+{"input": "I'm having trouble with the installation of a new software suite on my laptop.", "output": "Information Technology"}
+{"input": "Can you help me with a leaky roof, it's causing water damage.", "output": "Handiworks"}
+{"input": "There's a leak in my roof, can you take a look?", "output": "Handiworks"}
+{"input": ":00:10.000 --> 00:00:12.000", "output": "Cooking"}
+{"input": "I'm in need of a service to help me with my company's payroll help.", "output": "Accounting"}
+{"input": "The requests must sound like REAL customers (some angry, some polite, some urgent, some short, some detailed).", "output": "Electricity"}
+{"input": "The breaker in my house keeps tripping when I use my hairdryer.", "output": "Electricity"}
+{"input": "My computer is running a virus scan, but it's taking longer than expected.", "output": "Information Technology"}
+{"input": "The breaker in my house keeps tripping when I use my hairdryer.", "output": "Electricity"}
+{"input": "I'm searching for a chef who can teach me how to make sourdough bread from scratch.", "output": "Cooking"}
+{"input": "I've lost access to my cloud storage, and I need to retrieve my files.", "output": "Information Technology"}
+{"input": "My computer screen is flickering, and I'm worried it might be a hardware issue.", "output": "Information Technology"}
+{"input": "My blood pressure has been high lately, could you monitor it for me?", "output": "Health"}
+{"input": "I require a service to help me with my company's audit assistance.", "output": "Accounting"}
+{"input": "Can you help me with a leaky roof, it's causing water damage.", "output": "Handiworks"}
+{"input": "I need a math tutor for my daughter; she's having trouble with algebra.", "output": "Education"}
+{"input": "Looking for a chef who can cater to a group with specific dietary needs for a fundraiser.", "output": "Cooking"}
+{"input": "I require a professional to help me with my company's expense tracking.", "output": "Accounting"}
+{"input": "The outlet in my bedroom is not providing power to my laptop charger.", "output": "Electricity"}
+{"input": "My computer is running a virus scan, but it's taking longer than expected.", "output": "Information Technology"}
+{"input": "I'm facing a cash flow problem, can you help me with financial planning?", "output": "Accounting"}
+{"input": "Please repair the fence in my backyard, it's got a few cracks.", "output": "Handiworks"}
+{"input": "I require a chef who can provide a lesson on making artisanal cheese.", "output": "Cooking"}
+{"input": "My bathroom light switch is unresponsive; I'm concerned about a potential electrical fault.", "output": "Electricity"}
+{"input": "Do not start lines with I need every time. Vary the phrasing.", "output": "Education"}
+{"input": "I'm looking for a professional to assist with my company's tax return.", "output": "Accounting"}
+{"input": "Please find a chef who can offer a personalized meal prep service for a family with picky eaters.", "output": "Cooking"}
+{"input": "I've accidentally deleted a file from my computer; can you guide me through the recovery process?", "output": "Information Technology"}
+{"input": "I'm looking for a quick clean-up service for my office before a client visit.", "output": "Cleaning"}
+{"input": "Context keywords to inspire you: file taxes, bookkeeping for small business, audit assistance, financial planning, payroll help, quickbooks support, tax return, expense tracking", "output": "Accounting"}
+{"input": "I'm looking for a quick clean-up service for my office before a client visit.", "output": "Cleaning"}
+{"input": "Please find a chef who can provide a detailed lesson on baking artisanal bread.", "output": "Cooking"}
+{"input": "Do not start lines with I need every time. Vary the phrasing.", "output": "Plumbing"}
+{"input": "I've accidentally deleted a file from my computer; can you guide me through the recovery process?", "output": "Information Technology"}
+{"input": "I'm worried about a possible pipe burst in my basement, it's making a loud noise.", "output": "Plumbing"}
+{"input": "My aunt needs assistance with her daily activities, can you provide help?", "output": "Health"}
+{"input": "I'm in a hurry, my fence gate is broken, and I need it fixed.", "output": "Handiworks"}
+{"input": "Please find a personal mentor who can help me with my self-esteem issues.", "output": "Well Being"}
+{"input": "I'm looking for an English teacher who can help my son with his public speaking.", "output": "Education"}
+{"input": "I'm looking for a professional to help me with my company's financial planning.", "output": "Accounting"}
+{"input": "My son is interested in learning piano; can you find a teacher who can give him lessons?", "output": "Education"}
+{"input": "I'm interested in installing a smart home system that includes lighting.", "output": "Electricity"}
+{"input": "My computer's performance has degraded significantly; could it be a virus?", "output": "Information Technology"}
+{"input": "I need assistance with my company's payroll help.", "output": "Accounting"}
+{"input": "I need assistance with my company's bookkeeping for small business.", "output": "Accounting"}
+{"input": "I'm facing a cash flow problem, can you help me with financial planning?", "output": "Accounting"}
+{"input": "Please find a chef who can offer a personalized meal prep service for busy professionals.", "output": "Cooking"}
+{"input": "The screen on my tablet is unresponsive, and I can't turn it on.", "output": "Information Technology"}
+{"input": "I'm looking for an English teacher who can help my son with his grammar", "output": "Education"}
+{"input": "I've accidentally deleted a file from my computer; can you guide me through the recovery process?", "output": "Information Technology"}
+{"input": "I'm looking for a professional to help me with my company's financial statements.", "output": "Accounting"}
+{"input": "Need a reliable food delivery service for a wedding reception with a diverse menu.", "output": "Cooking"}
+{"input": "I'm feeling very weak and need someone to check my vitals, can you help?", "output": "Health"}
+{"input": "My bathroom light switch is unresponsive; I'm concerned about a potential electrical fault.", "output": "Electricity"}
+{"input": "My son is struggling with his essay; can you recommend a tutor who can help him improve his writing skills?", "output": "Education"}
+{"input": "I've noticed a drop in water pressure in my entire house, what could be wrong?", "output": "Plumbing"}
+{"input": "Do NOT number the list.", "output": "Education"}
+{"input": "The requests must sound like REAL customers (some angry, some polite, some urgent, some short, some detailed).", "output": "Handiworks"}
+{"input": "My computer'usted to build a new feature for our app, but I'm not sure how to proceed.", "output": "Information Technology"}
+{"input": "I've got a clogged drain in my bathroom, and I'm not sure how to clear it.", "output": "Plumbing"}
+{"input": "I require a service to help me with my company's expense tracking.", "output": "Accounting"}
+{"input": "I've got a pile of dirty dishes, can you take care of the laundry as well?", "output": "Cleaning"}
+{"input": "My son is interested in learning piano; can you find a teacher who can give him lessons?", "output": "Education"}
+{"input": "I'm looking for a professional to paint my fence.", "output": "Handiworks"}
+{"input": "I'm moving out and need a professional to clean my entire apartment.", "output": "Cleaning"}
+{"input": "My windows are looking grimy, could you give them a good wash?", "output": "Cleaning"}
+{"input": "The breaker in my house keeps tripping when I use multiple appliances.", "output": "Electricity"}
+{"input": "The water heater in my garage is not heating water properly, what could be the issue?", "output": "Plumbing"}
+{"input": "Urgent: I require a chef to prepare a vegan menu for a corporate event this Friday.", "output": "Cooking"}
+{"input": "My computer'usted to build a new feature for our app, but I'm not sure how to proceed.", "output": "Information Technology"}
+{"input": "I need a chef who can prepare a specialized menu for a children's birthday party.", "output": "Cooking"}
+{"input": "The bathroom grout is stained, could you clean it for me?", "output": "Cleaning"}
+{"input": "I'm looking for a professional to paint my fence.", "output": "Handiworks"}
+{"input": "Looking for a chef who can cater to a group with specific dietary needs for a fundraiser.", "output": "Cooking"}
+{"input": "There's a weird smell coming from my drains, could it be a blockage?", "output": "Plumbing"}
+{"input": "I require assistance with setting up QuickBooks for my freelance work.", "output": "Accounting"}
+{"input": "My house feels unsafe; the flickering lights are giving me a headache.", "output": "Electricity"}
+{"input": "My kitchen lights are flickering, and I'm worried about the electrical wiring.", "output": "Electricity"}
+{"input": "I need a handyman to fix my fence gate.", "output": "Handiworks"}
+{"input": "Do not start lines with I need every time. Vary the phrasing.", "output": "Electricity"}
+{"input": "My kitchen sink is leaking water all over the floor, it's a mess!", "output": "Plumbing"}
+{"input": "Do not use the category name in the request (e.g., don't say I need plumbing, say my pipe burst).", "output": "Well Being"}
+{"input": "I'm hosting a dinner party and need my place to be spotless.", "output": "Cleaning"}
+{"input": "I'm in need of a chef who can handle a last-minute request for a corporate event dinner.", "output": "Cooking"}
+{"input": "My water heater just stopped working, no hot water in the house.", "output": "Plumbing"}
+{"input": "I'm facing penalties for late tax returns, can you help me rectify this situation?", "output": "Accounting"}
+{"input": "My toilet is completely clogged, I can't flush it at all.", "output": "Plumbing"}
+{"input": "I'm looking for a coding lesson for my daughter; she wants to learn JavaScript.", "output": "Education"}
+{"input": "I've lost access to my cloud storage, and I need to retrieve my files.", "output": "Information Technology"}
+{"input": "I'm worried about my grandfather's mobility, can you provide physiotherapy?", "output": "Health"}
+{"input": "I'm having trouble with the installation of a new software suite on my laptop.", "output": "Information Technology"}
+{"input": "I need to prepare for an upcoming audit, can you provide a checklist?", "output": "Accounting"}
+{"input": "The windows in my bedroom are filthy, could you clean them for me?", "output": "Cleaning"}
+{"input": "I've got a leak in my bathroom sink, but I'm not sure how to fix it.", "output": "Plumbing"}
+{"input": "I'm in a hurry to find a relaxation technique for my anxiety.", "output": "Well Being"}
+{"input": "I'm looking for a coding lesson for my daughter; she wants to learn JavaScript.", "output": "Education"}
+{"input": "I'm feeling very weak and need someone to check my vitals, can you help?", "output": "Health"}
+{"input": "I need assistance with my company's bookkeeping for small business.", "output": "Accounting"}
+{"input": "I need a chef who can bake a custom wedding cake with a specific flavor profile.", "output": "Cooking"}
+{"input": "My toilet is running constantly, and I'm worried about the water bill.", "output": "Plumbing"}
+{"input": "I require a service to help me with my company's expense tracking.", "output": "Accounting"}
+{"input": "I've got a pile of dirty dishes, can you take care of the laundry as well?", "output": "Cleaning"}
+{"input": "My computer'usted to build a new feature for our app, but I'm not sure how to proceed.", "output": "Information Technology"}
+{"input": "Do NOT number the list.", "output": "Accounting"}
+{"input": "I'm looking for a piano teacher who can give my daughter private lessons.", "output": "Education"}
+{"input": "I'm in a hurry to find a relaxation technique for my high-stress job.", "output": "Well Being"}
+{"input": "I'm looking for a service to help me with my company's financial planning.", "output": "Accounting"}
+{"input": "The windows in my living room are filthy, could you clean them for me?", "output": "Cleaning"}
+{"input": "Output ONLY the requests, one per line.", "output": "Information Technology"}
+{"input": "I've got a lot of laundry and need a service that can handle it quickly.", "output": "Cleaning"}
+{"input": "I need a chef who can prepare a specialized menu for a children's birthday party.", "output": "Cooking"}
+{"input": "I'm looking for a Spanish tutor who can help my son with his vocabulary.", "output": "Education"}
+{"input": "My son is interested in learning piano; can you find a teacher who can give him lessons?", "output": "Education"}
+{"input": "I've heard you're great at financial planning, could you assist me in setting up a budget for my startup?", "output": "Accounting"}
+{"input": "I'm searching for a chef who can teach me how to make sourdough bread from scratch.", "output": "Cooking"}
+{"input": "My computer is running a virus scan, but it's taking longer than expected.", "output": "Information Technology"}
+{"input": "I'm concerned about a possible burst pipe in my home, it's making a loud banging noise.", "output": "Plumbing"}
+{"input": "My friend is seeking spiritual guidance to find inner peace.", "output": "Well Being"}
+{"input": "My son is interested in learning piano; can you find a teacher who can give him lessons?", "output": "Education"}
+{"input": "I'm feeling nauseous and can't keep food down, could you come to help?", "output": "Health"}
+{"input": "I'm having trouble with the installation of a new software suite on my laptop.", "output": "Information Technology"}
+{"input": "Do not use the category name in the request (e.g., don't say I need plumbing, say my pipe burst).", "output": "Cleaning"}
+{"input": "The driveway is a mess after the storm, can you power wash it?", "output": "Cleaning"}
+{"input": "I've got a lot of laundry and need a service that can handle it quickly.", "output": "Cleaning"}
+{"input": "The windows in my living room are filthy, could you clean them for me?", "output": "Cleaning"}
+{"input": "I'm looking for a Spanish tutor who can help my son with his accent.", "output": "Education"}
+{"input": "I'm looking for a piano teacher who can give my daughter private lessons.", "output": "Education"}
+{"input": "I'm hosting a dinner party and need my place to be spotless.", "output": "Cleaning"}
+{"input": "I'm seeking spiritual guidance to improve my relationships.", "output": "Well Being"}
+{"input": "I've accidentally deleted a folder with important documents; how can I recover them?", "output": "Information Technology"}
+{"input": "I've got a leak in my bathroom sink, but I'm not sure how to fix it.", "output": "Plumbing"}
+{"input": "I require a service to help me with my company's expense tracking.", "output": "Accounting"}
+{"input": "I'm in need of a professional to help me with my company's financial statements.", "output": "Accounting"}
+{"input": "Output ONLY the requests, one per line.", "output": "Cleaning"}
+{"input": "Looking for a chef who can cater to a group with specific dietary needs for a fundraiser.", "output": "Cooking"}
+{"input": "I'm interested in relaxation techniques to manage my anxiety.", "output": "Well Being"}
+{"input": "I'm looking for a professional to paint my fence.", "output": "Handiworks"}
+{"input": "Output ONLY the requests, one per line.", "output": "Cooking"}
+{"input": "I'm looking for an English teacher who can help my son with his grammar.", "output": "Education"}
+{"input": "I'm looking for a Spanish tutor who can help my son with his accent.", "output": "Education"}
+{"input": "Could you help me patch up the drywall in my bathroom?", "output": "Handiworks"}
+{"input": "The outlet in my bedroom is not providing power to my laptop charger.", "output": "Electricity"}
+{"input": "Context keywords to inspire you: laptop won't turn on, building web, building application, building software, wifi broken, server crash, screen, printer offline, install software, recover files, virus removal, coding help, password reset", "output": "Information Technology"}
+{"input": "I'm searching for a chef who can teach me how to make sourdough bread from scratch.", "output": "Cooking"}
+{"input": "I'm looking for a coding lesson for my daughter; she wants to learn Python.", "output": "Education"}
+{"input": "Context keywords to inspire you: nursing care for elderly, feel sick, need medicine, physiotherapy, wound dressing, post-surgery care, check blood pressure, medical assistance, home nurse, injection service", "output": "Health"}
+{"input": "I'm looking for a chef who can provide a lesson on making gourmet pizzas.", "output": "Cooking"}
+{"input": "I'm looking for someone to hang some shelves in my living room.", "output": "Handiworks"}
+{"input": "My faucet in the kitchen is leaking, and I'm worried about the water damage.", "output": "Plumbing"}
+{"input": "Can you recommend a life coach who focuses on work-life balance?", "output": "Well Being"}
+{"input": "I've got a lot of laundry and need a service that can handle it quickly.", "output": "Cleaning"}
+{"input": "I require a chef who can prepare a vegan and gluten-free menu for a bridal shower.", "output": "Cooking"}
+{"input": "I need a math tutor for my daughter; she's having trouble with calculus.", "output": "Education"}
+{"input": "The requests must sound like REAL customers (some angry, some polite, some urgent, some short, some detailed).", "output": "Plumbing"}
+{"input": "You are a synthetic data generator. Generate 60 unique, diverse, and realistic user job requests for the category: Education.", "output": "Education"}
+{"input": ":00:18.000 --> 00:00:20.000", "output": "Cooking"}
+{"input": "Can you recommend a life coach who focuses on work-life balance?", "output": "Well Being"}
+{"input": "I need a chef who can bake a custom wedding cake with a specific flavor profile.", "output": "Cooking"}
+{"input": "My printer is not responding to print commands from my computer.", "output": "Information Technology"}
+{"input": "Do not use the category name in the request (e.g., don't say I need plumbing, say my pipe burst).", "output": "Accounting"}
+{"input": "I'm looking for a professional to paint my fence.", "output": "Handiworks"}
+{"input": "I'm moving out and need a professional to clean my entire apartment.", "output": "Cleaning"}
+{"input": "Looking for a chef who can cater to a group with specific dietary needs for a charity event.", "output": "Cooking"}
+{"input": "Please find a chef who can offer a personalized meal prep service for busy professionals.", "output": "Cooking"}
+{"input": "Output ONLY the requests, one per line.", "output": "Accounting"}
+{"input": "I'm overwhelmed with managing my finances, can you offer some advice?", "output": "Accounting"}
+{"input": "I'm looking for a yoga instructor who can teach me advanced poses.", "output": "Well Being"}
+{"input": "My apartment is a mess after the party, can you clean it up?", "output": "Cleaning"}
+{"input": "I'm seeking spiritual guidance to improve my relationships.", "output": "Well Being"}
+{"input": "My son needs a tutor for his SAT prep; who can help him with the critical reading section?", "output": "Education"}
+{"input": "The breaker in my house keeps tripping when I use my microwave.", "output": "Electricity"}
+{"input": "I'm searching for a culinary instructor to teach me how to make authentic Italian cuisine.", "output": "Cooking"}
+{"input": "I need help with my SAT prep; can you recommend a tutor who can help me with the math section?", "output": "Education"}
+{"input": "I'm in need of a chef who can handle a last-minute request for a corporate event dinner.", "output": "Cooking"}
+{"input": "I'm in need of a professional to help me with my company's financial statements.", "output": "Accounting"}
+{"input": "I need a math tutor for my daughter; she's having trouble with algebra.", "output": "Education"}
+{"input": "I've got a lot of laundry and need a service that can handle it quickly.", "output": "Cleaning"}
+{"input": "I need a handyman to fix my fence gate.", "output": "Handiworks"}
+{"input": "I've accidentally deleted a file from my computer; can you guide me through the recovery process?", "output": "Information Technology"}
+{"input": "Please find a personal mentor who can help me with my creative block.", "output": "Well Being"}
+{"input": "I've lost access to my cloud storage, and I need to retrieve my files.", "output": "Information Technology"}
+{"input": "I'm looking for a professional to paint my fence.", "output": "Handiworks"}
+{"input": "My apartment is a mess after the party, can you clean it up?", "output": "Cleaning"}
+{"input": "Do not start lines with I need every time. Vary the phrasing.", "output": "Accounting"}
+{"input": "I'm in urgent need of a life coach to help with my career transition.", "output": "Well Being"}
+{"input": "My fence gate is squeaky, can you oil the hinges?", "output": "Handiworks"}
+{"input": "You are a synthetic data generator. Generate 60 unique, diverse, and realistic user job requests for the category: Electricity.", "output": "Electricity"}
+{"input": "I'm hosting a dinner party and need my place to be spotless.", "output": "Cleaning"}
+{"input": "My son is having trouble with physics; can you find a tutor who can explain the concepts better?", "output": "Education"}
+{"input": "Output ONLY the requests, one per line.", "output": "Electricity"}
+{"input": "I'm looking for a chef who can cater to a group with diverse dietary preferences for a charity event.", "output": "Cooking"}
+{"input": "I accidentally deleted a critical file; can you guide me through the recovery process?", "output": "Information Technology"}
+{"input": "My computer'usted to build a new feature for our app, but I'm not sure how to proceed.", "output": "Information Technology"}
+{"input": "The windows in my living room are filthy, could you clean them for me?", "output": "Cleaning"}
+{"input": "I'm looking for a yoga instructor who can accommodate my schedule.", "output": "Well Being"}
+{"input": "I've accidentally deleted a file from my computer; can you guide me through the recovery process?", "output": "Information Technology"}
+{"input": "Do not start lines with I need every time. Vary the phrasing.", "output": "Information Technology"}
+{"input": "Could you help me patch up the drywall in my bathroom?", "output": "Handiworks"}
+{"input": "I'm looking for an English teacher who can help my son with his public speaking.", "output": "Education"}
+{"input": "Output ONLY the requests, one per line.", "output": "Health"}
+{"input": "I've heard you're great at financial planning, could you assist me in setting up a budget for my startup?", "output": "Accounting"}
+{"input": "You are a synthetic data generator. Generate 60 unique, diverse, and realistic user job requests for the category: Handiworks.", "output": "Handiworks"}
+{"input": "I'm experiencing frequent power outages; I need to get my electrical system checked.", "output": "Electricity"}
+{"input": "I'm looking for a quick clean-up service for my office before a client visit.", "output": "Cleaning"}
+{"input": "The paint on my fence is chipping, can you repaint it?", "output": "Handiworks"}
+{"input": "I'm looking for a professional to help me with my financial statements for the year.", "output": "Accounting"}
+{"input": "My computer is running a virus scan, but it's taking longer than expected.", "output": "Information Technology"}
+{"input": "I need a chef who can prepare a specialized menu for a children' house.", "output": "Cooking"}
+{"input": "Every time I turn on the living room light, the breaker trips immediately.", "output": "Electricity"}
+{"input": "The windows in my living room are filthy, could you clean them for me?", "output": "Cleaning"}
+{"input": "I'm looking for a coding lesson for my daughter; she wants to learn Python.", "output": "Education"}
+{"input": "I'm feeling very unwell and need someone to check my temperature, can you help?", "output": "Health"}
+{"input": "I've got a leak in my bathroom sink, but I'm not sure how to fix it.", "output": "Plumbing"}
+{"input": "Do not use the category name in the request (e.g., don't say I need plumbing, say my pipe burst).", "output": "Well Being"}
+{"input": "I'm looking for a professional to help me with my company's financial planning.", "output": "Accounting"}
+{"input": "I'm feeling nauseous and can't keep food down, could you come to help?", "output": "Health"}
+{"input": "The windows in my living room are filthy, could you clean them for me?", "output": "Cleaning"}
+{"input": "My computer'usted to build a new feature for our app, but I'm not sure how to proceed.", "output": "Information Technology"}
+{"input": "The driveway is a mess after the storm, can you power wash it?", "output": "Cleaning"}
+{"input": "Do not start lines with I need every time. Vary the phrasing.", "output": "Health"}
+{"input": "I need a chef who can bake a custom wedding cake with a specific flavor profile.", "output": "Cooking"}
+{"input": "My son is interested in learning piano; can you find a teacher who can give him lessons?", "output": "Education"}
+{"input": "I'm looking for a piano teacher who can help my daughter improve her technique.", "output": "Education"}
+{"input": "I'm looking for a yoga instructor who can teach me advanced poses.", "output": "Well Being"}
+{"input": "I'm looking for a coding lesson for my daughter; she wants to learn JavaScript.", "output": "Education"}
+{"input": "My computer's performance has degraded significantly; could it be a virus?", "output": "Information Technology"}
+{"input": "I'm interested in installing a new lighting system in my living room.", "output": "Electricity"}
+{"input": "The driveway is a mess after the storm, can you power wash it?", "output": "Cleaning"}
+{"input": "I'm searching for an English teacher who can help with my son's reading comprehension.", "output": "Education"}
+{"input": "The breaker in my house keeps tripping when I use my hairdryer.", "output": "Electricity"}
+{"input": "I've lost all my work files from last week; can you help me recover them?", "output": "Information Technology"}
+{"input": "I'm in a hurry, my fence gate is broken, and I need it fixed.", "output": "Handiworks"}
+{"input": "I'm concerned about my elderly neighbor's health, can you check on her?", "output": "Health"}
+{"input": "I'm experiencing frequent power surges; I need to get my electrical system checked.", "output": "Electricity"}
+{"input": "The bathroom grout is stained, could you clean it for me?", "output": "Cleaning"}
+{"input": "The breaker in my house keeps tripping when I use my microwave.", "output": "Electricity"}
+{"input": "I'm looking for a quick clean-up service for my office before a client visit.", "output": "Cleaning"}
+{"input": "My printer is not printing from my computer, even though it's connected.", "output": "Information Technology"}
+{"input": "Can you help me with a leaky roof, it's causing water damage.", "output": "Handiworks"}
+{"input": "I'm facing a cash flow problem, can you help me with financial planning?", "output": "Accounting"}
+{"input": "I'm experiencing frequent power surges; I need to get my electrical system checked.", "output": "Electricity"}
+{"input": "Output ONLY the requests, one per line.", "output": "Well Being"}
+{"input": "I've got a leak in my bathroom sink, but I'm not sure how to fix it.", "output": "Plumbing"}
+{"input": "You are a synthetic data generator. Generate 60 unique, diverse, and realistic user job requests for the category: Well Being.", "output": "Well Being"}
+{"input": "I'm in a hurry, my fence needs fixing before the storm hits.", "output": "Handiworks"}
+{"input": "I need to install a new outlet in my garage for a workshop.", "output": "Electricity"}
+{"input": "The water pressure in my shower is so low, it's almost unusable.", "output": "Plumbing"}
+{"input": "My apartment is a mess after the party, can you clean it up?", "output": "Cleaning"}
+{"input": "I need a chef who can bake a custom wedding cake with a specific flavor profile.", "output": "Cooking"}
+{"input": "I'm facing a cash flow problem, can you help me with financial planning?", "output": "Accounting"}
+{"input": "Do NOT number the list.", "output": "Health"}
+{"input": "Do not use the category name in the request (e.g., don't say I need plumbing, say my pipe burst).", "output": "Plumbing"}
+{"input": "The outlet in my bedroom is not providing power to my laptop charger.", "output": "Electricity"}
+{"input": "The water pressure in my shower is so low, it's barely a trickle.", "output": "Plumbing"}
+{"input": "I need a meditation coach who can help me with my PTSD.", "output": "Well Being"}
+{"input": "My father is having trouble with his diabetes management, can you provide guidance?", "output": "Health"}
+{"input": "My computer is running a virus scan, but it's taking longer than expected.", "output": "Information Technology"}
+{"input": "I've noticed my kitchen appliances are not working properly; could it be a wiring problem?", "output": "Electricity"}
+{"input": "I've got a small leak under my sink, but I'm not sure where it's coming from.", "output": "Plumbing"}
+{"input": "I'm having trouble with the installation of a new software suite on my laptop.", "output": "Information Technology"}
+{"input": "I need assistance with installing the latest security update on my computer.", "output": "Information Technology"}
+{"input": "I'm in need of a chef who can handle a last-minute request for a corporate event dinner.", "output": "Cooking"}
+{"input": "I'm having trouble with a piece of code I wrote; it's not functioning as expected.", "output": "Information Technology"}
+{"input": "Can you help me with a leaky roof, it's causing water damage.", "output": "Handiworks"}
+{"input": "Do NOT number the list.", "output": "Plumbing"}
+{"input": "I'm looking for a professional to help me with my company's financial planning.", "output": "Accounting"}
+{"input": "You are a synthetic data generator. Generate 60 unique, diverse, and realistic user job requests for the category: Well Being.", "output": "Well Being"}
