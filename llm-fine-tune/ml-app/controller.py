@@ -1,10 +1,12 @@
 from flask import Flask
 from flask_restful import Resource, Api, reqparse, fields, marshal_with, abort
+from flask_cors import CORS
 
 import joblib
 
 app = Flask(__name__)
 api = Api(app)
+CORS(app)
 
 MODEL = joblib.load("nlp_model/service_classifier.pkl")
 parser = reqparse.RequestParser()

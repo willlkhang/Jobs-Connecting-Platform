@@ -1,0 +1,62 @@
+.smart-search-container {
+  background: #ffffff;
+  border: 1px solid #eef0f2;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.ai-badge {
+  display: inline-block;
+  background: linear-gradient(90deg, #6366f1, #a855f7);
+  color: white;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.ai-input {
+  border-radius: 50px !important;
+  padding: 1.2rem 5rem 1.2rem 1.5rem !important;
+  border: 2px solid #e2e8f0;
+  transition: all 0.3s ease;
+}
+
+.ai-input:focus {
+  border-color: #a855f7;
+  box-shadow: 0 0 15px rgba(168, 85, 247, 0.2);
+}
+
+/* Pulsing effect when loading */
+.ai-loading {
+  animation: border-pulse 1.5s infinite;
+}
+
+@keyframes border-pulse {
+  0% { border-color: #e2e8f0; }
+  50% { border-color: #a855f7; }
+  100% { border-color: #e2e8f0; }
+}
+
+.btn-ai-send {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 50px !important;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}

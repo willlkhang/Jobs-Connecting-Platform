@@ -1,4 +1,4 @@
-"use-client";
+"use client";
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -22,7 +22,7 @@ const categories = [
     { name: "Accounting", icon: "📊" }
 ];
 
-export default function CategorySlider( {id} ) {
+export default function CategorySlider( { onSelectCategory, selectedCategory } ) {
     const settings = {
         dots: false,
         infinite: true,
@@ -33,7 +33,7 @@ export default function CategorySlider( {id} ) {
         
         swipeToSlides: true,
         swipe: true,
-        arrow: true,
+        arrows: true,
         draggable: true
     };
     
@@ -43,7 +43,10 @@ export default function CategorySlider( {id} ) {
                 {
                     categories.map((category, index) => (
                         <div className="category-slide-item" key={index}>
-                            <div className="category-pill">
+                            <div className={`category-pill ${selectedCategory === category.name ? 'active' : ''}`}
+                                onClick={() => onSelectCategory(category.name)}
+                                style = {{ cursor: "pointer" }}
+                            >
                                 <span className="category-icon">{category.icon}</span>
                                 <span className="category-name">{category.name}</span>
                             </div>
