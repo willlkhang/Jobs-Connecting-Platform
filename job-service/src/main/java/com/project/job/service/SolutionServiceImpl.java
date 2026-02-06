@@ -10,7 +10,6 @@ import com.project.base.outputDto.SolutionResponse;
 import com.project.base.outputDto.UserResponse;
 import com.project.job.domain.Category;
 import com.project.job.domain.Solution;
-import com.project.job.mapper.CategoryMapper;
 import com.project.job.mapper.NeighborMapper;
 import com.project.job.mapper.SolutionMapper;
 import com.project.job.repository.CategoryRepository;

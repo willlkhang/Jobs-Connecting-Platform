@@ -2,6 +2,7 @@ package com.project.job.controller;
 
 //base service group
 import com.project.base.dto.SolutionDTO;
+import com.project.base.dto.CategoryDTO;
 import com.project.base.dto.Result;
 import com.project.base.exception.BusinessException;
 
@@ -12,10 +13,8 @@ import com.project.job.domain.Category;
 
 import com.project.base.outputDto.SolutionResponse;
 import com.project.job.service.SolutionService;
-import com.project.job.domain.Solution;
 
 //rest api spring boot group
-import jakarta.ws.rs.GET;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -33,10 +32,7 @@ public class JobController {
     @Autowired
     private CategoryService categoryService;
 
-    @GetMapping("/solutions")
-    public ResponseEntity<?> test() {
-        return null;
-    }
+
 
     @GetMapping("/solutions")
     public ResponseEntity<?> getAllSolutions() {
@@ -70,6 +66,13 @@ public class JobController {
         solutionService.addSolution(solutionDTO);
         return ResponseEntity.ok().body(solutionDTO);
     }
+
+    @PostMapping("/category")
+    public ResponseEntity<?> addCategory(@RequestBody CategoryDTO categoryDTO) {
+        categoryService.addCategory(categoryDTO);
+        return ResponseEntity.ok().body(categoryDTO);
+    }
+
 
     @GetMapping("/solution/cateogry/{id}")
     public ResponseEntity<Result> getListSolutionByCategoryId(@PathVariable Long id) {

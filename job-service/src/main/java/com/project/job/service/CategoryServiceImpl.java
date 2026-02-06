@@ -1,5 +1,6 @@
 package com.project.job.service;
 
+import com.project.base.dto.CategoryDTO;
 import com.project.base.outputDto.CategoryResponse;
 
 import com.project.job.domain.Category;
@@ -19,6 +20,21 @@ public class CategoryServiceImpl implements CategoryService {
     private CategoryRepository categoryRepository;
     @Autowired
     private CategoryMapper categoryMapper;
+
+    @Override
+    public void addCategory(CategoryDTO categoryDTO) {
+        try {
+            Category category = new Category();
+            //category.setCategoryId(categoryDTO.getCategoryId());
+            category.setCategoryName((categoryDTO.getCategoryName()));
+            category.setDescription((categoryDTO.getDescription()));
+
+            categoryRepository.save(category);
+        }
+        catch (Exception e) {
+            System.out.println("Some thing is missing from category input");
+        }
+    }
 
     @Override
     public List<CategoryResponse> getAllCategories() {

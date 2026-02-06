@@ -6,7 +6,7 @@ import joblib
 app = Flask(__name__)
 api = Api(app)
 
-MODEL = joblib.load("../nlp_model/service_classifier.pkl")
+MODEL = joblib.load("nlp_model/service_classifier.pkl")
 parser = reqparse.RequestParser()
 parser.add_argument('message', type=str, required=True, help="Message cannot be blank")
 
