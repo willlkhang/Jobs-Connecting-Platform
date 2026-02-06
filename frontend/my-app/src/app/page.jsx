@@ -18,6 +18,10 @@ export default function Home() {
   const [accessToken, setAccessToken] = useState();
   const [user, setUsetr] = useState({});
 
+  //utile
+  const [featuredIndex, setFeaturedIndex] = useState(0);
+  const [randomListIndices, setRandomListIndices] = useState([]);
+
   const getApi = async () => {
     try{
       setLoading(true);
@@ -66,6 +70,19 @@ export default function Home() {
     // }
   }, []);
 
+  useEffect(() => {
+    if (dataSolutions.length > 0) {
+      const randomTop = Math.floor(Math.random() * dataSolutions.length);
+      setFeaturedIndex(randomTop);
+      const allIndices = Array.from({ length: dataSolutions.length }, (_, i) => i);
+      const filteredIndices = allIndices.filter(i => i !== randomTop);
+      const shuffled = filteredIndices.sort(() => 0.5 - Math.random());
+      setRandomListIndices(shuffled.slice(0, 6));
+    }
+  }, [dataSolutions])
+
+  // const featuredItem = dataSolutions[featuredIndex];
+
   return (
     <div className="content-page">
       
@@ -101,7 +118,7 @@ export default function Home() {
                   <div className="solution-top">
                     <div className="solution-thumbnail-top">
                       <Image src={
-                        dataSolutions[11].imageUrl ?? "/error/error.png"
+                        dataSolutions[featuredIndex].imageUrl ?? "/error/error.png"
                       } 
                       alt="Error" 
                       width={600} 
@@ -110,10 +127,10 @@ export default function Home() {
                     </div>
                     <div className="solution-content">
                       <h3 className="solution-name">
-                        {dataSolutions[11].solutionName ?? ""}{" "}
+                        {dataSolutions[featuredIndex].solutionName ?? ""}{" "}
                       </h3>
                       <p className="solution-description">
-                        {dataSolutions[11].description ?? ""}
+                        {dataSolutions[featuredIndex].description ?? ""}
                       </p>
                       <p>
                         <label className="me-2" htmlFor="generic-box">
@@ -121,7 +138,7 @@ export default function Home() {
                         </label>
                         <i className="fa-solid fa-dollar-sign"></i>
                         <span className="generic-box">
-                          <b>{dataSolutions[11].price ?? ""}</b>
+                          <b>{dataSolutions[featuredIndex].price ?? ""}</b>
                         </span>
                       </p>
                       <p>
@@ -130,7 +147,7 @@ export default function Home() {
                         </label>
                         <i className="fa-solid fa-dollar-sign"></i>
                         <span className="generic-box">
-                          <b>{dataSolutions[11].processedNumber ?? ""}</b>
+                          <b>{dataSolutions[featuredIndex].processedNumber ?? ""}</b>
                         </span>
                       </p>
                       <p>
@@ -143,7 +160,7 @@ export default function Home() {
                         </span>
                       </p>
                       <div className="category-tags">
-                        {dataSolutions[11].categories?.map((object, index) => (
+                        {dataSolutions[featuredIndex].categories?.map((object, index) => (
                           <div className="tag" key={index}>
                             {object.categoryName}
                           </div>
@@ -153,7 +170,7 @@ export default function Home() {
                   </div>
 
                 </div>
-                {[5, 6, 7].map((i) => (
+                {randomListIndices.map((i) => (
                   <div key={i} className="col-lg-4 col-md-6 col-xs-12">
                     <Link
                       className="solution-item"
