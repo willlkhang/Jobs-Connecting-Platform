@@ -9,7 +9,7 @@
 ---
 
 # Quick Demo
-![Project Demo](Video will be here soon)
+[walkthrough video.mkv](note/walkthrough%20video.mkv)
 
 ---
 
