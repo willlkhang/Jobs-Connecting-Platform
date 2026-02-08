@@ -9,7 +9,7 @@
 ---
 
 # Quick Demo
-[walkthrough video.mkv](note/walkthrough%20video.mkv)
+[walkthrough video.mp4](note/walkthrough%20video.mp4)
 
 ---
 
