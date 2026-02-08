@@ -63,7 +63,6 @@ https://github.com/user-attachments/assets/bec63e7a-1ec9-4ad3-80a2-dd85edb451ae
 
 # Database
 ![Jobs_Connecting_Platform.png](note/Jobs_Connecting_Platform.png)
-
 ---
 
 # Tech Stack
@@ -88,3 +87,18 @@ https://github.com/user-attachments/assets/bec63e7a-1ec9-4ad3-80a2-dd85edb451ae
   - Postman (API Testing), Git/GitHub, Swap Memory Optimization (Linux), Ngrok (Local Tunneling)
 - **Production environment**: 
   - DigitalOcean VPS
+
+# Project Files Structure
+
+## 1. General Overview
+![img.png](note/img.png)
+
+## 2. Backend Java-Spring boot
+![img.png](note/imgjavaspringboot.png)
+---
+
+## 3. Frontend Next.js, SCSS/JSX
+![img.png](note/imgfe.png)
+
+## 4. ML, LLM fine-tuning
+![img.png](note/imgaiml.png)
