@@ -102,3 +102,5 @@ https://github.com/user-attachments/assets/bec63e7a-1ec9-4ad3-80a2-dd85edb451ae
 
 ## 4. ML, LLM fine-tuning
 ![img.png](note/imgaiml.png)
+
+Author: Minh Khang Nguyen (Will)
